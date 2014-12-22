@@ -190,7 +190,7 @@ gulp.task('integrate-test', function() {
   return runSequence('integrate', 'test-run');
 });
 
-gulp.task('watch', ['integrate', 'test-setup'], function() {
+gulp.task('watch', ['integrate', 'serve'], function() {
   var browserSync = require('browser-sync');
 
   // Compose several watch streams, each resulting in their own pipe

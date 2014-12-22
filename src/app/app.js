@@ -1,4 +1,4 @@
-angular.module('SC5AngularBoilerplate', [
+angular.module('HY', [
     'ngResource',
     'ngRoute',
     'templates'
@@ -6,16 +6,16 @@ angular.module('SC5AngularBoilerplate', [
   .config(function($routeProvider, $locationProvider) {
     console.log('Hello from config');
     $routeProvider.
-      when('/', {
-          templateUrl: 'assets/views/main.html'
-      }).
-      when('/sample', {
-          templateUrl: 'assets/views/sample.html',
-          controller: 'SampleController'
+      when('/:lang/:pageId', {
+        templateUrl: function(args) {
+          console.log('Template args', args);
+          return 'assets/views/page.html';
+        },
+        controller: 'PageController'
       }).
       otherwise({
-          redirectTo: '/'
+        redirectTo: '/fi/index'
       });
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
   });
