@@ -1,0 +1,10 @@
+html {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
+    color: $emo;
+}
+
+/* A simple test case to verify Compass build works ok */
+#{headings(all)} {
+    color: $soil;
+    text-transform: uppercase;
+}

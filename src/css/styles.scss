@@ -1,4 +1,4 @@
-/* A simple test case to verify Compass build works ok */
-#{headings(all)} {
-  color: #020202;
-}
+@import "../components/foundation/scss/foundation";
+@import "colors";
+@import "base";
+@import "foundation_overridables";
