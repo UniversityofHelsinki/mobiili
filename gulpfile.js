@@ -46,7 +46,7 @@ gulp.task('bump', function() {
 });
 
 gulp.task('build', function() {
-  return runSequence(['javascript', 'stylesheets', 'assets'], 'integrate', 'test');
+  return runSequence(['javascript', 'stylesheets', 'assets'], 'integrate');
 });
 
 /* Serve the web site */
@@ -187,7 +187,7 @@ gulp.task('integrate', function() {
 });
 
 gulp.task('integrate-test', function() {
-  return runSequence('integrate', 'test-run');
+  return runSequence('integrate');
 });
 
 gulp.task('watch', ['integrate', 'serve'], function() {
