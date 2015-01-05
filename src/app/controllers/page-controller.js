@@ -5,7 +5,6 @@ angular.module('HY')
     $scope.data = {};
 
     BrowserUsage.get().then(function(xhr) {
-      console.log('data', BrowserUsage.parse(xhr.data));
       $scope.data = BrowserUsage.parse(xhr.data);
     });
 

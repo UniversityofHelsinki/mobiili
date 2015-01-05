@@ -12,12 +12,10 @@
 </head>
 <body ng-controller="MainController">
   <base href="/">
-  <header>
-    <!-- <a ng-href="/#/en/landingPage">Main</a>
-    <a href="/sample">Sample</a> -->
+  <header ng-include src="'/assets/views/menu.html'" ng-controller="HeaderController">
   </header>
-  <h1>Helsingin Yliopisto</h1>
-  <div id="status" ng-view>
+
+  <div id="content" ng-view>
     <p>If you see this, something is wrong with your installation.</p>
   </div>
   <footer>
