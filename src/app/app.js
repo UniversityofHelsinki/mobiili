@@ -8,11 +8,13 @@ angular.module('HY', [
   .config(function($routeProvider, $locationProvider) {
     console.log('Hello from config');
     $routeProvider.
-      when('/:lang/:pageId', {
-        templateUrl: function(args) {
-          return 'assets/views/page.html';
-        },
-        controller: 'PageController'
+      when('/:lang/index', {
+        templateUrl:'assets/views/index.html',
+        controller: 'DefaultController'
+      }).
+      when('/:lang/browser_usage', {
+        templateUrl: 'assets/views/page.html',
+        controller: 'BrowserUsageController'
       }).
       otherwise({
         redirectTo: '/fi/index'

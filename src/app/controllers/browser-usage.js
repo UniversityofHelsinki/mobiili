@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('PageController', function($scope, $routeParams, BrowserUsage) {
+  .controller('BrowserUsageController', function($scope, $routeParams, BrowserUsage) {
 
     $scope.content = 'Test content';
     $scope.data = {};
