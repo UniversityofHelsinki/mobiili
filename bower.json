@@ -6,7 +6,8 @@
     "angular-resource": "~1.3.0",
     "angular-route": "~1.3.0",
     "angular-charts": "~0.2.7",
-    "ng-i18next": "~0.3.6"
+    "ng-i18next": "~0.3.6",
+    "angular-ui-router": "~0.2.13"
   },
   "devDependencies": {
     "foundation": "~5.5.0"

@@ -1,4 +1,4 @@
 angular.module('HY')
-  .controller('DefaultController', function() {
-    console.log('Hello, world from DefaultController!');
+  .controller('DefaultController', function($scope, $routeParams) {
+    console.log('Hello, world from DefaultController!', $scope);
   });
