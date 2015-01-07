@@ -68,7 +68,7 @@ angular.module('HY', [
         controller: 'NavigationController',
         resolve: {
           data: function() {
-            return {data: obj}
+            return obj;
           }
         }
       }

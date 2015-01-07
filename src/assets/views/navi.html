@@ -1,6 +1,2 @@
-<div>
-    <a class="button" ng-show="{{data.back}}" href="{{data.back.url}}">{{data.back.text}}</a>
-    <a class="button" ng-show="{{data.forward}}" href="{{data.forward.url}}">{{data.forward.text}}</a>
-
-    {{data}}
-</div>
+<a class="button" ng-show="data.navigation.back" href="/#/{{lang}}/{{data.navigation.back.url}}">{{data.navigation.back.text}}</a>
+<a class="button" ng-show="data.navigation.forward" href="/#/{{lang}}/{{data.navigation.forward.url}}">{{data.navigation.forward.text}}</a>

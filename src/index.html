@@ -15,12 +15,16 @@
   <header ng-include src="'/assets/views/menu.html'" ng-controller="HeaderController">
   </header>
 
-  <div class="content" ui-view="content">
-    <p>If you see this, something is wrong with your installation.</p>
+  <div class="content-wrapper">
+
+    <div class="content" ui-view="content">
+    </div>
+
+    <nav class="navigation" ui-view="nav">
+    </nav>
+
   </div>
 
-  <navigation class="navigation" ui-view="nav">
-  </navigation>
   <footer>
 
   </footer>

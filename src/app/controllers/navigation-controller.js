@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('NavigationController', function($scope, data) {
-    console.log('Hello, world from NaviController!', data);
+  .controller('NavigationController', function($scope, data, $stateParams) {
     $scope.data = data;
+    $scope.lang = $stateParams.lang;
   });
