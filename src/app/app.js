@@ -4,11 +4,12 @@ angular.module('HY', [
     'ui.router',
     'templates',
     'HY.services',
-    'angularCharts'
+    'angularCharts',
+    'pascalprecht.translate'
   ])
-  .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
-    $urlRouterProvider.otherwise('/fi/index');
+    // $urlRouterProvider.otherwise('/fi/index');
 
     $stateProvider
       .state('app', {
@@ -54,13 +55,6 @@ angular.module('HY', [
           })
         }
       });
-      // when('/:lang/browser_usage', {
-      //   templateUrl: 'assets/views/page.html',
-      //   controller: 'BrowserUsageController'
-      // }).
-      // otherwise({
-      //   redirectTo: '/fi/index'
-      // });
 
     function getNavView(obj) {
       return {
@@ -75,4 +69,14 @@ angular.module('HY', [
     };
 
     $locationProvider.html5Mode(false);
+
+    $translateProvider
+      .translations('fi', {
+        WELCOME_TEXT: 'Tervetuloa perehtymään Helsingin Yliopiston mobiilistrategiaan.'
+      })
+      .translations('en', {
+        WELCOME_TEXT: 'Welcome to Helsinki University mobile strategy.'
+      });
+    $translateProvider.preferredLanguage('fi');
+
   });
