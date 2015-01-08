@@ -3,3 +3,11 @@ nav {
     // position: absolute;
     // bottom: 0;
 }
+
+.button {
+    background-color: $ocean;
+
+    &:hover {
+        background-color: $marine;
+    }
+}
