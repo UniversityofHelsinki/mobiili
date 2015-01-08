@@ -1,4 +1,6 @@
 angular.module('HY')
-  .controller('MainController', function($scope, $rootScope, $stateParams) {
+  .controller('MainController', function($scope, $stateParams, $translate) {
 
+    // Translation
+    $translate.use($stateParams.lang);
   });

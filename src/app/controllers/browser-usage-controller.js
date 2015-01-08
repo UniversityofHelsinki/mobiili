@@ -1,5 +1,6 @@
 angular.module('HY')
-  .controller('BrowserUsageController', function($scope, $routeParams, BrowserUsage) {
+  .controller('BrowserUsageController', function($scope, $routeParams, $controller, BrowserUsage) {
+    angular.extend(this, $controller('MainController', {$scope: $scope}));
 
     $scope.content = 'Test content';
     $scope.data = {};
