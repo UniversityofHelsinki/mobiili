@@ -5,7 +5,8 @@ angular.module('HY', [
     'templates',
     'HY.services',
     'angularCharts',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'ngAnimate'
   ])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
