@@ -11,3 +11,19 @@ nav {
         background-color: $marine;
     }
 }
+
+.pager {
+    text-align: center;
+
+    .page-indicator {
+        display: inline-block;
+        border: 1px solid $ocean;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px;
+
+        &.current {
+            background-color: $ocean;
+        }
+    }
+}

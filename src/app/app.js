@@ -29,6 +29,7 @@ angular.module('HY', [
             controller: 'DefaultController'
           },
           'nav@': getNavView({
+            page: 1,
             navigation: {
               forward: {
                 text: 'Aloita',
@@ -46,6 +47,7 @@ angular.module('HY', [
             controller: 'BrowserUsageController'
           },
           'nav@': getNavView({
+            page: 2,
             navigation: {
               forward: {
                 text: 'Seuraava',
@@ -66,6 +68,7 @@ angular.module('HY', [
         controller: 'NavigationController',
         resolve: {
           data: function() {
+            obj.pageCount = $stateProvider.state.length;
             return obj;
           }
         }

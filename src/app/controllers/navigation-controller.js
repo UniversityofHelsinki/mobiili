@@ -3,4 +3,8 @@ angular.module('HY')
     angular.extend(this, $controller('MainController', {$scope: $scope}));
     $scope.data = data;
     $scope.lang = $stateParams.lang;
+
+    $scope.getTimes = function(n) {
+      return new Array(n);
+    };
   });
