@@ -5,6 +5,7 @@ html {
 
 /* A simple test case to verify Compass build works ok */
 #{headings(all)} {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     color: $soil;
     text-transform: uppercase;
 }
