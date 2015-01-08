@@ -2,7 +2,7 @@ angular.module('HY')
   .controller('HeaderController', function($scope, $translate, $location, $routeParams) {
 
     // TODO: Find a nicer way to do this
-    $scope.lang = $location.path().split('/')[1];
+    $scope.lang = $location.path().split('/')[1] || 'fi';
 
     $scope.changeLanguage = function(langKey) {
       var pathArray = $location.path().split('/');
