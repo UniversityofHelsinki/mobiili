@@ -10,7 +10,10 @@ angular.module('HY', [
   ])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
-    // $urlRouterProvider.otherwise('/fi/index');
+    var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
+        lastUrl = sessionData.lastUrl || '/fi/index';
+
+    $urlRouterProvider.otherwise(lastUrl);
 
     $stateProvider
       .state('app', {
