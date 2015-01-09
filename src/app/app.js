@@ -3,7 +3,6 @@ angular.module('HY', [
     'ngRoute',
     'ui.router',
     'templates',
-    'HY.services',
     'angularCharts',
     'pascalprecht.translate',
     'ngAnimate'
@@ -32,7 +31,7 @@ angular.module('HY', [
             page: 1,
             navigation: {
               forward: {
-                text: 'Aloita',
+                text: 'START',
                 url: 'browser_usage'
               }
             }
@@ -79,8 +78,15 @@ angular.module('HY', [
 
     $translateProvider
       .translations('fi', {
+        // Defaults
+        START: 'Aloita',
+        NEXT: 'Seuraava',
+        PREVIOUS: 'Edellinen',
+
+        // Index
         WELCOME_TEXT: 'Tervetuloa perehtymään Helsingin Yliopiston mobiilistrategiaan.'
       })
+
       .translations('en', {
         WELCOME_TEXT: 'Welcome to Helsinki University mobile strategy.'
       });
