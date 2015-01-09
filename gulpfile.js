@@ -52,7 +52,7 @@ gulp.task('build', function() {
 /* Serve the web site */
 gulp.task('serve', $.serve({
   root: 'dist',
-  port: 8080,
+  port: process.env.PORT || 8080,
   middleware: function(req, res, next) {
     var u = url.parse(req.url),
         // Rewrite urls of form 'main' & 'sample' to blank
