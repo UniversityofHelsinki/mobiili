@@ -26,7 +26,7 @@ angular.module('HY', [
         views: {
           'content@': {
             templateUrl: 'assets/views/index.html',
-            controller: 'DefaultController'
+            controller: 'QuizController'
           },
           'nav@': getNavView({
             page: 1,
@@ -85,7 +85,8 @@ angular.module('HY', [
         PREVIOUS: 'Edellinen',
 
         // Index
-        WELCOME_TEXT: 'Tervetuloa perehtymään Helsingin Yliopiston mobiilistrategiaan.'
+        WELCOME_TEXT: 'Tervetuloa perehtymään Helsingin Yliopiston mobiilistrategiaan.',
+        INDEX_1: 'Arvioi aluksi kuinka iso osa käyttäjistä on mobiilikäyttäjiä?'
       })
 
       .translations('en', {

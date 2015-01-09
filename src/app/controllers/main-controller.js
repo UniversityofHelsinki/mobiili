@@ -1,8 +1,8 @@
 angular.module('HY')
-  .controller('MainController', function($scope, $stateParams, $translate, $location) {
+  .controller('MainController', function($scope, $stateParams, $translate, $location, SessionData) {
 
-    // Set localStorage data
-    localStorage.setItem('hy_mobile', angular.toJson({lastUrl: $location.path()}));
+    // Set visited url information to localStorage data
+    SessionData.set({lastUrl: $location.path()});
 
     // Translation
     $translate.use($stateParams.lang);

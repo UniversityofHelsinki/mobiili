@@ -28,3 +28,19 @@ nav {
         }
     }
 }
+
+input {
+    outline: none;
+}
+input[type=range]  {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+ }
+
+ label.for-range {
+    width: 100%;
+    display: block;
+    max-width: 400px;
+    text-align: center;
+ }
