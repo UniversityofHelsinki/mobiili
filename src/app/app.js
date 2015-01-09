@@ -9,8 +9,8 @@ angular.module('HY', [
   ])
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
-    var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
-        lastUrl = sessionData.lastUrl || '/fi/index';
+    var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
+        lastUrl = sessionData.lastUrl || '/fi/index';
 
     $urlRouterProvider.otherwise(lastUrl);
 
@@ -71,8 +71,8 @@ angular.module('HY', [
             return obj;
           }
         }
-      }
-    };
+      };
+    }
 
     $locationProvider.html5Mode(false);
 
