@@ -3,6 +3,7 @@ angular.module('HY', [
     'ngRoute',
     'ui.router',
     'templates',
+    'HY.services',
     'angularCharts',
     'pascalprecht.translate',
     'ngAnimate'
