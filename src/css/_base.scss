@@ -8,8 +8,13 @@ html {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     color: $soil;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .content-wrapper {
     padding: 20px;
+}
+
+.hidden {
+    display: none;
 }

@@ -14,7 +14,7 @@ nav {
 }
 
 .pager {
-    text-align: center;
+    // text-align: center;
 
     .page-indicator {
         display: inline-block;
@@ -32,15 +32,53 @@ nav {
 input {
     outline: none;
 }
-input[type=range]  {
-    display: block;
-    width: 100%;
-    max-width: 400px;
- }
 
- label.for-range {
-    width: 100%;
-    display: block;
-    max-width: 400px;
-    text-align: center;
- }
+.switch {
+    span {
+        position: relative;
+        top: -0.5rem;
+        margin-right: 10px;
+    }
+    label {
+        // background-color: $ocean;
+    }
+    input:checked + label {
+        background-color: $ocean;
+    }
+}
+
+input[type="radio"] {
+-webkit-appearance: none;
+}
+.row.collapse.foundation-radio-button-row {
+  margin-bottom:1rem; //to get the vert/horz center trick to work well, I have to remove the button margin, so I add it to the row instead.
+}
+.foundation-radio-button {
+
+  position:relative;
+  border-right:1px solid white;
+
+  input.button {
+    background:$ocean;
+    &:hover {
+      background:$marine;
+    }
+    margin-bottom:0;
+    padding:1.25em;
+
+    &[type="radio"]:checked {
+      background:$marine;
+    }
+
+    + label {
+      font-size:1rem;
+      color: white;
+      position:absolute;
+      top:50%;;
+      left:50%;
+      display:inline-block;
+      width:auto;
+      transform:translate(-50%, -50%);
+    }
+  }
+}

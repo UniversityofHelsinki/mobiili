@@ -1,0 +1,21 @@
+<h4>{{ 'WARMUP_HEADER' | translate}}</h4>
+<p>{{ 'WARMUP_1' | translate }}</p>
+<p>{{ 'WARMUP_2' | translate }}</p>
+
+<div class="question-block">
+    <div class="switch">
+        <span>{{ 'WARMUP_Q1' | translate }}</span>
+        <input id="warmup_q1" type="checkbox" ng-model="tender.value" ng-change="updateModel(tender)">
+        <label for="warmup_q1"></label>
+    </div>
+    <div class="switch">
+            <span>{{ 'WARMUP_Q2' | translate }}</span>
+            <input id="warmup_q2" type="checkbox" ng-model="needNative.value" ng-change="updateModel(needNative)">
+            <label for="warmup_q2"></label>
+        </div>
+        <div class="switch">
+            <span>{{ 'WARMUP_Q3' | translate }}</span>
+            <input id="warmup_q3" type="checkbox" ng-model="securityRisk.value" ng-change="updateModel(securityRisk)">
+            <label for="warmup_q3"></label>
+        </div>
+</div>
