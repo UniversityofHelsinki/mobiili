@@ -3,5 +3,6 @@ angular.module('HY')
     angular.extend(this, $controller('MainController', {$scope: $scope}));
 
     $scope.text = data.text;
+    $scope.addClasses = 'part-divider';
 
   });

@@ -1,10 +1,11 @@
 $view-fade-out-duration: .2s;
 $view-fade-in-duration:  .5s;
-$view-margin:            40px;
+$view-padding:            20px 0 40px 0;
 
 [ui-view] {
   overflow: hidden;
-  margin-bottom: $view-margin;
+  padding: $view-padding;
+  margin: 0 20px;
 
   &.ng-leave {
     opacity: 1;
@@ -17,17 +18,17 @@ $view-margin:            40px;
   &.ng-enter {
     opacity: 0;
     max-height: 0;
-    margin-bottom: 0;
-    -webkit-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, margin-bottom 0s linear $view-fade-out-duration;
-       -moz-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, margin-bottom 0s linear $view-fade-out-duration;
-         -o-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, margin-bottom 0s linear $view-fade-out-duration;
-            transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, margin-bottom 0s linear $view-fade-out-duration;
+    padding: 0;
+    -webkit-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
+       -moz-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
+         -o-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
+            transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
   }
 
   &.ng-enter-active {
     opacity: 1;
     max-height: 10000px;
-    margin-bottom: $view-margin;
+    padding: $view-padding;
   }
 
   &.ng-leave-active {

@@ -4,6 +4,7 @@ angular.module('HY')
 
     $scope.data = data;
     $scope.lang = $stateParams.lang;
+    $scope.addClasses = data.addClasses;
 
     $scope.getTimes = function(n) {
       return new Array(n);

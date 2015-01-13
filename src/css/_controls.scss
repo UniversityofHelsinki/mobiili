@@ -1,7 +1,14 @@
 nav {
     clear: both;
-    // position: absolute;
-    // bottom: 0;
+    border-top: 1px solid $emo;
+
+    &.bottom {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
 }
 
 .button, button {

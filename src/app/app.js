@@ -103,6 +103,7 @@ angular.module('HY', [
             }
           },
           'nav@': getNavView({
+            addClasses: 'bottom',
             navigation: {
               forward: {
                 text: 'Seuraava',
