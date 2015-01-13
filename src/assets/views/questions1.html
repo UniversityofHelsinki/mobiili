@@ -1,31 +1,26 @@
 <h4>{{ 'QUESTIONS1' | translate }}</h4>
 
 <p>{{ 'QUESTIONS1_1' | translate }}</p>
-<div class="row collapse foundation-radio-button-row">
-    <div class="small-3 columns">
-         <div class="foundation-radio-button"><input class="button large expand" type="radio" name="hyMobileUsersRadio" value="10" id="hyMobileUsersRadio1" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)"><label for="hyMobileUsersRadio1">10%</label></div>
-    </div>
-
-    <div class="small-3 columns">
-          <div class="foundation-radio-button"><input class="button large expand" type="radio" name="hyMobileUsersRadio" value="20" id="hyMobileUsersRadio2" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)"><label for="hyMobileUsersRadio2">20%</label></div>
-    </div>
-
-    <div class="small-3 columns">
-          <div class="foundation-radio-button"><input class="button large expand" type="radio" name="hyMobileUsersRadio" value="40" id="hyMobileUsersRadio3" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)"><label for="hyMobileUsersRadio3">40%</label></div>
-    </div>
-
-    <div class="small-3 columns">
-          <div class="foundation-radio-button"><input class="button large expand" type="radio" name="hyMobileUsersRadio" value="60" id="hyMobileUsersRadio4" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)"><label for="hyMobileUsersRadio4">60%</label></div>
-    </div>
+<div class="button-group">
+    <button type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="'10'">10%</button>
+    <button type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="'20'">20%</button>
+    <button type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="'40'">40%</button>
+    <button type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="'60'">60%</button>
 </div>
 
-<p>{{ 'QUESTIONS1_2' | translate }}</p>
-<div class="row collapse foundation-radio-button-row">
-    <div class="small-6 columns">
-         <div class="foundation-radio-button"><input class="button large expand" type="radio" name="hyMobileUsersRadio" value="true" id="mobileGoogleSearchRadio1" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)"><label for="mobileGoogleSearchRadio1">Kyllä</label></div>
-    </div>
 
-    <div class="small-6 columns">
-          <div class="foundation-radio-button"><input class="button large expand" type="radio" name="hyMobileUsersRadio" value="false" id="mobileGoogleSearchRadio2" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)"><label for="mobileGoogleSearchRadio2">Ei</label></div>
-    </div>
+<p>{{ 'QUESTIONS1_2' | translate }}</p>
+<div class="button-group">
+    <button type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="'10'">10%</button>
+    <button type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="'20'">20%</button>
+    <button type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="'40'">40%</button>
+    <button type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="'60'">60%</button>
+</div>
+
+<p>{{ 'textInputMobile' | translate }}</p>
+<div class="button-group">
+    <button type="button" class="button" ng-model="textInputMobile.value" ng-change="updateModel(textInputMobile)" btn-radio="'10'">10%</button>
+    <button type="button" class="button" ng-model="textInputMobile.value" ng-change="updateModel(textInputMobile)" btn-radio="'20'">20%</button>
+    <button type="button" class="button" ng-model="textInputMobile.value" ng-change="updateModel(textInputMobile)" btn-radio="'40'">40%</button>
+    <button type="button" class="button" ng-model="textInputMobile.value" ng-change="updateModel(textInputMobile)" btn-radio="'60'">60%</button>
 </div>

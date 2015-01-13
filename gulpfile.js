@@ -108,7 +108,6 @@ gulp.task('javascript', ['preprocess'], function() {
       'components/jquery/dist/jquery.js',
       'components/angular/angular.js',
       'components/**/*.js',
-      'components/**/**/*.js',
       'templates.js',
       'app/**/*.js'
     ], { base: path.join(__dirname, 'src') }))

@@ -3,17 +3,12 @@ angular.module('HY', [
     'ngRoute',
     'ui.router',
     'templates',
+    'mm.foundation',
     'HY.services',
     'angularCharts',
     'pascalprecht.translate',
     'ngAnimate'
   ])
-  .run(function($rootScope) {
-    $rootScope.$on('$viewContentLoaded', function() {
-      // Init foundation on view content
-      $(document).foundation();
-    });
-  })
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
     var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
@@ -188,7 +183,8 @@ angular.module('HY', [
 
         QUESTIONS1: 'Arvioi',
         QUESTIONS1_1: 'Kuinka suuri osa HY ulkoisen verkkosivuston lukijoista käyttää mobiilia?',
-        QUESTIONS1_2: '60% opiskelijoiden ikäluokasta tekee päivittäin mobiilista Google-hakuja?',
+        QUESTIONS1_2: 'Kuinka suuri osa vierailijoista käytti mobiililaitetta suosituissa suomalaisissa verkkopalveluissa vuonna 2014?',
+        QUESTIONS1_3: 'Kuinka suuri osa opiskelijoiden ikäluokasta (18-25v) teki päivittäin mobiilista Google-hakuja vuonna 2013?',
 
         // Part headers
         PART_1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015'
