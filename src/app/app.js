@@ -78,7 +78,7 @@ angular.module('HY', [
             navigation: {
               forward: {
                 text: 'Seuraava',
-                url: 'index'
+                url: 'part1'
               },
               back: {
                 text: 'Takaisin',
@@ -106,11 +106,11 @@ angular.module('HY', [
             navigation: {
               forward: {
                 text: 'Seuraava',
-                url: 'index'
+                url: 'questions1'
               },
               back: {
                 text: 'Takaisin',
-                url: 'warmup'
+                url: 'browser_usage'
               }
             }
           })
@@ -121,10 +121,7 @@ angular.module('HY', [
         views: {
           'content@': {
             templateUrl: 'assets/views/questions1.html',
-            controller: 'QuizController',
-            compile: function() {
-              $(document).foundation();
-            }
+            controller: 'QuizController'
           },
           'nav@': getNavView({
             page: 1,
@@ -136,7 +133,7 @@ angular.module('HY', [
               },
               back: {
                 text: 'Takaisin',
-                url: 'warmup'
+                url: 'part1'
               }
             }
           })
