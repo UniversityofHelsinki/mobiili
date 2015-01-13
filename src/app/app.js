@@ -13,7 +13,7 @@ angular.module('HY', [
 
     var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
         lastUrl = sessionData.lastUrl || '/fi/index',
-        pageCounts = [3, 5];
+        pageCounts = [3, 1];
 
     $urlRouterProvider.otherwise(lastUrl);
 
