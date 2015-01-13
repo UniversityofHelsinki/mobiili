@@ -2,6 +2,6 @@
 
 <a class="button" ng-show="data.navigation.forward" href="/#/{{lang}}/{{data.navigation.forward.url}}">{{data.navigation.forward.text | translate}}</a>
 
-<div class="pager">
+<div class="pager" ng-show="data.page">
     <span ng-repeat="t in getTimes(data.pageCount) track by $index" class="page-indicator{{ $index + 1 === data.page ? ' current' : '' }}"></span>
 </div>
