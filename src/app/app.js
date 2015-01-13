@@ -13,7 +13,7 @@ angular.module('HY', [
 
     var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
         lastUrl = sessionData.lastUrl || '/fi/index',
-        pageCounts = [3, 1];
+        pageCounts = [3, 3];
 
     $urlRouterProvider.otherwise(lastUrl);
 
@@ -130,11 +130,57 @@ angular.module('HY', [
             navigation: {
               forward: {
                 text: 'Seuraava',
-                url: 'index'
+                url: 'stats1'
               },
               back: {
                 text: 'Takaisin',
                 url: 'part1'
+              }
+            }
+          })
+        }
+      })
+      .state('app.stats1', {
+        url: '/:lang/stats1',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/stats1.html',
+            controller: 'ChartController'
+          },
+          'nav@': getNavView({
+            page: 2,
+            pageCount: pageCounts[1],
+            navigation: {
+              forward: {
+                text: 'Seuraava',
+                url: 'stats2'
+              },
+              back: {
+                text: 'Takaisin',
+                url: 'questions1'
+              }
+            }
+          })
+        }
+      })
+      .state('app.stats2', {
+        url: '/:lang/stats2',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/stats2.html',
+            controller: 'DefaultController'
+          },
+          'nav@': getNavView({
+            page: 3,
+            pageCount: pageCounts[1],
+            navigation: {
+              forward: {
+                text: 'Seuraava',
+                url: 'stats3'
+              },
+              back: {
+                text: 'Takaisin',
+                url: 'stats1'
               }
             }
           })
@@ -183,6 +229,14 @@ angular.module('HY', [
         QUESTIONS1_1: 'Kuinka suuri osa HY ulkoisen verkkosivuston lukijoista käyttää mobiilia?',
         QUESTIONS1_2: 'Kuinka suuri osa vierailijoista käytti mobiililaitetta suosituissa suomalaisissa verkkopalveluissa vuonna 2014?',
         QUESTIONS1_3: 'Kuinka suuri osa opiskelijoiden ikäluokasta (18-25v) teki päivittäin mobiilista Google-hakuja vuonna 2013?',
+
+        STATS1_HEADER: 'Internet muuttui mobiiliksi 2014',
+        STATS1_1: 'Vuodesta 2014 lähtien pohjois-amerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).',
+        STATS1_2: 'Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen kannalta.',
+
+        STATS2_HEADER: 'Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa',
+        STATS2_1: 'Jo nyt merkittävillä kotimaisilla sivustoilla 60% käyttäjistä selaa mobiililaitteella.',
+        STATS2_2: 'Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla.',
 
         // Part headers
         PART_1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015'
