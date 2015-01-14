@@ -35,7 +35,7 @@ angular.module('HY', [
             pageCount: pageCounts[0],
             navigation: {
               forward: {
-                text: 'START',
+                text: 'defaults.START',
                 url: 'warmup'
               }
             }
@@ -54,11 +54,11 @@ angular.module('HY', [
             pageCount: pageCounts[0],
             navigation: {
               forward: {
-                text: 'NEXT',
+                text: 'defaults.NEXT',
                 url: 'browser_usage'
               },
               back: {
-                text: 'PREVIOUS',
+                text: 'defaults.PREVIOUS',
                 url: 'index'
               }
             }
@@ -77,11 +77,11 @@ angular.module('HY', [
             pageCount: pageCounts[0],
             navigation: {
               forward: {
-                text: 'Seuraava',
+                text: 'defaults.NEXT',
                 url: 'part1'
               },
               back: {
-                text: 'Takaisin',
+                text: 'defaults.PREVIOUS',
                 url: 'warmup'
               }
             }
@@ -97,7 +97,7 @@ angular.module('HY', [
             resolve: {
               data: function() {
                 return {
-                  text: 'PART_1'
+                  text: 'parts.1'
                 };
               }
             }
@@ -106,11 +106,11 @@ angular.module('HY', [
             addClasses: 'bottom',
             navigation: {
               forward: {
-                text: 'Seuraava',
+                text: 'defaults.NEXT',
                 url: 'questions1'
               },
               back: {
-                text: 'Takaisin',
+                text: 'defaults.PREVIOUS',
                 url: 'browser_usage'
               }
             }
@@ -129,11 +129,11 @@ angular.module('HY', [
             pageCount: pageCounts[1],
             navigation: {
               forward: {
-                text: 'Seuraava',
+                text: 'defaults.NEXT',
                 url: 'stats1'
               },
               back: {
-                text: 'Takaisin',
+                text: 'defaults.PREVIOUS',
                 url: 'part1'
               }
             }
@@ -152,11 +152,11 @@ angular.module('HY', [
             pageCount: pageCounts[1],
             navigation: {
               forward: {
-                text: 'Seuraava',
+                text: 'defaults.NEXT',
                 url: 'stats2'
               },
               back: {
-                text: 'Takaisin',
+                text: 'defaults.PREVIOUS',
                 url: 'questions1'
               }
             }
@@ -175,11 +175,11 @@ angular.module('HY', [
             pageCount: pageCounts[1],
             navigation: {
               forward: {
-                text: 'Seuraava',
+                text: 'defaults.NEXT',
                 url: 'stats3'
               },
               back: {
-                text: 'Takaisin',
+                text: 'defaults.PREVIOUS',
                 url: 'stats1'
               }
             }
@@ -203,47 +203,67 @@ angular.module('HY', [
 
     $translateProvider
       .translations('fi', {
-        // Defaults
-        START: 'Aloita',
-        NEXT: 'Seuraava',
-        PREVIOUS: 'Edellinen',
-        YES: 'Kyllä',
-        NO: 'Ei',
+        defaults: {
+          START: 'Aloita',
+          NEXT: 'Seuraava',
+          PREVIOUS: 'Edellinen',
+          YES: 'Kyllä',
+          NO: 'Ei',
+          MOBILE: 'Mobiili',
+          DESKTOP: 'Työasema'
+        },
 
-        // Index
-        INDEX_HEADER: 'Tulevaisuuden kestäviä verkkopalveluja',
-        INDEX_1: 'Tässä verkkosovelluksessa kerromme mitä modernilta verkkopalvelulta vaaditaan ja mitä hankintoja suunnitellessa pitää tietää.',
-        INDEX_2: 'Keskitymme kahteen periaatteeseen: päätelaiteriippumattomuuteen ja avoimuuteen. ',
-        INDEX_3: 'Aloitamme siitä, miksi nämä periaatteet ovat ajankohtaisia juuri nyt.',
-        INDEX_4: 'Kun suunnittelet verkkopalveluhankintaa, muista ottaa huomioon myös luotettavuus, suorituskyky, tietoturva ja käytettävyys.',
+        parts: {
+          1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015'
+        },
 
-        // Warmup
-        WARMUP_HEADER: 'Tulevaisuuden kestäviä verkkopalveluja',
-        WARMUP_1: 'Mitä modernilta verkkopalvelulta vaaditaan? Mitä hankintoja suunnitellessa pitää tietää?',
-        WARMUP_2: 'Mitä mieltä sinä olet?',
-        WARMUP_Q1: 'Pyydän ensimmäiseksi tarjouspyynnön tutulta konsultilta',
-        WARMUP_Q2: 'Tarvitsen natiiviapplikaation, jotta voin hyödyntää paikkatietoja',
-        WARMUP_Q3: 'Palveluni tietojen jakaminen ulkopuolisille on aina tietoturvariski',
+        date: {
+          MAY: 'Maaliskuu {{value}}'
+        },
 
-        QUESTIONS1: 'Arvioi',
-        QUESTIONS1_1: 'Kuinka suuri osa HY ulkoisen verkkosivuston lukijoista käyttää mobiilia?',
-        QUESTIONS1_2: 'Kuinka suuri osa vierailijoista käytti mobiililaitetta suosituissa suomalaisissa verkkopalveluissa vuonna 2014?',
-        QUESTIONS1_3: 'Kuinka suuri osa opiskelijoiden ikäluokasta (18-25v) teki päivittäin mobiilista Google-hakuja vuonna 2013?',
+        charts: {
+          MOBILE_VS_DT: 'Mobile Vs Desktop'
+        },
 
-        STATS1_HEADER: 'Internet muuttui mobiiliksi 2014',
-        STATS1_1: 'Vuodesta 2014 lähtien pohjois-amerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).',
-        STATS1_2: 'Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen kannalta.',
+        index: {
+          HEADER: 'Tulevaisuuden kestäviä verkkopalveluja',
+          1: 'Tässä verkkosovelluksessa kerromme mitä modernilta verkkopalvelulta vaaditaan ja mitä hankintoja suunnitellessa pitää tietää.',
+          2: 'Keskitymme kahteen periaatteeseen: päätelaiteriippumattomuuteen ja avoimuuteen. ',
+          3: 'Aloitamme siitä, miksi nämä periaatteet ovat ajankohtaisia juuri nyt.',
+          4: 'Kun suunnittelet verkkopalveluhankintaa, muista ottaa huomioon myös luotettavuus, suorituskyky, tietoturva ja käytettävyys.'
+        },
 
-        STATS2_HEADER: 'Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa',
-        STATS2_1: 'Jo nyt merkittävillä kotimaisilla sivustoilla 60% käyttäjistä selaa mobiililaitteella.',
-        STATS2_2: 'Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla.',
+        warmup: {
+          HEADER: 'Tulevaisuuden kestäviä verkkopalveluja',
+          1: 'Mitä modernilta verkkopalvelulta vaaditaan? Mitä hankintoja suunnitellessa pitää tietää?',
+          2: 'Mitä mieltä sinä olet?',
+          Q1: 'Pyydän ensimmäiseksi tarjouspyynnön tutulta konsultilta',
+          Q2: 'Tarvitsen natiiviapplikaation, jotta voin hyödyntää paikkatietoja',
+          Q3: 'Palveluni tietojen jakaminen ulkopuolisille on aina tietoturvariski'
+        },
 
-        // Part headers
-        PART_1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015'
+        questions1: {
+          HEADER: 'Arvioi',
+          1: 'Kuinka suuri osa HY ulkoisen verkkosivuston lukijoista käyttää mobiilia?',
+          2: 'Kuinka suuri osa vierailijoista käytti mobiililaitetta suosituissa suomalaisissa verkkopalveluissa vuonna 2014?',
+          3: 'Kuinka suuri osa opiskelijoiden ikäluokasta (18-25v) teki päivittäin mobiilista Google-hakuja vuonna 2013?'
+        },
+
+        stats1: {
+          HEADER: 'Internet muuttui mobiiliksi 2014',
+          1: 'Vuodesta 2014 lähtien pohjois-amerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).',
+          2: 'Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen kannalta.'
+        },
+
+        stats2: {
+          HEADER: 'Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa',
+          1: 'Jo nyt merkittävillä kotimaisilla sivustoilla 60% käyttäjistä selaa mobiililaitteella.',
+          2: 'Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla'
+        }
       })
 
       .translations('en', {
-        WELCOME_TEXT: 'Welcome to Helsinki University mobile strategy.'
+
       });
     $translateProvider.preferredLanguage('fi');
 

@@ -60,21 +60,23 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('MobileVsDT', function() {
+  .factory('MobileVsDT', function($filter) {
     return {
       get: function() {
+        var $translate = $filter('translate');
+
         return {
           data: {
-            series: ['Mobile', 'Desktop'],
+            series: [$translate('defaults.MOBILE'), $translate('defaults.DESKTOP')],
               data: [
                 {
-                  x: 'May 2013',
+                  x: $translate('date.MAY', {value: 2013}),
                   y: [
                     50,
                     50
                 ]},
                 {
-                  x: 'May 2014',
+                  x: $translate('date.MAY', {value: 2014}),
                   y: [
                     60,
                     40
@@ -85,7 +87,7 @@ angular.module('HY.services', [])
           chartType: 'bar',
           config: {
             labels: false,
-            title: 'Mobile Vs Desktop',
+            title: $translate('charts.MOBILE_VS_DT'),
             legend: {
               display: true,
               position: 'left'
