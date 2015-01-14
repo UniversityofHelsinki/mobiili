@@ -209,7 +209,8 @@ angular.module('HY', [
           YES: 'Kyllä',
           NO: 'Ei',
           MOBILE: 'Mobiili',
-          DESKTOP: 'Työasema'
+          DESKTOP: 'Työasema',
+          TABLET: 'Tabletti'
         },
 
         parts: {

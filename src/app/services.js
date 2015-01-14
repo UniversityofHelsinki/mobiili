@@ -60,7 +60,8 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('PlatformComparison', function($http) {
+  .factory('PlatformComparison', function($http, $filter) {
+    var $translate = $filter('translate');
     return {
       get: function() {
         return $http.get('/assets/data/platform_comparison.json');
@@ -82,7 +83,7 @@ angular.module('HY.services', [])
               values.push(value);
 
               if (i === 0) {
-                parsed.series.push(key);
+                parsed.series.push($translate('defaults.' + key.toUpperCase()));
               }
             }
           });
