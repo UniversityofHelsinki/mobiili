@@ -1,11 +1,10 @@
 angular.module('HY', [
     'ngResource',
-    'ngRoute',
     'ui.router',
     'templates',
     'mm.foundation',
     'HY.services',
-    // 'angularCharts',
+    'chart.js',
     'pascalprecht.translate',
     'ngAnimate'
   ])
@@ -180,7 +179,7 @@ angular.module('HY', [
         views: {
           'content@': {
             templateUrl: 'assets/views/stats2.html',
-            controller: 'DefaultController'
+            controller: 'ChartController'
           },
           'nav@': getNavView({
             page: 3,

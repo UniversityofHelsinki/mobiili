@@ -60,40 +60,73 @@ angular.module('HY.services', [])
       }
     };
   })
+  .factory('PlatformComparison', function($http) {
+    return {
+      get: function() {
+        return $http.get('/assets/data/platform_comparison.json');
+      },
+      parse: function(data) {
+        var parsed = {},
+            tempData = [];
+        parsed.labels = [];
+        parsed.series = [];
+        parsed.data = [];
+
+        for (var i = 0; i < data.length; i++) {
+          var values = [];
+          parsed.data.push(values);
+          angular.forEach(data[i], function(value, key) {
+            if (key === 'Date') {
+              parsed.labels.push(value);
+            } else if (key !== 'Console') {
+              values.push(value);
+
+              if (i === 0) {
+                parsed.series.push(key);
+              }
+            }
+          });
+        }
+
+        var pairArrays = function(arrays) {
+          var len = arrays[0].length,
+              arrs = [].concat.apply([], arrays),
+              foo = [];
+
+          for (var i = 0; i < len; i++) {
+            foo.push(_.compact(_.map(arrs, function(val, key) {
+              if ((key + len - i) % len === 0) {
+                return val;
+              }
+            })));
+          }
+          return foo;
+        };
+
+        parsed.data = pairArrays(parsed.data);
+        return parsed;
+      }
+    };
+  })
   .factory('MobileVsDT', function($filter) {
     return {
       get: function() {
         var $translate = $filter('translate');
 
         return {
-          data: {
-            series: [$translate('defaults.MOBILE'), $translate('defaults.DESKTOP')],
-              data: [
-                {
-                  x: $translate('date.MAY', {value: 2013}),
-                  y: [
-                    50,
-                    50
-                ]},
-                {
-                  x: $translate('date.MAY', {value: 2014}),
-                  y: [
-                    60,
-                    40
-                  ]
-                }
-              ]
-          },
-          chartType: 'bar',
-          config: {
-            labels: false,
-            title: $translate('charts.MOBILE_VS_DT'),
-            legend: {
-              display: true,
-              position: 'left'
-            },
-            innerRadius: 0
-          }
+          labels: [
+            $translate('date.MAY', {value: 2013}),
+            $translate('date.MAY', {value: 2014})
+          ],
+          series: [
+            $translate('defaults.MOBILE'),
+            $translate('defaults.DESKTOP')
+          ],
+          data: [
+            [50, 50],
+            [60, 40]
+          ],
+          options: {}
         };
       }
     };

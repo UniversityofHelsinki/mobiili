@@ -2,4 +2,6 @@
 <p translate>{{ 'stats1.1' }}</p>
 <p translate>{{ 'stats1.2' }}</p>
 
-<div ac-chart="mobileVsDt.chartType" ac-data="mobileVsDt.data" ac-config="mobileVsDt.config" class='chart'></div>
+<canvas id="mobileVsDtChart" class="chart chart-line" data="mobileVsDt.data"
+  legend="true" series="mobileVsDt.series" labels="mobileVsDt.labels">
+</canvas>

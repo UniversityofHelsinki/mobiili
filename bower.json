@@ -9,7 +9,9 @@
     "angular-translate": "~2.5.2",
     "angular-animate": "1.2.28",
     "angular-foundation": "~0.5.1",
-    "angular-chart.js": "~0.3.9"
+    "angular-chart.js": "~0.3.9",
+    "angular-lodash": "~0.1.2",
+    "ng-lodash": "~0.1.0"
   },
   "devDependencies": {
     "foundation": "^5.0.0"

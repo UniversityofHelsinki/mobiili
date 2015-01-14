@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('HeaderController', function($scope, $translate, $location, $routeParams) {
+  .controller('HeaderController', function($scope, $translate, $location) {
 
     // TODO: Find a nicer way to do this
     $scope.lang = $location.path().split('/')[1] || 'fi';
