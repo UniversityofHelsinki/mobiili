@@ -1,0 +1,21 @@
+<div class="exclamation-mark"></div>
+<h4 translate>{{ 'summary1.HEADER' }}</h4>
+
+<p translate>{{ 'questions1.1' }}</p>
+<p>
+    <span translate>{{'defaults.ANSWER'}}</span>: {{correct.hyMobileUsage}}
+    <span translate="{{'defaults.CORRECT'}}" ng-show="checkAnswer({{hyMobileUsage}})"></span>
+    <span translate="{{'defaults.INCORRECT'}}" ng-show="!checkAnswer(hyMobileUsage)"></span>
+</p>
+<p translate>{{ 'questions1.2' }}</p>
+<p>
+    <span translate>{{'defaults.ANSWER'}}</span>: {{correct.overallMobileUsage}}
+    <span translate="{{'defaults.CORRECT'}}" ng-show="checkAnswer(overallMobileUsage)"></span>
+    <span translate="{{'defaults.INCORRECT'}}" ng-show="!checkAnswer(overallMobileUsage)"></span>
+</p>
+<p translate>{{ 'questions1.3' }}</p>
+<p>
+    <span translate>{{'defaults.ANSWER'}}</span>: {{correct.mobileGoogleSearch}}
+    <span translate="{{'defaults.CORRECT'}}" ng-show="checkAnswer(mobileGoogleSearch)"></span>
+    <span translate="{{'defaults.INCORRECT'}}" ng-show="!checkAnswer(mobileGoogleSearch)"></span>
+</p>
