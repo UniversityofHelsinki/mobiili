@@ -5,7 +5,7 @@ angular.module('HY', [
     'templates',
     'mm.foundation',
     'HY.services',
-    'angularCharts',
+    // 'angularCharts',
     'pascalprecht.translate',
     'ngAnimate'
   ])
@@ -14,6 +14,18 @@ angular.module('HY', [
     var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
         lastUrl = sessionData.lastUrl || '/fi/index',
         pageCounts = [3, 3];
+
+    function getNavView(obj) {
+      return {
+        templateUrl: 'assets/views/navi.html',
+        controller: 'NavigationController',
+        resolve: {
+          data: function() {
+            return obj;
+          }
+        }
+      };
+    }
 
     $urlRouterProvider.otherwise(lastUrl);
 
@@ -186,18 +198,6 @@ angular.module('HY', [
           })
         }
       });
-
-    function getNavView(obj) {
-      return {
-        templateUrl: 'assets/views/navi.html',
-        controller: 'NavigationController',
-        resolve: {
-          data: function() {
-            return obj;
-          }
-        }
-      };
-    }
 
     $locationProvider.html5Mode(false);
 
