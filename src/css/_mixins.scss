@@ -3,3 +3,9 @@
     -webkit-transform: translateY($translateY);
        -moz-transform: translateY($translateY);
 }
+
+@mixin scale($scale) {
+            transform: scale($scale);
+    -webkit-transform: scale($scale);
+       -moz-transform: scale($scale);
+}

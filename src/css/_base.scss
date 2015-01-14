@@ -36,3 +36,21 @@ html {
     }
 
 }
+
+.question-mark, .exclamation-mark {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    @include scale(20);
+    transform-origin: right top;
+    color: $ocean;
+    opacity: 0.05;
+}
+
+.question-mark:after {
+    content: '?';
+}
+
+.exclamation-mark:after {
+    content: '!';
+}

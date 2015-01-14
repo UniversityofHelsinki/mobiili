@@ -196,6 +196,121 @@ angular.module('HY', [
             }
           })
         }
+      })
+      .state('app.stats3', {
+        url: '/:lang/stats3',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/stats3.html',
+            controller: 'ChartController'
+          },
+          'nav@': getNavView({
+            page: 4,
+            pageCount: pageCounts[1],
+            navigation: {
+              forward: {
+                text: 'defaults.NEXT',
+                url: 'stats4'
+              },
+              back: {
+                text: 'defaults.PREVIOUS',
+                url: 'stats2'
+              }
+            }
+          })
+        }
+      })
+      .state('app.stats4', {
+        url: '/:lang/stats4',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/stats4.html',
+            controller: 'ChartController'
+          },
+          'nav@': getNavView({
+            page: 5,
+            pageCount: pageCounts[1],
+            navigation: {
+              forward: {
+                text: 'defaults.NEXT',
+                url: 'opportunities'
+              },
+              back: {
+                text: 'defaults.PREVIOUS',
+                url: 'stats3'
+              }
+            }
+          })
+        }
+      })
+      .state('app.opportunities', {
+        url: '/:lang/opportunities',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/opportunities.html',
+            controller: 'DefaultController'
+          },
+          'nav@': getNavView({
+            page: 6,
+            pageCount: pageCounts[1],
+            navigation: {
+              forward: {
+                text: 'defaults.NEXT',
+                url: 'problem'
+              },
+              back: {
+                text: 'defaults.PREVIOUS',
+                url: 'stats4'
+              }
+            }
+          })
+        }
+      })
+      .state('app.problem', {
+        url: '/:lang/problem',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/problem.html',
+            controller: 'DefaultController'
+          },
+          'nav@': getNavView({
+            page: 7,
+            pageCount: pageCounts[1],
+            navigation: {
+              forward: {
+                text: 'defaults.NEXT',
+                url: 'summary1'
+              },
+              back: {
+                text: 'defaults.PREVIOUS',
+                url: 'opportunities'
+              }
+            }
+          })
+        }
+      })
+      .state('app.summary1', {
+        url: '/:lang/summary1',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/summary1.html',
+            controller: 'QuizController'
+          },
+          'nav@': getNavView({
+            page: 8,
+            pageCount: pageCounts[1],
+            navigation: {
+              // forward: {
+              //   text: 'defaults.NEXT',
+              //   url: 'summary1'
+              // },
+              back: {
+                text: 'defaults.PREVIOUS',
+                url: 'opportunities'
+              }
+            }
+          })
+        }
       });
 
     $locationProvider.html5Mode(false);
@@ -210,7 +325,10 @@ angular.module('HY', [
           NO: 'Ei',
           MOBILE: 'Mobiili',
           DESKTOP: 'Työasema',
-          TABLET: 'Tabletti'
+          TABLET: 'Tabletti',
+          ANSWER: 'Vastaus',
+          CORRECT: 'Oikein',
+          INCORRECT: 'Väärin'
         },
 
         parts: {
@@ -259,7 +377,36 @@ angular.module('HY', [
           HEADER: 'Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa',
           1: 'Jo nyt merkittävillä kotimaisilla sivustoilla 60% käyttäjistä selaa mobiililaitteella.',
           2: 'Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla'
+        },
+
+        stats3: {
+          HEADER: 'Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa'
+        },
+
+        stats4: {
+          HEADER: 'HY verkkopalvelujen mobiilikäyttö jäi joulukuussa 2014 alle 20%:n',
+          1: 'Julkinen verkkosivusto 21% mobiili (puhelin ja tablet)',
+          2: 'Flamma 7% mobiili, näistä valtaosa tablet-käyttäjiä'
+        },
+
+        opportunities: {
+          HEADER: 'Mobiili on mahdollisuus koska',
+          1: 'Mobiililaite on aina mukana',
+          2: 'Mobiililaitteissa on enemmän ominaisuuksia kuin desktop-laitteissa (GPS, kamera, kiihtyvyysanturit)',
+          3: 'HY:n uusien ja uudistuvien palveluiden käyttöä voidaan parhaiten lisätä huomioimalla myös mobiilikäyttäjät'
+        },
+
+        problem: {
+          HEADER: 'Ongelma on selvä. Monet sivustot eivät toimi mobiilissa koska ne on suunniteltu desktopille',
+          1: 'Mobiililaitteissa on pienempi ja usein pystysuuntainen näyttö',
+          2: 'Mobiililaitteilla tekstinsyöttö on kömpelömpää',
+          3: 'Mobiililaitteilla skrollailu voi olla helpompaa ja tutumpaa'
+        },
+
+        summary1: {
+          HEADER: 'Yhteenveto'
         }
+
       })
 
       .translations('en', {

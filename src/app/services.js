@@ -2,8 +2,8 @@ angular.module('HY.services', [])
   .factory('Utils', function($filter) {
     var $translate = $filter('translate');
     return {
-      translate: function(translationString) {
-        return $translate(translationString);
+      translate: function(translationString, params) {
+        return $translate(translationString, params);
       },
       pairArrays: function(arrays) {
         var len = arrays[0].length,
@@ -43,6 +43,28 @@ angular.module('HY.services', [])
         var oldData = angular.fromJson(localStorage.getItem('answers') || {});
         data = angular.extend(oldData, data);
         localStorage.setItem('answers', angular.toJson(data));
+      }
+    };
+  })
+
+  .factory('CorrectAnswers', function() {
+    var answers = {
+      mobileUsage: 0,
+      tender: 0,
+      needNative: 0,
+      securityRisk: 0,
+      hyMobileUsage: 20,
+      overallMobileUsage: 60,
+      mobileGoogleSearch: 60,
+      textInputMobile: 0
+    };
+
+    return {
+      list: function() {
+        return answers;
+      },
+      get: function(key) {
+        return answers[key];
       }
     };
   })
