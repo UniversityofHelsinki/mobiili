@@ -1,4 +1,26 @@
 angular.module('HY.services', [])
+  .factory('Utils', function($filter) {
+    var $translate = $filter('translate');
+    return {
+      translate: function(translationString) {
+        return $translate(translationString);
+      },
+      pairArrays: function(arrays) {
+        var len = arrays[0].length,
+            arrs = [].concat.apply([], arrays),
+            retVal = [];
+
+        for (var i = 0; i < len; i++) {
+          retVal.push(_.compact(_.map(arrs, function(val, key) {
+            if ((key + len - i) % len === 0) {
+              return val;
+            }
+          })));
+        }
+        return retVal;
+      }
+    };
+  })
   .factory('SessionData', function() {
     return {
       get: function() {
@@ -60,15 +82,13 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('PlatformComparison', function($http, $filter) {
-    var $translate = $filter('translate');
+  .factory('PlatformComparison', function($http, Utils) {
     return {
       get: function() {
         return $http.get('/assets/data/platform_comparison.json');
       },
       parse: function(data) {
-        var parsed = {},
-            tempData = [];
+        var parsed = {};
         parsed.labels = [];
         parsed.series = [];
         parsed.data = [];
@@ -83,45 +103,28 @@ angular.module('HY.services', [])
               values.push(value);
 
               if (i === 0) {
-                parsed.series.push($translate('defaults.' + key.toUpperCase()));
+                parsed.series.push(Utils.translate('defaults.' + key.toUpperCase()));
               }
             }
           });
         }
 
-        var pairArrays = function(arrays) {
-          var len = arrays[0].length,
-              arrs = [].concat.apply([], arrays),
-              foo = [];
-
-          for (var i = 0; i < len; i++) {
-            foo.push(_.compact(_.map(arrs, function(val, key) {
-              if ((key + len - i) % len === 0) {
-                return val;
-              }
-            })));
-          }
-          return foo;
-        };
-
-        parsed.data = pairArrays(parsed.data);
+        parsed.data = Utils.pairArrays(parsed.data);
         return parsed;
       }
     };
   })
-  .factory('MobileVsDT', function($filter) {
+  .factory('MobileVsDT', function($filter, Utils) {
     return {
       get: function() {
-        var $translate = $filter('translate');
-
         return {
           labels: [
-            $translate('date.MAY', {value: 2013}),
-            $translate('date.MAY', {value: 2014})
+            Utils.translate('date.MAY', {value: 2013}),
+            Utils.translate('date.MAY', {value: 2014})
           ],
           series: [
-            $translate('defaults.MOBILE'),
-            $translate('defaults.DESKTOP')
+            Utils.translate('defaults.MOBILE'),
+            Utils.translate('defaults.DESKTOP')
           ],
           data: [
             [50, 50],
