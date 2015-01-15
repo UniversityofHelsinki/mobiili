@@ -109,7 +109,7 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('PlatformComparison', function(Utils) {
+  .factory('PlatformComparison', function($http, Utils) {
     return {
       get: function() {
         return $http.get('/assets/data/platform_comparison.json');
