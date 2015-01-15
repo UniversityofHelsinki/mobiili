@@ -33,6 +33,8 @@ angular.module('HY')
     $scope.overallMobileUsage = $scope.getModel('overallMobileUsage', false);
     $scope.mobileGoogleSearch = $scope.getModel('mobileGoogleSearch', false);
     $scope.textInputMobile = $scope.getModel('textInputMobile', false);
+    $scope.tech = $scope.getModel('tech', '');
+    $scope.openSource = $scope.getModel('openSource', '');
 
     $scope.correct = correctAnswers;
 

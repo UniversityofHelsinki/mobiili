@@ -108,7 +108,9 @@ angular.module('HY', [
         },
 
         parts: {
-          PART1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015'
+          PART1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015',
+          PART2: 'II. Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus',
+          PART3: 'III. Ratkaisuvaihtoehtoja mobiiliin'
         },
 
         date: {
@@ -156,7 +158,16 @@ angular.module('HY', [
         },
 
         stats3: {
-          HEADER: 'Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa'
+          HEADER: 'Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa',
+          1: '18-25v suomalaisista älypuhelimen käyttäjistä (93% kaikista)',
+          DATA1: 'Käyttää älypuhelinta',
+          DATA2: 'Käyttää mobiiliwebbiä päivittäin',
+          DATA3: 'Potentiaalisia mobiiliweb-käyttäjiä',
+          DATA4: 'Hakee päivittäin Google puhelimella',
+          DATA5: 'Google-hausta HY verkkoliikennettä tulee HY ulkoiselle sivustolle',
+          DATA6: 'Flammaan',
+          DATA7: 'HY ext',
+          DATA8: 'HY flamma'
         },
 
         stats4: {
@@ -181,6 +192,51 @@ angular.module('HY', [
 
         summary1: {
           HEADER: 'Yhteenveto'
+        },
+
+        questions2: {
+          HEADER: 'Tiedätkö...',
+          1: 'Vuonna 2015 paras teknologiasuositus verkkopalvelun esittämiseen on',
+          2: 'Vuonna 2015 huomattavin open source tallennuspaikka'
+        },
+
+        deviceIndependency: {
+          HEADER: 'Laiteriippumattomuus',
+          1: 'Periaatteen tavoitteena palvelujen erinomainen saavutettavuus ja käytettävyys',
+          2: 'Varmistetaan palvelu on mahdollisimman monen käytettävissä päätelaitteesta riippumatta',
+          3: 'Toteutetaan yliopiston yhdenvertaisuusperiaatetta'
+        },
+
+        futurePredict: {
+          HEADER: 'Tulevaisuuden ennakointi on haaste',
+          1: 'iPad tuli 2010. Google Glass 2012. Älykellot 2013. Mitä tapahtuu vuonna 2015?',
+          2: 'Jos palvelu suunniteltiin 2009, niin miten se toimii nyt uusilla laitteilla?'
+        },
+
+        standards: {
+          HEADER: 'Standardit kestävät aikaa parhaiten',
+          1: 'Toimittajat vaihtuvat, perusteknologia säilyy',
+          2: 'Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen',
+          3: 'HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti'
+        },
+
+        openPrincipals: {
+          HEADER:'Avoimuuden periaate',
+          1: 'Open data',
+          2: 'Open source'
+        },
+
+        openData: {
+          HEADER: 'Open Data'
+        },
+
+        openSource: {
+          HEADER: 'Open Source'
+        },
+
+        openSource2: {
+          HEADER: 'Tämäkin projekti on open sourcea',
+          1: 'Lähdekoodi GitHubissa'
         }
 
       })

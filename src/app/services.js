@@ -56,7 +56,9 @@ angular.module('HY.services', [])
       hyMobileUsage: 20,
       overallMobileUsage: 60,
       mobileGoogleSearch: 60,
-      textInputMobile: 0
+      textInputMobile: 0,
+      tech: 'HTML5',
+      openSource: 'GitHub'
     };
 
     return {
@@ -151,6 +153,30 @@ angular.module('HY.services', [])
           data: [
             [50, 50],
             [60, 40]
+          ],
+          options: {}
+        };
+      }
+    };
+  })
+  .factory('MobileUsers', function($filter, Utils) {
+    return {
+      get: function() {
+        return {
+          labels: ['%'],
+          series: [
+            Utils.translate('stats3.DATA1'),
+            Utils.translate('stats3.DATA2'),
+            Utils.translate('stats3.DATA3'),
+            Utils.translate('stats3.DATA4'),
+            Utils.translate('stats3.DATA5'),
+            Utils.translate('stats3.DATA6'),
+            Utils.translate('stats3.DATA7'),
+            Utils.translate('stats3.DATA8')
+          ],
+          data: [
+            // [93, 82, 76, 52, 44, 7, 21, 7]
+            [93], [82], [76], [52], [44], [7], [21], [7]
           ],
           options: {}
         };
