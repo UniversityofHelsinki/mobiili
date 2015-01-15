@@ -58,7 +58,10 @@ angular.module('HY.services', [])
       mobileGoogleSearch: 60,
       textInputMobile: 0,
       tech: 'HTML5',
-      openSource: 'GitHub'
+      openSource: 'GitHub',
+      mobileUrl:  false,
+      useCamera:  true,
+      useLocation: true
     };
 
     return {

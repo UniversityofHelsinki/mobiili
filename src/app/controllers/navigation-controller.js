@@ -43,14 +43,17 @@ angular.module('HY')
           id: 'part3',
           routes: [
             {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'questions2', type: ''},
-            {id: 'device-independency', type: ''},
-            {id: 'future-predict', type: ''},
-            {id: 'standards', type: ''},
-            {id: 'open-principals', type: ''},
-            {id: 'open-data', type: ''},
-            {id: 'open-source', type: ''},
-            {id: 'open-source2', type: ''}
+            {id: 'mobile-friendly', type: 'info'}
+          ]
+        },
+        {
+          id: 'part4',
+          routes: [
+            {id: 'init', addClasses: 'part-divider-view'},
+            {id: 'questions3', type: 'quiz'},
+            {id: 'mobile-web', type: 'info'},
+            {id: 'mobile-web2', type: 'info'},
+            {id: 'features', type: 'info'}
           ]
         }
       ],
@@ -75,7 +78,7 @@ angular.module('HY')
       if ($scope.pageIndex < $scope.pageCount) {
         next = partRoutes[$scope.pageIndex + 1];
         retVal.url = $stateParams.partId + '/' + next.type + '/' + next.id;
-      } else {
+      } else if (partIndex + 1 < routes.length) {
         // Not in the same part
         retVal.url = routes[partIndex + 1].id;
       }

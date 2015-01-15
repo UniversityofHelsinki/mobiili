@@ -111,7 +111,8 @@ angular.module('HY', [
           PRELUDE: 'Tervetuloa tutustumaan Helsingin Yliopiston mobiilistrategiaan',
           PART1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015',
           PART2: 'II. Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus',
-          PART3: 'III. Ratkaisuvaihtoehtoja mobiiliin'
+          PART3: 'III. Ratkaisuvaihtoehtoja mobiiliin',
+          PART4: 'IV. Mobiiliweb'
         },
 
         date: {
@@ -238,6 +239,54 @@ angular.module('HY', [
         openSource2: {
           HEADER: 'Tämäkin projekti on open sourcea',
           1: 'Lähdekoodi GitHubissa'
+        },
+
+        mobileFriendly: {
+          HEADER: 'Mobiiliystävälliset vaihtoehdot verkkopalvelulle',
+          1: 'Responsiivinen verkkopalvelu',
+          2: 'verkkosivusto, joka on suunniteltu mobiilikäyttöä ajatellen.',
+          3: 'Sovellukset',
+          4: 'Jokaiselle käyttöjärjestelmälle oma sovellus, joita jaellaan Applen App Storessa, Google Play Storessa ja Windows Phone Storessa ja asennetaan laitteelle'
+        },
+
+        questions3: {
+          HEADER: 'Arvioi',
+          1: 'Mobiililaitteille tarvitaan oma verkkosivustonsa, kuten m.helsinki.fi',
+          2: 'Mobiiliwebin avulla voi ottaa valokuva',
+          3: 'Mobiiliwebin avulla voi luoda paikkatietoisia palveluja'
+        },
+
+        mobileWeb1: {
+          HEADER: 'Mobiiliweb - mobiiliystävällinen verkkopalvelu',
+          1: 'Mobiiliweb tarkoittaa verkkopalvelua tai webapplikaatiota, joka toimii erilaisilla laitteilla tavallisessa selaimessa - joskus sovellusmaisesti.',
+          2: 'Aiemmin tehtiin usein myös oma verkko-osoitteensa, esim. http://m.hs.fi, mutta nykyään yhtä sivustoa pidetään parempana'
+        },
+
+        mobileWeb2: {
+          HEADER: 'Mobiiliystävälliset verkkosivustot ovat responsiivisia',
+          HEADER2: 'Responsiivisen/PLR verkkopalvelun tunnistaa näistä',
+          SUB_HEADER: 'Responsiivinen ulkoasu/taitto',
+          SUB_HEADER2: 'Responsiiviset kuvat',
+          TRY: 'Kokeile',
+          A_1: 'Palvelu mukautuu käytetyn laitteen näytön mittasuhteisiin ja säilyy käytettävänä eri laitteilla.',
+          A_2: 'Jos luet tätä desktopilla, kokeile muuttaa tämän sivun kokoa vetämällä verkkoselaimen reunaa pienemmäksi ja sitten suuremmaksi.',
+          A_3: 'Jos käytät mobiililaitetta, jonka voi kääntää, kokeile pyöräyttää näkymä 90 astetta.',
+          B_1: 'Kuvat, jotka ovat oikean kokoisia suhteessa näyttöön',
+          B_2: 'Suositun FullHD (1920x1080) näytössä on 9 kertaa enemmän informaatiota kuin pienen mobiililaitteen näytölle mahtuu.',
+          B_3: 'Palvelun kannattaa lähettää laitteen ominaisuuksiin sopivan kokoinen kuva'
+        },
+
+        features: {
+          HEADER: 'Nykyaikainen verkkopalvelu osaa myös tämän',
+          1: 'Et tarvitse sovellusta seuraaviin:',
+          2: 'Valokuvien ottamiseen',
+          3: 'Paikkatiedon käyttämiseen',
+          4: 'Puhelimen kotiruudulle lisäämiseen',
+          5: 'Tiedon tallentamiseen laitteelle',
+          6: 'Sisällön nopeaan etsimiseen',
+          7: 'Reaaliajassa tietojen haku ulkopuolisista lähteistä',
+          8: 'Koko sivua ei ladata uudestaan toiselle sivulle siirryttäessä',
+          9: 'Tunnistautuminen yhdellä kirjautumisella käyttäjäksi useille sivustoille (SSO)'
         }
 
       })

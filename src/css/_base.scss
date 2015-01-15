@@ -31,8 +31,9 @@ html {
         position: absolute;
         color: white;
         top: 50%;
-        margin: 0 6%;
-        @include translateY(-50%);
+        width: 90%;
+        left: 50%;
+        @include translate(-50%, -50%);
     }
 
 }

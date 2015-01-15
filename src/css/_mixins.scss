@@ -1,7 +1,7 @@
-@mixin translateY($translateY) {
-            transform: translateY($translateY);
-    -webkit-transform: translateY($translateY);
-       -moz-transform: translateY($translateY);
+@mixin translate($translateX, $translateY) {
+            transform: translate($translateX, $translateY);
+    -webkit-transform: translate($translateX, $translateY);
+       -moz-transform: translate($translateX, $translateY);
 }
 
 @mixin scale($scale) {
