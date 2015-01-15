@@ -55,12 +55,29 @@ angular.module('HY')
             {id: 'mobile-web2', type: 'info'},
             {id: 'features', type: 'info'}
           ]
+        },
+        {
+          id: 'part5',
+          routes: [
+            {id: 'init', addClasses: 'part-divider-view'},
+            {id: 'questions4', type: 'quiz'},
+            {id: 'native-hybrid', type: 'info'},
+            {id: 'comparison', type: 'info'},
+            {id: 'stats5', type: 'chart'},
+            {id: 'app-strength', type: 'info'},
+            {id: 'apps', type: 'info'},
+            {id: 'app-downloads', type: 'chart'}
+          ]
         }
       ],
       part = _.find(routes, {id: $stateParams.partId}),
       partIndex = _.findIndex(routes, {id: $stateParams.partId}),
       partRoutes = part.routes,
       currentRoute = _.find(partRoutes, { id: $stateParams.pageId || 'init' });
+
+    // TODO: Handle broken route
+    // if (typeof currentRoute === 'undefined') {
+    // }
 
     $scope.pageCount = partRoutes.length - 1;
 

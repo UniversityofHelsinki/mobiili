@@ -38,6 +38,9 @@ angular.module('HY')
     $scope.mobileUrl = $scope.getModel('mobileUrl', '');
     $scope.useCamera = $scope.getModel('useCamera', '');
     $scope.useLocation = $scope.getModel('useLocation', '');
+    $scope.mobileOs = $scope.getModel('mobileOs', '');
+    $scope.appType = $scope.getModel('appType', '');
+    $scope.appsInstalled = $scope.getModel('appsInstalled', ' ');
 
     $scope.correct = correctAnswers;
 

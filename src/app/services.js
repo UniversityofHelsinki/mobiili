@@ -109,7 +109,7 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('PlatformComparison', function($http, Utils) {
+  .factory('PlatformComparison', function(Utils) {
     return {
       get: function() {
         return $http.get('/assets/data/platform_comparison.json');
@@ -141,7 +141,7 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('MobileVsDT', function($filter, Utils) {
+  .factory('MobileVsDT', function(Utils) {
     return {
       get: function() {
         return {
@@ -156,13 +156,12 @@ angular.module('HY.services', [])
           data: [
             [50, 50],
             [60, 40]
-          ],
-          options: {}
+          ]
         };
       }
     };
   })
-  .factory('MobileUsers', function($filter, Utils) {
+  .factory('MobileUsers', function(Utils) {
     return {
       get: function() {
         return {
@@ -180,8 +179,43 @@ angular.module('HY.services', [])
           data: [
             // [93, 82, 76, 52, 44, 7, 21, 7]
             [93], [82], [76], [52], [44], [7], [21], [7]
+          ]
+        };
+      }
+    };
+  })
+  .factory('MobilePlatforms', function() {
+    return {
+      get: function() {
+        return {
+          labels: [
+            'Android',
+            'iOS',
+            'Windows Phone'
           ],
-          options: {}
+          data: [
+            [55.4, 32.9, 11.7]
+          ]
+        };
+      }
+    };
+  })
+  .factory('AppDownloads', function(Utils) {
+    return {
+      get: function() {
+        return {
+          labels: [
+            Utils.translate('appDownloads.DOWNLOADS', {value: 0}),
+            Utils.translate('appDownloads.DOWNLOADS', {value: 1}),
+            Utils.translate('appDownloads.DOWNLOADS', {value: 2}),
+            Utils.translate('appDownloads.DOWNLOADS', {value: 3}),
+            Utils.translate('appDownloads.DOWNLOADS', {value: 4}),
+            Utils.translate('appDownloads.DOWNLOADS', {value: '5-7'}),
+            Utils.translate('appDownloads.DOWNLOADS', {value: '8+'})
+          ],
+          data: [
+            [65.5, 8.4, 8.9, 6.2, 3.7, 4.8, 2.4]
+          ]
         };
       }
     };

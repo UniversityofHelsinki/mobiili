@@ -112,7 +112,8 @@ angular.module('HY', [
           PART1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015',
           PART2: 'II. Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus',
           PART3: 'III. Ratkaisuvaihtoehtoja mobiiliin',
-          PART4: 'IV. Mobiiliweb'
+          PART4: 'IV. Mobiiliweb',
+          PART5: 'V. Sovellukset'
         },
 
         date: {
@@ -287,6 +288,73 @@ angular.module('HY', [
           7: 'Reaaliajassa tietojen haku ulkopuolisista lähteistä',
           8: 'Koko sivua ei ladata uudestaan toiselle sivulle siirryttäessä',
           9: 'Tunnistautuminen yhdellä kirjautumisella käyttäjäksi useille sivustoille (SSO)'
+        },
+
+        questions4: {
+          HEADER: 'Arvioi',
+          1: 'Suomessa käytetyin mobiilikäyttöjärjestelmä on',
+          2: 'Mitä seuraavista Applen mobiililaitteissa ei voi käyttää',
+          3: 'Syksyllä 2014 yhdysvaltalainen älypuhelimen käyttäjä asensi keskimäärin näin monta appia /kk',
+          NATIVE: 'Natiivi appeja',
+          HYBRID: 'Hybridi appeja',
+          WINDOWS: 'Windows appeja',
+          WEB: 'Web appeja'
+        },
+
+        nativeHybrid: {
+          HEADER: 'Natiivit ja hybridit',
+          1: 'Sanalla sovellus voidaan viitata ainakin kolmeen erilaiseen mobiililaitteissa toimivaan ohjelmistoon',
+          2: 'Web-applikaatiot ovat verkkoselaimessa toimivia, usein HTML5:en perustuvia sovelluksia. Niitä ei jaella sovelluskaupoissa eikä niitä voi ladata laitteille.',
+          3: 'Natiiviapplikaatiot on kehitetty alusta pitäen tietylle käyttöjärjestelmälle tietyllä kielellä: Android: Java, iOs: Objective C, C, Windows C#, C++',
+          4: 'Hybridiapplikaatio on sovellukseksi “paketoitu” web applikaatio, johon on usein lisätty joku natiiviapplikaation kielellä laadittu lisäosa',
+          5: 'Näiden lisäksi sovelluksia löytyy älytelevisioille, Facebookille ja monille muille ohjelmistoalustoille.'
+        },
+
+        comparison: {
+          HEADER: 'Eri sovellusratkaisut',
+          WEB: 'Web appi',
+          HYBRID: 'Hybridi appi',
+          NATIVE: 'Natiivi appi',
+          1: 'Löydetään ja asennetaan sovelluskaupasta',
+          2: 'Tuki mobiililaitteen ominaisuuksille (kamera, paikannus, kiihtyvyys, eleet...)',
+          3: 'Osittainen tuki',
+          4: 'Ikoni kotinäyttöön',
+          5: 'Notifikaatiot',
+          6: 'vain esim. email',
+          7: 'Toteutusteknologia',
+          8: 'laitevalmistajakohtainen'
+        },
+
+        stats5: {
+          HEADER: 'Sovellukset',
+          1: 'Suomessa on eniten käytössä Android (Google) iOs ja (Apple) käyttöjärjestelmien mobiililaitteita, mutta myös Windows Mobilea käytetään.'
+        },
+
+        appStrength: {
+          HEADER: 'Sovellusten vahvuudet',
+          1: 'Uusi kanava: näkyvyys sovelluskaupassa',
+          2: 'Muistutukset (nofications) laitteen käyttäjälle',
+          3: 'Hyvät offline toiminnallisuudet',
+          4: 'Voi hyödyntää mobiililaitteiden ominaisuuksia laajemmin',
+          5: 'Parempi suorituskyky erityisesti vaativissa sovelluksissa',
+          6: 'Sovelluksella on helppo rahastaa',
+          7: 'Laitepohjainen käyttäjätunnistus'
+        },
+
+        apps: {
+          HEADER: 'Muista tämä sovelluksista',
+          SUMMARY: 'App Storen suosituimmat hakusanat vuoteen 2012',
+          KEYWORD: 'Hakusana',
+          VOLUME: 'Kuukausivolyymi',
+          1: 'Ihmiset etsivät sovelluskaupoista tuttuja brändejä.',
+          2: 'Sovellusten sisältöjä on vaikea jakaa eikä Google ei osaa hakea sisältöjä sovellusten sisältä.',
+          3: 'Jos haluat sovelluksen sisällön saavutettavaksi tarvitset myös verkkopalvelun.'
+        },
+
+        appDownloads: {
+          HEADER: 'Uusien sovellusten käyttöönottamiseen voi olla kynnys',
+          DOWNLOADS: '{{value}} sovellusta',
+          1: 'Viime syksynä suurin osa yhdysvaltalaisista mobiilikäyttäjistä ei ollut viimeisen kuukauden aikana asentanut yhtään uutta sovellusta.'
         }
 
       })
