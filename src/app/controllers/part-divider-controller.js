@@ -1,8 +1,8 @@
 angular.module('HY')
-  .controller('PartDividerController', function($scope, data, $stateParams, $controller) {
+  .controller('PartDividerController', function($scope, $stateParams, $controller) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
 
-    $scope.text = data.text;
+    $scope.text = 'parts.' + $stateParams.partId.toUpperCase();
     $scope.addClasses = 'part-divider';
 
   });

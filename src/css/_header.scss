@@ -7,7 +7,6 @@ header {
     background-image: url('/assets/images/helsinki_university_53x50.png');
     background-repeat: no-repeat;
     background-position: 16px 50%;
-    padding-left: 85px;
     padding-right: 16px;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     text-transform: uppercase;
@@ -24,6 +23,7 @@ header {
 
     .title {
         display: none;
+        padding-left: 85px;
     }
 
     a {

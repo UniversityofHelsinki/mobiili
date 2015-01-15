@@ -2,12 +2,16 @@ nav {
     clear: both;
     border-top: 1px solid $emo;
 
-    &.bottom {
+    &.part-divider-view {
       position: absolute;
       bottom: 0;
       text-align: center;
       width: 100%;
       margin: 0;
+
+      .pager {
+        display: none;
+      }
     }
 }
 
