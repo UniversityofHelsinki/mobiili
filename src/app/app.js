@@ -11,9 +11,9 @@ angular.module('HY', [
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
     var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
-        lastUrl = sessionData.lastUrl || '/fi/index';
+        lastUrl = sessionData.lastUrl || '/fi/prelude';
 
-    $urlRouterProvider.otherwise('notFound');
+    $urlRouterProvider.otherwise(lastUrl);
 
     $stateProvider
       .state('app', {
@@ -108,6 +108,7 @@ angular.module('HY', [
         },
 
         parts: {
+          PRELUDE: 'Tervetuloa tutustumaan Helsingin Yliopiston mobiilistrategiaan',
           PART1: 'I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015',
           PART2: 'II. Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus',
           PART3: 'III. Ratkaisuvaihtoehtoja mobiiliin'

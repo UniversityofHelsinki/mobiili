@@ -2,70 +2,107 @@ angular.module('HY')
   .controller('NavigationController', function($scope, $stateParams, $controller) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
 
-    var navigationDefaults = {
-        forward: {
-          text: 'defaults.NEXT'
+    var routes = [
+        {
+          id: 'prelude',
+          routes: [
+            {id: 'init', addClasses: 'part-divider-view'},
+            {id: 'index', type: 'info'},
+            {id: 'warmup', type: 'quiz'}
+          ]
         },
-        back: {
-          text: 'defaults.PREVIOUS'
+        {
+          id: 'part1',
+          routes: [
+            {id: 'init', addClasses: 'part-divider-view'},
+            {id: 'questions1', type: 'quiz'},
+            {id: 'stats1', type: 'chart'},
+            {id: 'stats2', type: 'chart'},
+            {id: 'stats3', type: 'chart'},
+            {id: 'stats4', type: 'chart'},
+            {id: 'opportunities', type: 'info'},
+            {id: 'problem', type: 'info'},
+            {id: 'summary1', type: 'quiz'}
+          ]
+        },
+        {
+          id: 'part2',
+          routes: [
+            {id: 'init', type: '', addClasses: 'part-divider-view'},
+            {id: 'questions2', type: 'quiz'},
+            {id: 'device-independency', type: 'info'},
+            {id: 'future-predict', type: 'chart'},
+            {id: 'standards', type: 'chart'},
+            {id: 'open-principals', type: 'info'},
+            {id: 'open-data', type: 'info'},
+            {id: 'open-source', type: 'info'},
+            {id: 'open-source2', type: 'info'}
+          ]
+        },
+        {
+          id: 'part3',
+          routes: [
+            {id: 'init', addClasses: 'part-divider-view'},
+            {id: 'questions2', type: ''},
+            {id: 'device-independency', type: ''},
+            {id: 'future-predict', type: ''},
+            {id: 'standards', type: ''},
+            {id: 'open-principals', type: ''},
+            {id: 'open-data', type: ''},
+            {id: 'open-source', type: ''},
+            {id: 'open-source2', type: ''}
+          ]
         }
-      },
-      setUrls = function(backUrl, forwardUrl) {
-        var newData = _.clone(navigationDefaults, true);
-
-        newData.forward.url = forwardUrl;
-        newData.back.url = backUrl;
-
-        return newData;
-      },
-      routes = {
-        prelude: [
-          {id: 'init', addClasses: 'part-divider-view'},
-          {id: 'index', navigation: setUrls(false, 'prelude/quiz/warmup')},
-          {id: 'warmup', navigation: setUrls('prelude/info/index', 'part1')}
-        ],
-        part1: [
-          {id: 'init', navigation: setUrls('prelude/info/warmup', 'part1/quiz/questions1'), addClasses: 'part-divider-view'},
-          {id: 'questions1', navigation: setUrls('part1', 'part1/chart/stats1')},
-          {id: 'stats1', navigation: setUrls('part1/quiz/questions1', 'part1/chart/stats2')},
-          {id: 'stats2', navigation: setUrls('part1/chart/stats1', 'part1/chart/stats3')},
-          {id: 'stats3', navigation: setUrls('part1/chart/stats2', 'part1/chart/stats4')},
-          {id: 'stats4', navigation: setUrls('part1/chart/stats3', 'part1/info/opportunities')},
-          {id: 'opportunities', navigation: setUrls('part1/chart/stats4', 'part1/info/problem')},
-          {id: 'problem', navigation: setUrls('part1/chart/opportunities', 'part1/quiz/summary1')},
-          {id: 'summary1', navigation: setUrls('part1/chart/problem', 'part2')}
-        ],
-        part2: [
-          {id: 'init', navigation: setUrls('part1/quiz/summary1', 'part2/quiz/questions2'), addClasses: 'part-divider-view'},
-          {id: 'questions2', navigation: setUrls('part2', 'part2/info/device-independency')},
-          {id: 'device-independency', navigation: setUrls('part2/quiz/questions2', 'part2/chart/future-predict')},
-          {id: 'future-predict', navigation: setUrls('part2/info/device-independency', 'part2/chart/standards')},
-          {id: 'standards', navigation: setUrls('part2/chart/future-predict', 'part2/info/open-principals')},
-          {id: 'open-principals', navigation: setUrls('part2/chart/standards', 'part2/info/open-data')},
-          {id: 'open-data', navigation: setUrls('part2/info/open-principals', 'part2/info/open-source')},
-          {id: 'open-source', navigation: setUrls('part2/info/open-data', 'part2/info/open-source2')},
-          {id: 'open-source2', navigation: setUrls('part2/info/open-source', 'part3')}
-        ],
-        part3: [
-          {id: 'init', navigation: setUrls('part2/quiz/summary1', 'part2/quiz/questions2'), addClasses: 'part-divider-view'},
-          {id: 'questions2', navigation: setUrls('part2', 'part2/info/device-independency')},
-          {id: 'device-independency', navigation: setUrls('part2/quiz/questions2', 'part3/chart/future-predict')},
-          {id: 'future-predict', navigation: setUrls('part3/info/device-independency', 'part3/chart/standards')},
-          {id: 'standards', navigation: setUrls('part3/chart/future-predict', 'part3/info/open-principals')},
-          {id: 'open-principals', navigation: setUrls('part3/chart/standards', 'part3/info/open-data')},
-          {id: 'open-data', navigation: setUrls('part3/info/open-principals', 'part3/info/open-source')},
-          {id: 'open-source', navigation: setUrls('part3/info/open-data', 'part3/info/open-source2')},
-          {id: 'open-source2', navigation: setUrls('part3/info/open-source', 'part3')}
-        ]
-      },
-      partRoutes = routes[$stateParams.partId],
+      ],
+      part = _.find(routes, {id: $stateParams.partId}),
+      partIndex = _.findIndex(routes, {id: $stateParams.partId}),
+      partRoutes = part.routes,
       currentRoute = _.find(partRoutes, { id: $stateParams.pageId || 'init' });
 
     $scope.pageCount = partRoutes.length - 1;
-    $scope.pageIndex = _.findIndex(partRoutes, { id: $stateParams.pageId });
-    $scope.data = currentRoute.navigation;
+
+    // In case pageId is missing, we are dealing with init page, so we need to manually add correct index
+    $scope.pageIndex = $stateParams.pageId ? _.findIndex(partRoutes, { id: $stateParams.pageId }) : 0;
+
     $scope.lang = $stateParams.lang;
     $scope.addClasses = currentRoute.addClasses;
+
+    $scope.forward = (function() {
+      var next,
+          retVal = {
+            text: 'defaults.NEXT'
+          };
+      if ($scope.pageIndex < $scope.pageCount) {
+        next = partRoutes[$scope.pageIndex + 1];
+        retVal.url = $stateParams.partId + '/' + next.type + '/' + next.id;
+      } else {
+        // Not in the same part
+        retVal.url = routes[partIndex + 1].id;
+      }
+
+      return retVal;
+    })();
+
+    $scope.back = (function() {
+      var back,
+          retVal = {
+            text: 'defaults.PREVIOUS'
+          };
+
+      if ($scope.pageIndex === 1) {
+        // Back to init page
+        retVal.url = routes[partIndex].id;
+      } else if ($scope.pageIndex > 1) {
+        back = partRoutes[$scope.pageIndex - 1];
+        retVal.url = $stateParams.partId + '/' + back.type + '/' + back.id;
+      } else if (partIndex > 0) {
+        // Not in the same part and not the first part in question
+        back = routes[partIndex - 1];
+        retVal.url = back.id + '/' + back.routes[back.routes.length - 1].type + '/' + back.routes[back.routes.length - 1].id;
+      }
+
+      return retVal;
+    })();
 
     $scope.getTimes = function(n) {
       return new Array(n);
