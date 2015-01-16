@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('NavigationController', function($scope, $stateParams, $controller, $state) {
+  .controller('NavigationController', function($scope, $stateParams, $controller, $state, SessionData) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
 
     var part,
@@ -75,6 +75,9 @@ angular.module('HY')
         }
       ];
 
+    // Add navigation info to localStorage
+    SessionData.set({partsCount: routes.length});
+
     part = _.find(routes, {id: $stateParams.partId});
     if (typeof part === 'undefined') {
       // Redirect to not found if part does not exist
@@ -84,9 +87,8 @@ angular.module('HY')
       partRoutes = part.routes;
       currentRoute = _.find(partRoutes, { id: $stateParams.pageId || 'init' });
 
-      // TODO: Handle broken route
-      // if (typeof currentRoute === 'undefined') {
-      // }
+      // Add progress info to localStorage
+      SessionData.set({currentPart: partIndex + 1});
 
       $scope.pageCount = partRoutes.length - 1;
 

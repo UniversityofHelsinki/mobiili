@@ -67,3 +67,12 @@ header {
         }
     }
 }
+
+.progress-header {
+    height: $header-height-small/2;
+    line-height: $header-height-small/2;
+    text-align: right;
+    background-color: $soil;
+    color: $asphalt;
+    padding: 0 20px;
+}

@@ -112,7 +112,8 @@ angular.module('HY', [
           CORRECT: 'Oikein',
           INCORRECT: 'Väärin',
           PAGE_NOT_FOUND: 'Sivua ei löytynyt',
-          HOME: 'Alkuun'
+          HOME: 'Alkuun',
+          PART: 'Osio'
         },
 
         parts: {
