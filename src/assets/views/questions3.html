@@ -2,20 +2,20 @@
 <h4 translate>{{ 'questions3.HEADER' }}</h4>
 
 <p translate>{{ 'questions3.1' }}</p>
-<div class="button-group">
-    <button type="button" class="button" ng-model="mobileUrl.value" ng-change="updateModel(mobileUrl)" btn-radio="true" translate>{{ 'defaults.YES' }}</button>
-    <button type="button" class="button" ng-model="mobileUrl.value" ng-change="updateModel(mobileUrl)" btn-radio="false" translate>{{ 'defaults.NO' }}</button>
-</div>
+<ul class="button-group round">
+<li><a type="button" class="button" ng-model="mobileUrl.value" ng-change="updateModel(mobileUrl)" btn-radio="'true'" translate>{{ 'defaults.YES' }}</a></li>
+    <li><a type="button" class="button" ng-model="mobileUrl.value" ng-change="updateModel(mobileUrl)" btn-radio="'false'" translate>{{ 'defaults.NO' }}</a></li>
+</ul>
 
 
 <p translate>{{ 'questions3.2' }}</p>
-<div class="button-group">
-    <button type="button" class="button" ng-model="useCamera.value" ng-change="updateModel(useCamera)" btn-radio="true" translate>{{ 'defaults.YES' }}</button>
-    <button type="button" class="button" ng-model="useCamera.value" ng-change="updateModel(useCamera)" btn-radio="false" translate>{{ 'defaults.NO' }}</button>
-</div>
+<ul class="button-group round">
+    <li><a type="button" class="button" ng-model="useCamera.value" ng-change="updateModel(useCamera)" btn-radio="'true'" translate>{{ 'defaults.YES' }}</a></li>
+    <li><a type="button" class="button" ng-model="useCamera.value" ng-change="updateModel(useCamera)" btn-radio="'false'" translate>{{ 'defaults.NO' }}</a></li>
+</ul>
 
 <p translate>{{ 'questions3.3' }}</p>
-<div class="button-group">
-    <button type="button" class="button" ng-model="useLocation.value" ng-change="updateModel(useLocation)" btn-radio="true" translate>{{ 'defaults.YES' }}</button>
-    <button type="button" class="button" ng-model="useLocation.value" ng-change="updateModel(useLocation)" btn-radio="false" translate>{{ 'defaults.NO' }}</button>
-</div>
+<ul class="button-group round">
+    <li><a type="button" class="button" ng-model="useLocation.value" ng-change="updateModel(useLocation)" btn-radio="'true'" translate>{{ 'defaults.YES' }}</a></li>
+    <li><a type="button" class="button" ng-model="useLocation.value" ng-change="updateModel(useLocation)" btn-radio="'false'" translate>{{ 'defaults.NO' }}</a></li>
+</ul>

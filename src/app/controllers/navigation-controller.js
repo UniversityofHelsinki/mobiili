@@ -79,9 +79,11 @@ angular.module('HY')
     SessionData.set({partsCount: routes.length});
 
     part = _.find(routes, {id: $stateParams.partId});
-    if (typeof part === 'undefined') {
+
+    if (typeof part === 'undefined' || typeof (_.find(part.routes, { id: $stateParams.pageId || 'init' })) === 'undefined') {
       // Redirect to not found if part does not exist
       $state.go('app.notFound', $stateParams);
+
     } else {
       partIndex = _.findIndex(routes, {id: $stateParams.partId});
       partRoutes = part.routes;

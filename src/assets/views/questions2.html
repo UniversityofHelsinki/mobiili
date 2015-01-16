@@ -2,18 +2,18 @@
 <h4 translate>{{ 'questions2.HEADER' }}</h4>
 
 <p translate>{{ 'questions2.1' }}</p>
-<div class="button-group">
-    <button type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Java'">Java</button>
-    <button type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Flash'">Flash</button>
-    <button type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'HTML5'">HTML5</button>
-    <button type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'C#'">C#</button>
-</div>
+<ul class="button-group round stack-for-small">
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Java'">Java</a></li>
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Flash'">Flash</a></li>
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'HTML5'">HTML5</a></li>
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'C#'">C#</a></li>
+</ul>
 
 
 <p translate>{{ 'questions2.2' }}</p>
-<div class="button-group">
-    <button type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'iCloud'">iCloud</button>
-    <button type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'GitHub'">GitHub</button>
-    <button type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Wikipedia'">Wikipedia</button>
-    <button type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Box.net'">Box.net</button>
-</div>
+<ul class="button-group round stack-for-small">
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'iCloud'">iCloud</a></li>
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'GitHub'">GitHub</a></li>
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Wikipedia'">Wikipedia</a></li>
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Box.net'">Box.net</a></li>
+</ul>
