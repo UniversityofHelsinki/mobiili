@@ -1,1 +1,7 @@
-<span translate>{{ 'defaults.PART' }}</span> {{progress.currentPart}}/{{progress.partsCount}}
+<div class="controls">
+    <a ng-click="bookmark()"><i ng-class="bookmarkIcon"></i><span translate>{{ bookmarkText }}</span></a>
+</div>
+
+<div class="progress-indicator">
+    <span translate>{{ 'defaults.PART' }}</span> {{progress.currentPart}}/{{progress.partsCount}}
+</div>

@@ -34,6 +34,31 @@ angular.module('HY.services', [])
     };
   })
 
+  .factory('Bookmarks', function() {
+    return {
+      list: function() {
+        return angular.fromJson(localStorage.getItem('bookmarks') || []);
+      },
+      get: function(url) {
+        return _.find(angular.fromJson(localStorage.getItem('bookmarks')) || [], {url: url});
+      },
+      set: function(data) {
+        var oldData = angular.fromJson(localStorage.getItem('bookmarks') || []),
+            existing = _.find(oldData, {url: data.url});
+
+        if (typeof existing !== 'undefined') {
+          // Remove bookmark
+          oldData = _.reject(oldData, { url: data.url });
+        } else {
+          // Add bookmark
+          oldData.push(data);
+        }
+
+        localStorage.setItem('bookmarks', angular.toJson(oldData));
+      }
+    };
+  })
+
   .factory('Answers', function() {
     return {
       get: function() {

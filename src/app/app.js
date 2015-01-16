@@ -114,7 +114,9 @@ angular.module('HY', [
           INCORRECT: 'Väärin',
           PAGE_NOT_FOUND: 'Sivua ei löytynyt',
           HOME: 'Alkuun',
-          PART: 'Osio'
+          PART: 'Osio',
+          BOOKMARK: 'Lisää suosikiksi',
+          UNBOOKMARK: 'Poista suosikki'
         },
 
         parts: {

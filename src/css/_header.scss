@@ -71,8 +71,22 @@ header {
 .progress-header {
     height: $header-height-small/2;
     line-height: $header-height-small/2;
-    text-align: right;
     background-color: $soil;
     color: $asphalt;
     padding: 0 20px;
+
+    .progress-indicator {
+        display: inline-block;
+        float: right;
+    }
+
+    .controls {
+        display: inline-block;
+        a {
+            color: white;
+        }
+        i {
+            padding-right: 8px;
+        }
+    }
 }
