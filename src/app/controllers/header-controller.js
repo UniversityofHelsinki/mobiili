@@ -1,10 +1,9 @@
 angular.module('HY')
-  .controller('HeaderController', function($scope, $translate, $location, SessionData) {
+  .controller('HeaderController', function($scope, $translate, $location, progress) {
 
     // TODO: Find a nicer way to do this
     $scope.lang = $location.path().split('/')[1] || 'fi';
-    $scope.currentPart = SessionData.get().currentPart;
-    $scope.partsCount = SessionData.get().partsCount;
+    $scope.progress = progress;
 
     $scope.changeLanguage = function(langKey) {
       var pathArray = $location.path().split('/');

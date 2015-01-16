@@ -8,6 +8,7 @@ angular.module('HY', [
     'pascalprecht.translate',
     'ngAnimate'
   ])
+  .value('progress', {})
   .run(function($state, $rootScope) {
     $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
       event.preventDefault();

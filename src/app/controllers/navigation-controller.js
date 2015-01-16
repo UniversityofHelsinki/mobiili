@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('NavigationController', function($scope, $stateParams, $controller, $state, SessionData) {
+  .controller('NavigationController', function($scope, $stateParams, $controller, $state, progress) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
 
     var part,
@@ -75,8 +75,8 @@ angular.module('HY')
         }
       ];
 
-    // Add navigation info to localStorage
-    SessionData.set({partsCount: routes.length});
+    // Set progress info
+    progress.partsCount = routes.length;
 
     part = _.find(routes, {id: $stateParams.partId});
 
@@ -89,8 +89,8 @@ angular.module('HY')
       partRoutes = part.routes;
       currentRoute = _.find(partRoutes, { id: $stateParams.pageId || 'init' });
 
-      // Add progress info to localStorage
-      SessionData.set({currentPart: partIndex + 1});
+      // Set progress info
+      progress.currentPart = partIndex + 1;
 
       $scope.pageCount = partRoutes.length - 1;
 
