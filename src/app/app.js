@@ -8,10 +8,16 @@ angular.module('HY', [
     'pascalprecht.translate',
     'ngAnimate'
   ])
+  .run(function($state, $rootScope) {
+    $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
+      event.preventDefault();
+      $state.go('app.notFound', toParams);
+    });
+  })
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
 
     var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
-        lastUrl = sessionData.lastUrl || '/fi/prelude';
+        lastUrl = sessionData.lastUrl || '/fi/prelude/info/index';
 
     $urlRouterProvider.otherwise(lastUrl);
 
@@ -66,6 +72,15 @@ angular.module('HY', [
           }
         }
       })
+      .state('app.notFound', {
+        url: '/:lang/notFound',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/not-found.html',
+            controller: 'MainController'
+          }
+        }
+      })
       .state('app.Part', {
         url: '/:lang/:partId',
         views: {
@@ -76,15 +91,6 @@ angular.module('HY', [
           'nav@': {
             templateUrl: 'assets/views/navi.html',
             controller: 'NavigationController'
-          }
-        }
-      })
-      .state('app.notFound', {
-        url: 'notFound',
-        views: {
-          'content@': {
-            templateUrl: 'assets/views/not-found.html',
-            controller: 'MainController'
           }
         }
       });
@@ -104,7 +110,9 @@ angular.module('HY', [
           TABLET: 'Tabletti',
           ANSWER: 'Vastaus',
           CORRECT: 'Oikein',
-          INCORRECT: 'Väärin'
+          INCORRECT: 'Väärin',
+          PAGE_NOT_FOUND: 'Sivua ei löytynyt',
+          HOME: 'Alkuun'
         },
 
         parts: {
