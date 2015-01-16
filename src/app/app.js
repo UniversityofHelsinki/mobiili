@@ -11,7 +11,7 @@ angular.module('HY', [
   .run(function($state, $rootScope) {
     $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
       event.preventDefault();
-      $state.go('app.notFound', toParams);
+      $state.go('app.notFound', toParams, {location: false});
     });
   })
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider) {
@@ -32,7 +32,7 @@ angular.module('HY', [
         views: {
           'content@': {
             templateUrl: function($stateParams) {
-              return 'assets/views/' + $stateParams.pageId + '.html';
+              return 'assets/views/' + $stateParams.partId + '/' + $stateParams.pageId + '.html';
             },
             controller: 'InfoController'
           },
@@ -47,7 +47,7 @@ angular.module('HY', [
         views: {
           'content@': {
             templateUrl: function($stateParams) {
-              return 'assets/views/' + $stateParams.pageId + '.html';
+              return 'assets/views/' + $stateParams.partId + '/' + $stateParams.pageId + '.html';
             },
             controller: 'ChartController'
           },
@@ -62,7 +62,7 @@ angular.module('HY', [
         views: {
           'content@': {
             templateUrl: function($stateParams) {
-              return 'assets/views/' + $stateParams.pageId + '.html';
+              return 'assets/views/' + $stateParams.partId + '/' + $stateParams.pageId + '.html';
             },
             controller: 'QuizController'
           },

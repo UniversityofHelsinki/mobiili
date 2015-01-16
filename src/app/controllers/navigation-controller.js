@@ -19,21 +19,21 @@ angular.module('HY')
           id: 'part1',
           routes: [
             {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'questions1', type: 'quiz'},
+            {id: 'questions', type: 'quiz'},
             {id: 'stats1', type: 'chart'},
             {id: 'stats2', type: 'chart'},
             {id: 'stats3', type: 'chart'},
             {id: 'stats4', type: 'chart'},
             {id: 'opportunities', type: 'info'},
             {id: 'problem', type: 'info'},
-            {id: 'summary1', type: 'quiz'}
+            {id: 'summary', type: 'quiz'}
           ]
         },
         {
           id: 'part2',
           routes: [
             {id: 'init', type: '', addClasses: 'part-divider-view'},
-            {id: 'questions2', type: 'quiz'},
+            {id: 'questions', type: 'quiz'},
             {id: 'device-independency', type: 'info'},
             {id: 'future-predict', type: 'chart'},
             {id: 'standards', type: 'chart'},
@@ -54,7 +54,7 @@ angular.module('HY')
           id: 'part4',
           routes: [
             {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'questions3', type: 'quiz'},
+            {id: 'questions', type: 'quiz'},
             {id: 'mobile-web', type: 'info'},
             {id: 'mobile-web2', type: 'info'},
             {id: 'features', type: 'info'}
@@ -64,10 +64,10 @@ angular.module('HY')
           id: 'part5',
           routes: [
             {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'questions4', type: 'quiz'},
+            {id: 'questions', type: 'quiz'},
             {id: 'native-hybrid', type: 'info'},
             {id: 'comparison', type: 'info'},
-            {id: 'stats5', type: 'chart'},
+            {id: 'stats', type: 'chart'},
             {id: 'app-strength', type: 'info'},
             {id: 'apps', type: 'info'},
             {id: 'app-downloads', type: 'chart'}
@@ -82,7 +82,7 @@ angular.module('HY')
 
     if (typeof part === 'undefined' || typeof (_.find(part.routes, { id: $stateParams.pageId || 'init' })) === 'undefined') {
       // Redirect to not found if part does not exist
-      $state.go('app.notFound', $stateParams);
+      $state.go('app.notFound', $stateParams, {location: false});
 
     } else {
       partIndex = _.findIndex(routes, {id: $stateParams.partId});
