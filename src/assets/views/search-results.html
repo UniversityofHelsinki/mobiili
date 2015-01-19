@@ -1,0 +1,8 @@
+<ul ng-repeat="hit in searchableData | filter:search">
+    <li>
+        <a href="{{hit.url}}">
+          <h5>{{hit.content.HEADER}}</h5>
+          <p>{{hit.content.3}}</p>
+      </a>
+  </li>
+</ul>

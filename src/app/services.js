@@ -244,4 +244,78 @@ angular.module('HY.services', [])
         };
       }
     };
+  })
+  .factory('Routes', function() {
+    return {
+      get: function() {
+        return [
+          {
+            id: 'prelude',
+            routes: [
+              {id: 'init', addClasses: 'part-divider-view'},
+              {id: 'index', type: 'info', translationNamespace: 'index'},
+              {id: 'warmup', type: 'quiz', translationNamespace: 'warmup'}
+            ]
+          },
+          {
+            id: 'part1',
+            routes: [
+              {id: 'init', addClasses: 'part-divider-view'},
+              {id: 'questions', type: 'quiz', translationNamespace: ''},
+              {id: 'stats1', type: 'chart', translationNamespace: ''},
+              {id: 'stats2', type: 'chart', translationNamespace: ''},
+              {id: 'stats3', type: 'chart', translationNamespace: ''},
+              {id: 'stats4', type: 'chart', translationNamespace: ''},
+              {id: 'opportunities', type: 'info', translationNamespace: ''},
+              {id: 'problem', type: 'info', translationNamespace: ''},
+              {id: 'summary', type: 'quiz', translationNamespace: ''}
+            ]
+          },
+          {
+            id: 'part2',
+            routes: [
+              {id: 'init', type: '', addClasses: 'part-divider-view'},
+              {id: 'questions', type: 'quiz', translationNamespace: ''},
+              {id: 'device-independency', type: 'info', translationNamespace: ''},
+              {id: 'future-predict', type: 'chart', translationNamespace: ''},
+              {id: 'standards', type: 'chart', translationNamespace: ''},
+              {id: 'open-principals', type: 'info', translationNamespace: ''},
+              {id: 'open-data', type: 'info', translationNamespace: ''},
+              {id: 'open-source', type: 'info', translationNamespace: ''},
+              {id: 'open-source2', type: 'info', translationNamespace: ''}
+            ]
+          },
+          {
+            id: 'part3',
+            routes: [
+              {id: 'init', addClasses: 'part-divider-view'},
+              {id: 'mobile-friendly', type: 'info', translationNamespace: ''}
+            ]
+          },
+          {
+            id: 'part4',
+            routes: [
+              {id: 'init', addClasses: 'part-divider-view'},
+              {id: 'questions', type: 'quiz', translationNamespace: ''},
+              {id: 'mobile-web', type: 'info', translationNamespace: ''},
+              {id: 'mobile-web2', type: 'info', translationNamespace: ''},
+              {id: 'features', type: 'info', translationNamespace: ''}
+            ]
+          },
+          {
+            id: 'part5',
+            routes: [
+              {id: 'init', addClasses: 'part-divider-view'},
+              {id: 'questions', type: 'quiz', transNS: 'questions1', translationNamespace: ''},
+              {id: 'native-hybrid', type: 'info', translationNamespace: ''},
+              {id: 'comparison', type: 'info', translationNamespace: ''},
+              {id: 'stats', type: 'chart', translationNamespace: ''},
+              {id: 'app-strength', type: 'info', translationNamespace: ''},
+              {id: 'apps', type: 'info', translationNamespace: ''},
+              {id: 'app-downloads', type: 'chart', translationNamespace: ''}
+            ]
+          }
+        ];
+      }
+    };
   });

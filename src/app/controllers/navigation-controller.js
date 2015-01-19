@@ -1,79 +1,11 @@
 angular.module('HY')
-  .controller('NavigationController', function($scope, $stateParams, $controller, $state, progress) {
+  .controller('NavigationController', function($rootScope, $scope, $stateParams, $controller, $state, progress, Routes) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
-
     var part,
         partIndex,
         partRoutes,
         currentRoute,
-        routes = [
-        {
-          id: 'prelude',
-          routes: [
-            {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'index', type: 'info'},
-            {id: 'warmup', type: 'quiz'}
-          ]
-        },
-        {
-          id: 'part1',
-          routes: [
-            {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'questions', type: 'quiz'},
-            {id: 'stats1', type: 'chart'},
-            {id: 'stats2', type: 'chart'},
-            {id: 'stats3', type: 'chart'},
-            {id: 'stats4', type: 'chart'},
-            {id: 'opportunities', type: 'info'},
-            {id: 'problem', type: 'info'},
-            {id: 'summary', type: 'quiz'}
-          ]
-        },
-        {
-          id: 'part2',
-          routes: [
-            {id: 'init', type: '', addClasses: 'part-divider-view'},
-            {id: 'questions', type: 'quiz'},
-            {id: 'device-independency', type: 'info'},
-            {id: 'future-predict', type: 'chart'},
-            {id: 'standards', type: 'chart'},
-            {id: 'open-principals', type: 'info'},
-            {id: 'open-data', type: 'info'},
-            {id: 'open-source', type: 'info'},
-            {id: 'open-source2', type: 'info'}
-          ]
-        },
-        {
-          id: 'part3',
-          routes: [
-            {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'mobile-friendly', type: 'info'}
-          ]
-        },
-        {
-          id: 'part4',
-          routes: [
-            {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'questions', type: 'quiz'},
-            {id: 'mobile-web', type: 'info'},
-            {id: 'mobile-web2', type: 'info'},
-            {id: 'features', type: 'info'}
-          ]
-        },
-        {
-          id: 'part5',
-          routes: [
-            {id: 'init', addClasses: 'part-divider-view'},
-            {id: 'questions', type: 'quiz'},
-            {id: 'native-hybrid', type: 'info'},
-            {id: 'comparison', type: 'info'},
-            {id: 'stats', type: 'chart'},
-            {id: 'app-strength', type: 'info'},
-            {id: 'apps', type: 'info'},
-            {id: 'app-downloads', type: 'chart'}
-          ]
-        }
-      ];
+        routes = Routes.get();
 
     // Set progress info
     progress.partsCount = routes.length;
