@@ -261,58 +261,58 @@ angular.module('HY.services', [])
             id: 'part1',
             routes: [
               {id: 'init', addClasses: 'part-divider-view'},
-              {id: 'questions', type: 'quiz', translationNamespace: ''},
-              {id: 'stats1', type: 'chart', translationNamespace: ''},
-              {id: 'stats2', type: 'chart', translationNamespace: ''},
-              {id: 'stats3', type: 'chart', translationNamespace: ''},
-              {id: 'stats4', type: 'chart', translationNamespace: ''},
-              {id: 'opportunities', type: 'info', translationNamespace: ''},
-              {id: 'problem', type: 'info', translationNamespace: ''},
-              {id: 'summary', type: 'quiz', translationNamespace: ''}
+              {id: 'questions', type: 'quiz', translationNamespace: 'questions1'},
+              {id: 'stats1', type: 'chart', translationNamespace: 'stats1'},
+              {id: 'stats2', type: 'chart', translationNamespace: 'stats2'},
+              {id: 'stats3', type: 'chart', translationNamespace: 'stats3'},
+              {id: 'stats4', type: 'chart', translationNamespace: 'stats4'},
+              {id: 'opportunities', type: 'info', translationNamespace: 'opportunities'},
+              {id: 'problem', type: 'info', translationNamespace: 'problem'},
+              {id: 'summary', type: 'quiz', translationNamespace: 'summary1'}
             ]
           },
           {
             id: 'part2',
             routes: [
               {id: 'init', type: '', addClasses: 'part-divider-view'},
-              {id: 'questions', type: 'quiz', translationNamespace: ''},
-              {id: 'device-independency', type: 'info', translationNamespace: ''},
-              {id: 'future-predict', type: 'chart', translationNamespace: ''},
-              {id: 'standards', type: 'chart', translationNamespace: ''},
-              {id: 'open-principals', type: 'info', translationNamespace: ''},
-              {id: 'open-data', type: 'info', translationNamespace: ''},
-              {id: 'open-source', type: 'info', translationNamespace: ''},
-              {id: 'open-source2', type: 'info', translationNamespace: ''}
+              {id: 'questions', type: 'quiz', translationNamespace: 'questions2'},
+              {id: 'device-independency', type: 'info', translationNamespace: 'deviceIndependency'},
+              {id: 'future-predict', type: 'chart', translationNamespace: 'futurePredict'},
+              {id: 'standards', type: 'chart', translationNamespace: 'standards'},
+              {id: 'open-principals', type: 'info', translationNamespace: 'openPrincipals'},
+              {id: 'open-data', type: 'info', translationNamespace: 'openData'},
+              {id: 'open-source', type: 'info', translationNamespace: 'openSource'},
+              {id: 'open-source2', type: 'info', translationNamespace: 'openSource2'}
             ]
           },
           {
             id: 'part3',
             routes: [
               {id: 'init', addClasses: 'part-divider-view'},
-              {id: 'mobile-friendly', type: 'info', translationNamespace: ''}
+              {id: 'mobile-friendly', type: 'info', translationNamespace: 'mobileFriendly'}
             ]
           },
           {
             id: 'part4',
             routes: [
               {id: 'init', addClasses: 'part-divider-view'},
-              {id: 'questions', type: 'quiz', translationNamespace: ''},
-              {id: 'mobile-web', type: 'info', translationNamespace: ''},
-              {id: 'mobile-web2', type: 'info', translationNamespace: ''},
-              {id: 'features', type: 'info', translationNamespace: ''}
+              {id: 'questions', type: 'quiz', translationNamespace: 'questions3'},
+              {id: 'mobile-web', type: 'info', translationNamespace: 'mobileWeb1'},
+              {id: 'mobile-web2', type: 'info', translationNamespace: 'mobileWeb2'},
+              {id: 'features', type: 'info', translationNamespace: 'features'}
             ]
           },
           {
             id: 'part5',
             routes: [
               {id: 'init', addClasses: 'part-divider-view'},
-              {id: 'questions', type: 'quiz', transNS: 'questions1', translationNamespace: ''},
-              {id: 'native-hybrid', type: 'info', translationNamespace: ''},
-              {id: 'comparison', type: 'info', translationNamespace: ''},
-              {id: 'stats', type: 'chart', translationNamespace: ''},
-              {id: 'app-strength', type: 'info', translationNamespace: ''},
+              {id: 'questions', type: 'quiz', transNS: 'questions1', translationNamespace: 'questions4'},
+              {id: 'native-hybrid', type: 'info', translationNamespace: 'nativeHybrid'},
+              {id: 'comparison', type: 'info', translationNamespace: 'comparison'},
+              {id: 'stats', type: 'chart', translationNamespace: 'stats5'},
+              {id: 'app-strength', type: 'info', translationNamespace: 'appStrength'},
               {id: 'apps', type: 'info', translationNamespace: ''},
-              {id: 'app-downloads', type: 'chart', translationNamespace: ''}
+              {id: 'app-downloads', type: 'chart', translationNamespace: 'appDownloads'}
             ]
           }
         ];
