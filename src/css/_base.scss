@@ -1,11 +1,9 @@
 html {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     color: $emo;
 }
 
 /* A simple test case to verify Compass build works ok */
 #{headings(all)} {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     color: $soil;
     text-transform: uppercase;
     font-weight: bold;
@@ -13,6 +11,15 @@ html {
 
 .hidden {
     display: none;
+}
+
+header, .progress-header, .content-wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.content {
+    position: relative;
 }
 
 [ui-view].part-divider {
@@ -46,6 +53,7 @@ html {
     transform-origin: right top;
     color: $ocean;
     opacity: 0.05;
+    z-index: 0;
 }
 
 .question-mark:after {

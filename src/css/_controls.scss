@@ -1,6 +1,13 @@
 nav {
     clear: both;
-    border-top: 1px solid $emo;
+
+    &.top-bar {
+        overflow: hidden;
+    }
+
+    &.navigation {
+        border-top: 1px solid $emo;
+    }
 
     &.part-divider-view {
       position: absolute;
@@ -16,13 +23,8 @@ nav {
 }
 
 .button, button {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
-    background-color: $ocean;
+    // font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     outline: none;
-
-    &:hover, &.active {
-        background-color: $marine;
-    }
 }
 
 .pager {
@@ -63,4 +65,21 @@ table {
     .centered {
         text-align: center;
     }
+}
+
+.fa.search {
+
+    &:before {
+        content: '\f002';
+        position: absolute;
+        height: inherit;
+        padding: 14px 5px;
+        z-index: 1;
+    }
+
+    input[type=search] {
+        padding-left: 20px;
+        border-radius: 12px;
+    }
+
 }

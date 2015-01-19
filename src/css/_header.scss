@@ -73,20 +73,25 @@ header {
     line-height: $header-height-small/2;
     background-color: $soil;
     color: $asphalt;
-    padding: 0 20px;
 
     .progress-indicator {
+        padding: 0 15px;
+    }
+
+    .top-bar-section ul li > a {
         display: inline-block;
-        float: right;
     }
 
     .controls {
-        display: inline-block;
         a {
             color: white;
         }
         i {
             padding-right: 8px;
+
+            &.active {
+                color: $ocean;
+            }
         }
     }
 }

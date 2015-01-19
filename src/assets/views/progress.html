@@ -1,7 +1,23 @@
-<div class="controls">
-    <a ng-click="bookmark()"><i ng-class="bookmarkIcon"></i><span translate>{{ bookmarkText }}</span></a>
-</div>
+<nav class="top-bar" data-topbar role="navigation">
+  <section class="top-bar-section">
+    <ul class="left controls">
+      <li>
+          <a ng-click="bookmark()"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARK' }}</span></a>
+      </li>
+      <li class="divider"></li>
+    </ul>
 
-<div class="progress-indicator">
-    <span translate>{{ 'defaults.PART' }}</span> {{progress.currentPart}}/{{progress.partsCount}}
-</div>
+    <ul class="right title-area">
+      <li class="has-form fa search">
+        <input type="search" placeholder="hae">
+        </li>
+        <li class="divider"></li>
+        <li class="name progress-indicator">
+            <span translate>{{ 'defaults.PART' }}</span> {{progress.currentPart}}/{{progress.partsCount}}
+            <!-- <progressbar value="progress.currentPart" max="6"></progressbar> -->
+        </li>
+    </ul>
+
+
+  </section>
+</nav>
