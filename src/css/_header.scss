@@ -26,6 +26,10 @@ header {
         padding-left: 85px;
     }
 
+    .title-link {
+        float: left;
+    }
+
     a {
         color: $asphalt;
         font-size: $header-smaller-font-size;
@@ -68,7 +72,7 @@ header {
     }
 }
 
-.progress-header {
+.navigation-header {
     height: $header-height-small/2;
     line-height: $header-height-small/2;
     background-color: $soil;

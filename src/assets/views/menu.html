@@ -1,6 +1,34 @@
-<a href="/#/{{lang}}/prelude/info/index"><h3 class="title">Helsingin Yliopisto</h3></a>
-<div class="languages">
-    <a ng-click="changeLanguage('fi')" data-text="Suomi" data-text-min="Fi" ng-show="showLang('fi')"></a>
-    <a ng-click="changeLanguage('en')" data-text="English" data-text-min="En" ng-show="showLang('en')"></a>
-    <a ng-click="changeLanguage('se')" data-text="Svenska" data-text-min="Se" ng-show="showLang('se')"></a>
+<header>
+    <a href="/#/{{lang}}/prelude/info/index" class="title-link"><h3 class="title">Helsingin Yliopisto</h3></a>
+    <div class="languages">
+        <a ng-click="changeLanguage('fi')" data-text="Suomi" data-text-min="Fi" ng-show="showLang('fi')"></a>
+        <a ng-click="changeLanguage('en')" data-text="English" data-text-min="En" ng-show="showLang('en')"></a>
+        <a ng-click="changeLanguage('se')" data-text="Svenska" data-text-min="Se" ng-show="showLang('se')"></a>
+    </div>
+</header>
+
+<div class="navigation-header">
+    <nav class="top-bar" data-topbar role="navigation">
+      <section class="top-bar-section">
+        <ul class="left controls">
+          <li>
+              <a ng-click="bookmark()"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARK' }}</span></a>
+          </li>
+          <li class="divider"></li>
+        </ul>
+
+        <ul class="right title-area">
+            <li class="has-form fa search">
+                <input type="search" placeholder="hae" ng-model="search.value" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
+            </li>
+            <li class="divider"></li>
+            <li class="name progress-indicator">
+                <span translate>{{ 'defaults.PART' }}</span> {{progress.currentPart}}/{{progress.partsCount}}
+                <!-- <progressbar value="progress.currentPart" max="6"></progressbar> -->
+            </li>
+        </ul>
+
+
+      </section>
+    </nav>
 </div>

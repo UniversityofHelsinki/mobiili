@@ -11,6 +11,12 @@ angular.module('HY', [
   .value('progress', {})
   // TODO Load from JSON
   .constant('translations', {
+    en: {
+      warmup: {
+        HEADER: 'in english',
+        1: 'testing'
+      }
+    },
     fi: {
       defaults: {
         START: 'Aloita',
@@ -306,6 +312,10 @@ angular.module('HY', [
       .state('app.search', {
         url: '/:lang/search',
         views: {
+          'header@': {
+            templateUrl: '/assets/views/menu.html',
+            controller: 'HeaderController'
+          },
           'content@': {
             templateUrl: 'assets/views/search-results.html',
             controller: 'SearchController'
@@ -315,6 +325,10 @@ angular.module('HY', [
       .state('app.info', {
         url: '/:lang/:partId/info/:pageId',
         views: {
+          'header@': {
+            templateUrl: '/assets/views/menu.html',
+            controller: 'HeaderController'
+          },
           'content@': {
             templateUrl: function($stateParams) {
               return 'assets/views/' + $stateParams.partId + '/' + $stateParams.pageId + '.html';
@@ -330,6 +344,10 @@ angular.module('HY', [
       .state('app.chart', {
         url: '/:lang/:partId/chart/:pageId',
         views: {
+          'header@': {
+            templateUrl: '/assets/views/menu.html',
+            controller: 'HeaderController'
+          },
           'content@': {
             templateUrl: function($stateParams) {
               return 'assets/views/' + $stateParams.partId + '/' + $stateParams.pageId + '.html';
@@ -345,6 +363,10 @@ angular.module('HY', [
       .state('app.quiz', {
         url: '/:lang/:partId/quiz/:pageId',
         views: {
+          'header@': {
+            templateUrl: '/assets/views/menu.html',
+            controller: 'HeaderController'
+          },
           'content@': {
             templateUrl: function($stateParams) {
               return 'assets/views/' + $stateParams.partId + '/' + $stateParams.pageId + '.html';
@@ -360,6 +382,10 @@ angular.module('HY', [
       .state('app.notFound', {
         url: '/:lang/notFound',
         views: {
+          'header@': {
+            templateUrl: '/assets/views/menu.html',
+            controller: 'HeaderController'
+          },
           'content@': {
             templateUrl: 'assets/views/not-found.html',
             controller: 'MainController'
@@ -369,6 +395,10 @@ angular.module('HY', [
       .state('app.Part', {
         url: '/:lang/:partId',
         views: {
+          'header@': {
+            templateUrl: '/assets/views/menu.html',
+            controller: 'HeaderController'
+          },
           'content@': {
             templateUrl: 'assets/views/part-divider.html',
             controller: 'PartDividerController'

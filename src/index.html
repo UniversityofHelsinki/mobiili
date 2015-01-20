@@ -16,11 +16,12 @@
 </head>
 <body>
   <base href="/">
-  <header ng-include src="'/assets/views/menu.html'" ng-controller="HeaderController">
-  </header>
+  <div  ui-view="header"></div>
+  <!-- <header ng-include src="'/assets/views/menu.html'" ng-controller="HeaderController">
+  </header> -->
 
-  <div ng-include src="'/assets/views/progress.html'" ng-controller="HeaderController" class="progress-header">
-  </div>
+  <!-- <div ng-include src="'/assets/views/progress.html'" ng-controller="HeaderController" class="progress-header">
+  </div> -->
 
   <div class="content-wrapper">
 

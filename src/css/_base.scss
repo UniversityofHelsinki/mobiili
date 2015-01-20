@@ -13,7 +13,7 @@ html {
     display: none;
 }
 
-header, .progress-header, .content-wrapper {
+[ui-view=header], .progress-header, .content-wrapper {
     max-width: 1280px;
     margin: auto;
 }

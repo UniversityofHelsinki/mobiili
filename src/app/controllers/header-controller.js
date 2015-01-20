@@ -1,12 +1,9 @@
 angular.module('HY')
-  .controller('HeaderController', function($rootScope, $state, $scope, $translate, $location, progress, Bookmarks, Routes, Search, SessionData) {
+  .controller('HeaderController', function($state, $stateParams, $scope, $translate, $location, progress, Bookmarks, Routes, Search, SessionData) {
 
-    // TODO: Find a nicer way to do this
-    $scope.lang = $location.path().split('/')[1] || 'fi';
+    $scope.lang = $stateParams.lang;
     $scope.progress = progress;
-    // Set default serch value to rootScope
     $scope.search = Search;
-
     $scope.searchableData = Routes.get();
 
     $scope.getBookmarkState = function(isBookmarked) {
@@ -21,9 +18,7 @@ angular.module('HY')
     $scope.getBookmarkState();
 
     $scope.changeLanguage = function(langKey) {
-      var pathArray = $location.path().split('/');
-      $scope.lang = langKey;
-      $location.path('/' + langKey + '/' + pathArray[pathArray.length - 1]);
+      $state.go($state.current.name, angular.extend($state.params, {lang: langKey}), {reload: true});
     };
 
     $scope.showLang = function(langKey) {
