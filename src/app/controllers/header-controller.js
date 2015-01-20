@@ -1,11 +1,11 @@
 angular.module('HY')
-  .controller('HeaderController', function($rootScope, $scope, $translate, $location, progress, Bookmarks, Routes) {
+  .controller('HeaderController', function($rootScope, $scope, $translate, $location, progress, Bookmarks, Routes, Search) {
 
     // TODO: Find a nicer way to do this
     $scope.lang = $location.path().split('/')[1] || 'fi';
     $scope.progress = progress;
     // Set default serch value to rootScope
-    $rootScope.search = {};
+    $scope.search = Search;
 
     $scope.searchableData = Routes.get();
 

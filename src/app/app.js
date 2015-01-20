@@ -28,7 +28,8 @@ angular.module('HY', [
         HOME: 'Alkuun',
         PART: 'Osio',
         BOOKMARK: 'Suosikki',
-        UNBOOKMARK: 'Poista suosikki'
+        UNBOOKMARK: 'Poista suosikki',
+        READ_MORE: 'Lue lisää'
       },
 
       parts: {
@@ -377,4 +378,35 @@ angular.module('HY', [
       });
     $translateProvider.preferredLanguage('fi');
 
+  })
+  .filter('searchHits', function() {
+    return function(data, searchTerm) {
+      if (searchTerm.trim() !== '') {
+        var regex = new RegExp(searchTerm, 'gi'),
+            hitData = [];
+
+        angular.forEach(data, function(obj) {
+          var hits = [];
+          angular.forEach(obj.content, function(value) {
+            if (value.match(regex)) {
+              hits.push(value);
+            }
+          });
+          if (hits.length > 0) {
+            obj.parsedHits = hits;
+            hitData.push(obj);
+          }
+        });
+
+        return hitData;
+      }
+    };
+  })
+  .filter('highlight', function($sce) {
+    return function(str, searchTerm) {
+      var regex = new RegExp(searchTerm, 'gi'),
+          replacedVal = str.replace(regex, '<span class="match">$&</span>');
+
+      return $sce.trustAsHtml(replacedVal);
+    };
   });

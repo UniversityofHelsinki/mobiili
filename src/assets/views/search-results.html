@@ -1,8 +1,11 @@
-<ul ng-repeat="hit in searchableData | filter:search">
+<ul ng-repeat="hit in searchableData | searchHits:search.value">
     <li>
-        <a href="{{hit.url}}">
-          <h3>{{hit.content.HEADER}}</h3>
-          <p>{{hit.content.1}}</p>
-      </a>
+        <a href="/#/{{lang}}/{{hit.url}}">
+            <h3>{{hit.content.HEADER}}</h3>
+            <p ng-repeat="parsed in hit.parsedHits">
+                <span ng-bind-html="parsed | highlight:search.value"></span>
+            </p>
+        </a>
+        <a href="/#/{{lang}}/{{hit.url}}" translate>dfgd{{defaults.READ_MORE}}</a>
   </li>
 </ul>

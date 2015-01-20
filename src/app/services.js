@@ -1,4 +1,9 @@
 angular.module('HY.services', [])
+  .factory('Search', function() {
+    return {
+      value: ''
+    };
+  })
   .factory('Utils', function($filter) {
     var $translate = $filter('translate');
     return {
