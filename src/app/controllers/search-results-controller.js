@@ -1,13 +1,12 @@
 angular.module('HY')
   .controller('SearchController', function($scope, $controller, $translate, translations, Routes, Search) {
-    angular.extend(this, $controller('MainController', {$scope: $scope}));
-    console.log('Search controller');
+
     var routes = Routes.get();
+
+    $scope.lang = $translate.use();
 
     // Get search val from Service
     $scope.search = Search;
-
-    $scope.lang = $translate.use();
 
     // Index content (translations) with routes for search filter
     $scope.searchableData = _.flatten(_.map(routes, function(part) {
@@ -20,4 +19,8 @@ angular.module('HY')
         };
       });
     }));
+
+    $scope.closeSearch = function() {
+      $scope.search.value = '';
+    };
   });

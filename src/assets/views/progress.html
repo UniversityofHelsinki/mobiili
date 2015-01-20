@@ -9,7 +9,7 @@
 
     <ul class="right title-area">
         <li class="has-form fa search">
-            <input type="search" placeholder="hae" ng-model="search.value">
+            <input type="search" placeholder="hae" ng-model="search.value" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
         </li>
         <li class="divider"></li>
         <li class="name progress-indicator">

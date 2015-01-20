@@ -16,6 +16,7 @@ angular.module('HY', [
         START: 'Aloita',
         NEXT: 'Seuraava',
         PREVIOUS: 'Edellinen',
+        BACK: 'Takaisin',
         YES: 'Kyllä',
         NO: 'Ei',
         MOBILE: 'Mobiili',
@@ -29,7 +30,8 @@ angular.module('HY', [
         PART: 'Osio',
         BOOKMARK: 'Suosikki',
         UNBOOKMARK: 'Poista suosikki',
-        READ_MORE: 'Lue lisää'
+        READ_MORE: 'Lue lisää',
+        SEARCH_RESULTS: 'Hakutulokset'
       },
 
       parts: {
@@ -300,6 +302,15 @@ angular.module('HY', [
         template: '<ui-view />',
         controller: 'MainController',
         abstract: true
+      })
+      .state('app.search', {
+        url: '/:lang/search',
+        views: {
+          'content@': {
+            templateUrl: 'assets/views/search-results.html',
+            controller: 'SearchController'
+          }
+        }
       })
       .state('app.info', {
         url: '/:lang/:partId/info/:pageId',

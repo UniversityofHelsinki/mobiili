@@ -1,5 +1,8 @@
 angular.module('HY')
-  .controller('ChartController', function($scope, $controller, MobileVsDT, PlatformComparison, MobileUsers, MobilePlatforms, AppDownloads) {
+  .controller('ChartController', function($scope, $controller, MobileVsDT, PlatformComparison, MobileUsers, MobilePlatforms, AppDownloads, Search) {
+
+    // Get search state for view visibility
+    $scope.search = Search;
 
     $scope.mobileVsDt = MobileVsDT.get();
     $scope.mobileUsers = MobileUsers.get();
