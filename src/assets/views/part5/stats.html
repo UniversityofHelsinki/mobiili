@@ -1,6 +1,4 @@
 <h4 translate>{{ 'stats5.HEADER' }}</h4>
 <p translate>{{ 'stats5.1' }}</p>
 
-<canvas id="MobilePlatformsChart" class="chart chart-bar" data="mobilePlatforms.data"
-  labels="mobilePlatforms.labels">
-</canvas>
+<canvas tc-chartjs-bar chart-options="options" chart-data="mobilePlatforms" class="chart" auto-legend></canvas>

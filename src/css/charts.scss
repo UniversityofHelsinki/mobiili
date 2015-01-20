@@ -1,5 +1,23 @@
-.chart-container {
+.chart {
     width: 100% !important;
     max-width: 600px;
     height: auto !important;
+}
+
+.tc-chart-js-legend {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.tc-chart-js-legend li {
+    display: block;
+    float: left;
+    clear:both;
+    padding:10px;
+}
+.tc-chart-js-legend li span {
+    width:25px;
+    height:25px;
+    display:block;
+    float:left;
+    margin-right:10px;
 }

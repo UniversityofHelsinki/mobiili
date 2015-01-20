@@ -4,9 +4,9 @@ angular.module('HY', [
     'templates',
     'mm.foundation',
     'HY.services',
-    'chart.js',
     'pascalprecht.translate',
-    'ngAnimate'
+    'ngAnimate',
+    'tc.chartjs'
   ])
   .value('progress', {})
   // TODO Load from JSON

@@ -147,26 +147,33 @@ angular.module('HY.services', [])
       parse: function(data) {
         var parsed = {};
         parsed.labels = [];
-        parsed.series = [];
-        parsed.data = [];
+        // parsed.series = [];
+        parsed.datasets = [];
+        console.log('DATAAAA', data);
 
         for (var i = 0; i < data.length; i++) {
-          var values = [];
-          parsed.data.push(values);
+          console.log('1');
+          var values = {data: []};
+          parsed.datasets.push(values);
           angular.forEach(data[i], function(value, key) {
+            console.log('2');
             if (key === 'Date') {
               parsed.labels.push(value);
             } else if (key !== 'Console') {
-              values.push(value);
+              values.data.push(value);
 
               if (i === 0) {
-                parsed.series.push(Utils.translate('defaults.' + key.toUpperCase()));
+                // parsed.series.push(Utils.translate('defaults.' + key.toUpperCase()));
+                values.label = Utils.translate('defaults.' + key.toUpperCase());
               }
             }
           });
         }
 
-        parsed.data = Utils.pairArrays(parsed.data);
+        // TODO Now this is broken with the new chart plugin...
+        // parsed.data = Utils.pairArrays(parsed.datasets.data);
+        parsed.data = parsed.datasets.data;
+        console.log('PARSED', parsed);
         return parsed;
       }
     };
@@ -179,13 +186,27 @@ angular.module('HY.services', [])
             Utils.translate('date.MAY', {value: 2013}),
             Utils.translate('date.MAY', {value: 2014})
           ],
-          series: [
-            Utils.translate('defaults.MOBILE'),
-            Utils.translate('defaults.DESKTOP')
-          ],
-          data: [
-            [50, 50],
-            [60, 40]
+          datasets: [
+            {
+              label: Utils.translate('defaults.MOBILE'),
+              fillColor: 'rgba(220,220,220,0.2)',
+              strokeColor: 'rgba(220,220,220,1)',
+              pointColor: 'rgba(220,220,220,1)',
+              pointStrokeColor: '#fff',
+              pointHighlightFill: '#fff',
+              pointHighlightStroke: 'rgba(220,220,220,1)',
+              data: [50, 50]
+            },
+            {
+              label: Utils.translate('defaults.DESKTOP'),
+              fillColor: 'rgba(151,187,205,0.2)',
+              strokeColor: 'rgba(151,187,205,1)',
+              pointColor: 'rgba(151,187,205,1)',
+              pointStrokeColor: '#fff',
+              pointHighlightFill: '#fff',
+              pointHighlightStroke: 'rgba(151,187,205,1)',
+              data: [60, 40]
+            }
           ]
         };
       }
@@ -196,19 +217,39 @@ angular.module('HY.services', [])
       get: function() {
         return {
           labels: ['%'],
-          series: [
-            Utils.translate('stats3.DATA1'),
-            Utils.translate('stats3.DATA2'),
-            Utils.translate('stats3.DATA3'),
-            Utils.translate('stats3.DATA4'),
-            Utils.translate('stats3.DATA5'),
-            Utils.translate('stats3.DATA6'),
-            Utils.translate('stats3.DATA7'),
-            Utils.translate('stats3.DATA8')
-          ],
-          data: [
-            // [93, 82, 76, 52, 44, 7, 21, 7]
-            [93], [82], [76], [52], [44], [7], [21], [7]
+          datasets: [
+            {
+              label: Utils.translate('stats3.DATA1'),
+              data:[93]
+            },
+            {
+              label: Utils.translate('stats3.DATA2'),
+              data:[82]
+            },
+            {
+              label: Utils.translate('stats3.DATA3'),
+              data:[76]
+            },
+            {
+              label: Utils.translate('stats3.DATA4'),
+              data:[52]
+            },
+            {
+              label: Utils.translate('stats3.DATA5'),
+              data:[44]
+            },
+            {
+              label: Utils.translate('stats3.DATA6'),
+              data:[7]
+            },
+            {
+              label: Utils.translate('stats3.DATA7'),
+              data:[21]
+            },
+            {
+              label: Utils.translate('stats3.DATA8'),
+              data:[7]
+            }
           ]
         };
       }
@@ -223,8 +264,10 @@ angular.module('HY.services', [])
             'iOS',
             'Windows Phone'
           ],
-          data: [
-            [55.4, 32.9, 11.7]
+          datasets: [
+            {
+              data: [55.4, 32.9, 11.7]
+            }
           ]
         };
       }
@@ -243,8 +286,10 @@ angular.module('HY.services', [])
             Utils.translate('appDownloads.DOWNLOADS', {value: '5-7'}),
             Utils.translate('appDownloads.DOWNLOADS', {value: '8+'})
           ],
-          data: [
-            [65.5, 8.4, 8.9, 6.2, 3.7, 4.8, 2.4]
+          datasets: [
+            {
+              data: [65.5, 8.4, 8.9, 6.2, 3.7, 4.8, 2.4]
+            }
           ]
         };
       }

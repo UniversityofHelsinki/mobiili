@@ -2,6 +2,4 @@
 <p translate>{{ 'stats1.1' }}</p>
 <p translate>{{ 'stats1.2' }}</p>
 
-<canvas id="mobileVsDtChart" class="chart chart-line" data="mobileVsDt.data"
-  legend="true" series="mobileVsDt.series" labels="mobileVsDt.labels">
-</canvas>
+<canvas tc-chartjs-line chart-options="options" chart-data="mobileVsDt" class="chart" auto-legend></canvas>
