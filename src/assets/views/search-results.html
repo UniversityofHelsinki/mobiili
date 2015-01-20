@@ -1,5 +1,5 @@
 <div class="search-results">
-<button ng-click="closeSearch()" translate>{{'defaults.BACK'}}</button>
+<a ng-click="closeSearch()" class="back-button" translate>{{'defaults.BACK'}}</a>
     <h1 translate>{{'defaults.SEARCH_RESULTS'}}</h1>
     <ul ng-repeat="hit in searchableData | searchHits:search.value">
         <li>
