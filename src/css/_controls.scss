@@ -17,7 +17,7 @@ nav[ui-view] {
         }
     }
 
-    &.part-divider-view {
+    &.navigation.part-divider-view {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -26,9 +26,13 @@ nav[ui-view] {
       width: 100%;
       margin: 0;
 
-      .pager {
-        display: none;
-      }
+        a {
+            float: none;
+        }
+
+        .pager {
+            display: none;
+        }
     }
 }
 
