@@ -59,6 +59,32 @@ angular.module('HY.services', [])
         });
 
         return data;
+      },
+      parseJsonData: function(data) {
+        var parsed = {};
+        parsed.labels = [];
+        parsed.datasets = [];
+
+        for (var i = 0; i < data.length; i++) {
+          angular.forEach(data[i], function(value, key) {
+            if (key === 'Date') {
+              parsed.labels.push(value);
+            } else if (key !== 'Console') {
+              var obj = _.find(parsed.datasets, {label: key});
+              if (obj) {
+                obj.data.push(value);
+              } else {
+                parsed.datasets.push({
+                  label: key,
+                  data: [value]
+                });
+              }
+            }
+          });
+        }
+
+        parsed.data = parsed.datasets.data;
+        return this.applyChartColors(parsed);
       }
     };
   })
@@ -140,77 +166,17 @@ angular.module('HY.services', [])
     };
   })
 
-  .factory('BrowserUsage', function($http, Utils) {
+  .factory('BrowserUsage', function($http) {
     return {
       get: function() {
         return $http.get('/assets/data/browser_usage.json');
-      },
-      parse: function(data) {
-        var parsed = {};
-        parsed.series = [];
-        parsed.data = [];
-
-        for (var i = 0; i < data.length; i++) {
-          var obj = {x: '', y: []},
-              total = 0;
-          parsed.data.push(obj);
-
-          angular.forEach(data[i], function(value, key) {
-            if (key === 'Date') {
-              this.x = value;
-            } else {
-              this.y.push(value);
-              total += value;
-
-              if (i === 0) {
-                parsed.series.push(key);
-              }
-            }
-          }, obj);
-          obj.y.push(100 - total);
-        }
-        parsed.series.push('Other');
-
-        return Utils.applyChartColors(parsed);
       }
     };
   })
-  .factory('PlatformComparison', function($http, Utils) {
+  .factory('PlatformComparison', function($http) {
     return {
       get: function() {
         return $http.get('/assets/data/platform_comparison.json');
-      },
-      parse: function(data) {
-        var parsed = {};
-        parsed.labels = [];
-        // parsed.series = [];
-        parsed.datasets = [];
-        console.log('DATAAAA', data);
-
-        for (var i = 0; i < data.length; i++) {
-          console.log('1');
-          var values = {data: []};
-          parsed.datasets.push(values);
-          angular.forEach(data[i], function(value, key) {
-            console.log('2');
-            if (key === 'Date') {
-              parsed.labels.push(value);
-            } else if (key !== 'Console') {
-              values.data.push(value);
-
-              if (i === 0) {
-                // parsed.series.push(Utils.translate('defaults.' + key.toUpperCase()));
-                values.label = Utils.translate('defaults.' + key.toUpperCase());
-              }
-            }
-          });
-        }
-
-        // TODO Now this is broken with the new chart plugin...
-        // parsed.data = Utils.pairArrays(parsed.datasets.data);
-        parsed.data = parsed.datasets.data;
-        console.log('PARSED', parsed);
-        return Utils.applyChartColors(parsed);
       }
     };
   })

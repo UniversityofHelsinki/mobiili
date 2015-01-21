@@ -14,6 +14,7 @@ html {
 }
 
 [ui-view=header], .progress-header, .content-wrapper {
+    clear: both;
     max-width: 1280px;
     margin: auto;
 }
