@@ -310,7 +310,7 @@ angular.module('HY', [
   .config(function($stateProvider, $urlRouterProvider, $locationProvider, $translateProvider, translations) {
 
     var sessionData = angular.fromJson(localStorage.getItem('hy_mobile') || {}),
-        lastUrl = sessionData.lastUrl || '/fi/prelude/info/index';
+        lastUrl = sessionData.lastUrl || '/fi/prelude';
     $urlRouterProvider.otherwise(lastUrl);
 
     $stateProvider
