@@ -298,7 +298,6 @@ angular.module('HY.services', [])
   .factory('Routes', function(translations) {
     return {
       getIndexedData: function(lang) {
-        console.log('translations', lang, translations)
         var routes = this.get();
         // Index content (translations) with routes for search filter
         return _.flatten(_.map(routes, function(part) {

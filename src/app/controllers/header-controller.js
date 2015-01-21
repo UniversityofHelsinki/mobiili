@@ -4,7 +4,7 @@ angular.module('HY')
     $scope.lang = $stateParams.lang;
     $scope.progress = progress;
     $scope.search = Search;
-    $scope.searchableData = Routes.get();
+    $scope.searchableData = Routes.getIndexedData($scope.lang);
 
     $scope.getBookmarkState = function(isBookmarked) {
       if (typeof isBookmarked === 'undefined') {
@@ -26,7 +26,10 @@ angular.module('HY')
     };
 
     $scope.bookmark = function() {
-      Bookmarks.set({ url: $location.path(), title: $('.content-wrapper').find('h1, h1, h3, h4, h5, h6').first().text() });
+      var path = '/' + _.rest($location.path().split('/'), 2).join('/'),
+          pageHeader = _.find($scope.searchableData, {id: path}).content.HEADER || '';
+
+      Bookmarks.set({ url: $location.path(), title:  pageHeader});
       $scope.getBookmarkState(!$scope.isBookmarked);
     };
 
