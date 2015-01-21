@@ -23,6 +23,42 @@ angular.module('HY.services', [])
           })));
         }
         return retVal;
+      },
+      applyChartColors: function(data) {
+        var colors = [
+          '17,90,140',
+          '2,180,158',
+          '45,193,212',
+          '242,233,129',
+          '251,211,128',
+          '246,201,205',
+          '250,231,211',
+          '243,117,96',
+          '225,66,152',
+          '189,54,46'
+        ];
+
+        angular.forEach(data.data || data.datasets, function(elem, index) {
+          angular.extend(elem, {
+            // Bar
+            fillColor: 'rgba(' + colors[index] + ',0.2)',
+            strokeColor: 'rgba(' + colors[index] + ',1)',
+            highlightFill: 'rgba(' + colors[index] + ',0.75)',
+            highlightStroke: 'rgba(' + colors[index] + ',1)',
+
+            // Line
+            pointColor: 'rgba(' + colors[index] + ',1)',
+            pointStrokeColor: '#fff',
+            pointHighlightFill: '#fff',
+            pointHighlightStroke: 'rgba(' + colors[index] + ',1)',
+
+            // Pie and Doughnut
+            color: 'rgba(' + colors[index] + ',1)',
+            highlight: 'rgba(' + colors[index] + ',1)'
+          });
+        });
+
+        return data;
       }
     };
   })
@@ -104,7 +140,7 @@ angular.module('HY.services', [])
     };
   })
 
-  .factory('BrowserUsage', function($http) {
+  .factory('BrowserUsage', function($http, Utils) {
     return {
       get: function() {
         return $http.get('/assets/data/browser_usage.json');
@@ -135,7 +171,7 @@ angular.module('HY.services', [])
         }
         parsed.series.push('Other');
 
-        return parsed;
+        return Utils.applyChartColors(parsed);
       }
     };
   })
@@ -174,14 +210,14 @@ angular.module('HY.services', [])
         // parsed.data = Utils.pairArrays(parsed.datasets.data);
         parsed.data = parsed.datasets.data;
         console.log('PARSED', parsed);
-        return parsed;
+        return Utils.applyChartColors(parsed);
       }
     };
   })
   .factory('MobileVsDT', function(Utils) {
     return {
       get: function() {
-        return {
+        return Utils.applyChartColors({
           labels: [
             Utils.translate('date.MAY', {value: 2013}),
             Utils.translate('date.MAY', {value: 2014})
@@ -189,33 +225,21 @@ angular.module('HY.services', [])
           datasets: [
             {
               label: Utils.translate('defaults.MOBILE'),
-              fillColor: 'rgba(220,220,220,0.2)',
-              strokeColor: 'rgba(220,220,220,1)',
-              pointColor: 'rgba(220,220,220,1)',
-              pointStrokeColor: '#fff',
-              pointHighlightFill: '#fff',
-              pointHighlightStroke: 'rgba(220,220,220,1)',
               data: [50, 50]
             },
             {
               label: Utils.translate('defaults.DESKTOP'),
-              fillColor: 'rgba(151,187,205,0.2)',
-              strokeColor: 'rgba(151,187,205,1)',
-              pointColor: 'rgba(151,187,205,1)',
-              pointStrokeColor: '#fff',
-              pointHighlightFill: '#fff',
-              pointHighlightStroke: 'rgba(151,187,205,1)',
               data: [60, 40]
             }
           ]
-        };
+        });
       }
     };
   })
   .factory('MobileUsers', function(Utils) {
     return {
       get: function() {
-        return {
+        return Utils.applyChartColors({
           labels: ['%'],
           datasets: [
             {
@@ -251,14 +275,14 @@ angular.module('HY.services', [])
               data:[7]
             }
           ]
-        };
+        });
       }
     };
   })
-  .factory('MobilePlatforms', function() {
+  .factory('MobilePlatforms', function(Utils) {
     return {
-      get: function() {
-        return {
+      getBars: function() {
+        return Utils.applyChartColors({
           labels: [
             'Android',
             'iOS',
@@ -269,14 +293,32 @@ angular.module('HY.services', [])
               data: [55.4, 32.9, 11.7]
             }
           ]
-        };
+        });
+      },
+      getPie: function() {
+        return Utils.applyChartColors({
+          data: [
+            {
+              value: 55.4,
+              label: 'Android'
+            },
+            {
+              value: 32.9,
+              label: 'iOS'
+            },
+            {
+              value: 11.7,
+              label: 'Windows Phone'
+            }
+          ]
+        });
       }
     };
   })
   .factory('AppDownloads', function(Utils) {
     return {
       get: function() {
-        return {
+        return Utils.applyChartColors({
           labels: [
             Utils.translate('appDownloads.DOWNLOADS', {value: 0}),
             Utils.translate('appDownloads.DOWNLOADS', {value: 1}),
@@ -291,7 +333,7 @@ angular.module('HY.services', [])
               data: [65.5, 8.4, 8.9, 6.2, 3.7, 4.8, 2.4]
             }
           ]
-        };
+        });
       }
     };
   })

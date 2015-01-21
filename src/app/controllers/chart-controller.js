@@ -6,7 +6,7 @@ angular.module('HY')
 
     $scope.mobileVsDt = MobileVsDT.get();
     $scope.mobileUsers = MobileUsers.get();
-    $scope.mobilePlatforms = MobilePlatforms.get();
+    $scope.mobilePlatforms = MobilePlatforms.getPie();
     $scope.appDownloads = AppDownloads.get();
     console.log('appDownloads', $scope.appDownloads);
 
@@ -50,5 +50,9 @@ angular.module('HY')
       //String - A legend template
       legendTemplate: '<ul class="tc-chart-js-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].strokeColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
     };
+
+    $scope.pieOptions = angular.extend($scope.options, {
+      legendTemplate: '<ul class="tc-chart-js-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
+    });
 
   });
