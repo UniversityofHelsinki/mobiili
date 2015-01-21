@@ -5,6 +5,7 @@ angular.module('HY')
     $scope.progress = progress;
     $scope.search = Search;
     $scope.searchableData = Routes.getIndexedData($scope.lang);
+    $scope.subNav = ['prelude', 'part1', 'part2', 'part3', 'part4', 'part5'];
 
     $scope.getBookmarkState = function(isBookmarked) {
       if (typeof isBookmarked === 'undefined') {

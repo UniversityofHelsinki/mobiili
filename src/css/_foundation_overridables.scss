@@ -116,7 +116,7 @@ $font-family-sans-serif: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans 
 
 // We use these as default colors throughout
 $primary-color: $ocean;
-// $secondary-color: #e7e7e7;
+$secondary-color: $asphalt;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -1200,7 +1200,7 @@ $button-bg-hover: $marine;
 // $include-html-nav-classes: $include-html-classes;
 
 // We use these to control margin and padding
-// $sub-nav-list-margin: rem-calc(-4 0 18);
+$sub-nav-list-margin: 5px 0px 18px;
 // $sub-nav-list-padding-top: rem-calc(4);
 
 // We use this to control the definition
@@ -1215,7 +1215,7 @@ $button-bg-hover: $marine;
 
 // We use these to control the active item styles
 // $sub-nav-active-font-weight: $font-weight-normal;
-// $sub-nav-active-bg: $primary-color;
+$sub-nav-active-bg: $secondary-color;
 // $sub-nav-active-bg-hover: scale-color($sub-nav-active-bg, $lightness: -14%);
 // $sub-nav-active-color: $white;
 // $sub-nav-active-padding: $sub-nav-padding;

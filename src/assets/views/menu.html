@@ -9,28 +9,40 @@
 
 <div class="navigation-header">
     <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name"></li>
+      </ul>
+      <ul class="left">
+          <li class="has-form fa search">
+            <form>
+              <input id="search" name="search" type="search" placeholder="hae" ng-model="search.value" ng-model-options="{ updateOn: 'submit blur', debounce: {'submit': 0, 'blur': 0} }">
+            </form>
+          </li>
+      </ul>
       <section class="top-bar-section">
-        <ul class="left controls">
+        <ul class="right controls">
           <li>
-              <a ng-click="bookmark()"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARK' }}</span></a>
+              <a href="/#/{{lang}}/bookmarks"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARKS' }}</span></a>
           </li>
           <li class="divider"></li>
         </ul>
-
-        <ul class="right title-area">
-            <li class="has-form fa search">
-              <form>
-                <input id="search" name="search" type="search" placeholder="hae" ng-model="search.value" ng-model-options="{ updateOn: 'submit blur', debounce: {'submit': 0, 'blur': 0} }">
-              </form>
-            </li>
-            <li class="divider"></li>
-            <li class="name progress-indicator">
-                <span translate>{{ 'defaults.PART' }}</span> {{progress.currentPart}}/{{progress.partsCount}}
-                <!-- <progressbar value="progress.currentPart" max="6"></progressbar> -->
-            </li>
-        </ul>
-
-
       </section>
     </nav>
+</div>
+
+<div class="progress-header show-for-medium-up">
+  <dl class="sub-nav">
+    <dd ng-class="{active: $index==progress.currentPart-1}" ng-repeat="value in subNav">
+      <a href="/#/{{lang}}/{{value}}" translate>{{ 'partHeadings.' + value.toUpperCase() }}</a>
+    </dd>
+  </dl>
+</div>
+
+<div class="controls">
+
+  <a ng-click="bookmark()" class="add-bookmark"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ bookmarkText }}</span></a>
+
+  <div class="progress-wrapper">
+    <progressbar value="30" max="100"></progressbar> Beginner
+  </div>
 </div>

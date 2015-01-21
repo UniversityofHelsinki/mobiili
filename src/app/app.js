@@ -34,6 +34,7 @@ angular.module('HY', [
         PAGE_NOT_FOUND: 'Sivua ei löytynyt',
         HOME: 'Alkuun',
         PART: 'Osio',
+        BOOKMARKS: 'Suosikit',
         BOOKMARK: 'Suosikki',
         UNBOOKMARK: 'Poista suosikki',
         READ_MORE: 'Lue lisää',
@@ -47,6 +48,15 @@ angular.module('HY', [
         PART3: 'III. Ratkaisuvaihtoehtoja mobiiliin',
         PART4: 'IV. Mobiiliweb',
         PART5: 'V. Sovellukset'
+      },
+
+      partHeadings: {
+        PRELUDE: 'Esittely',
+        PART1: 'Trendit',
+        PART2: 'Suunnitteluperiaatteet',
+        PART3: 'Mobiiliratkaisut',
+        PART4: 'Mobiiliweb',
+        PART5: 'Sovellukset'
       },
 
       date: {
@@ -319,6 +329,19 @@ angular.module('HY', [
           'content@': {
             templateUrl: 'assets/views/search-results.html',
             controller: 'SearchController'
+          }
+        }
+      })
+      .state('app.bookmarks', {
+        url: '/:lang/bookmarks',
+        views: {
+          'header@': {
+            templateUrl: '/assets/views/menu.html',
+            controller: 'HeaderController'
+          },
+          'content@': {
+            templateUrl: 'assets/views/bookmarks.html',
+            controller: 'BookmarksController'
           }
         }
       })

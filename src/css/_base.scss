@@ -26,10 +26,11 @@ html {
     position: absolute;
     left: 0;
     right: 0;
-    top: 117px;
+    top: 115px;
     bottom: 0;
     background-color: $emo;
-    margin: 0;
+    max-width: 1280px;
+    margin: auto;
     color: white;
     text-align: center;
 

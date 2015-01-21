@@ -1,4 +1,4 @@
-nav {
+nav[ui-view] {
     clear: both;
 
     &.top-bar {
@@ -12,6 +12,8 @@ nav {
     &.part-divider-view {
       position: absolute;
       bottom: 0;
+      left: 0;
+      right: 0;
       text-align: center;
       width: 100%;
       margin: 0;

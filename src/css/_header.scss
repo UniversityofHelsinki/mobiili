@@ -1,8 +1,9 @@
-$header-height-small: 70px;
+$header-height-small: 72px;
 $header-font-size: 17px;
 $header-smaller-font-size: 12px;
 
 header {
+    clear: both;
     background-color: $panther;
     background-image: url('/assets/images/helsinki_university_53x50.png');
     background-repeat: no-repeat;
@@ -73,8 +74,9 @@ header {
 }
 
 .navigation-header {
-    height: $header-height-small/2;
-    line-height: $header-height-small/2;
+    clear: both;
+    position: relative;
+    top: -2px;
     background-color: $soil;
     color: $asphalt;
 
@@ -92,10 +94,45 @@ header {
         }
         i {
             padding-right: 8px;
+        }
+    }
+}
+
+.progress-header {
+    clear: both;
+    ul {
+
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.controls {
+    .add-bookmark {
+        margin-left: 15px;
+        color: $emo;
+
+        i {
+            margin-right: 5px;
 
             &.active {
                 color: $ocean;
             }
+        }
+    }
+    .progress-wrapper {
+        display: inline-block;
+        float: right;
+        font-size: 0.8rem;
+        line-height: 31px;
+        margin-right: 10px;
+
+        .progress {
+            width: 200px;
+            display: inline-block;
+            margin-bottom: -3px;
+            height: 16px;
         }
     }
 }
