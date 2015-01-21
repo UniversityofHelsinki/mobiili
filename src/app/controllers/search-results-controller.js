@@ -1,24 +1,12 @@
 angular.module('HY')
-  .controller('SearchController', function($scope, $controller, $stateParams, $translate, translations, Routes, Search) {
+  .controller('SearchController', function($scope, $controller, $stateParams, $translate, Routes, Search) {
 
-    var routes = Routes.get();
     $scope.lang = $stateParams.lang;
     $translate.use($stateParams.lang);
 
     // Get search val from Service
     $scope.search = Search;
-
-    // Index content (translations) with routes for search filter
-    $scope.searchableData = _.flatten(_.map(routes, function(part) {
-      // Reject init views = part dividers
-      return _.map(_.reject(part.routes, {id: 'init'}), function(route) {
-        return {
-          id: '/' + part.id + '/' + route.type + '/' + route.id,
-          content: translations[$translate.use()][route.translationNamespace],
-          url: '/' + part.id + '/' + route.type + '/' + route.id
-        };
-      });
-    }));
+    $scope.searchableData = Routes.getIndexedData($scope.lang);
 
     $scope.closeSearch = function() {
       $scope.search.value = '';

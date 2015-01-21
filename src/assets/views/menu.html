@@ -19,7 +19,9 @@
 
         <ul class="right title-area">
             <li class="has-form fa search">
-                <input type="search" placeholder="hae" ng-model="search.value" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
+              <form>
+                <input id="search" name="search" type="search" placeholder="hae" ng-model="search.value" ng-model-options="{ updateOn: 'submit blur', debounce: {'submit': 0, 'blur': 0} }">
+              </form>
             </li>
             <li class="divider"></li>
             <li class="name progress-indicator">

@@ -295,8 +295,23 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('Routes', function() {
+  .factory('Routes', function(translations) {
     return {
+      getIndexedData: function(lang) {
+        console.log('translations', lang, translations)
+        var routes = this.get();
+        // Index content (translations) with routes for search filter
+        return _.flatten(_.map(routes, function(part) {
+          // Reject init views = part dividers
+          return _.map(_.reject(part.routes, {id: 'init'}), function(route) {
+            return {
+              id: '/' + part.id + '/' + route.type + '/' + route.id,
+              content: translations[lang][route.translationNamespace],
+              url: '/' + part.id + '/' + route.type + '/' + route.id
+            };
+          });
+        }));
+      },
       get: function() {
         return [
           {
