@@ -101,7 +101,7 @@ header {
         display: inline-block;
     }
 
-    .controls {
+    .top-bar-controls {
         a {
             color: white;
         }
@@ -122,6 +122,8 @@ header {
 }
 
 .controls {
+    padding: 10px 0;
+
     .add-bookmark {
         margin-left: 15px;
         color: $emo;

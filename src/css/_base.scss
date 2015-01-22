@@ -2,6 +2,11 @@ html {
     color: $emo;
 }
 
+body {
+    background-color: $asphalt;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEUlEQVQIW2M8e/ZsvbGxcSMAFaoEArcjceEAAAAASUVORK5CYII=) repeat;
+}
+
 /* A simple test case to verify Compass build works ok */
 #{headings(all)} {
     color: $soil;
@@ -17,6 +22,7 @@ html {
     clear: both;
     max-width: 1280px;
     margin: auto;
+    background-color: white;
 }
 
 .content {
