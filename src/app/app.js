@@ -38,7 +38,8 @@ angular.module('HY', [
         BOOKMARK: 'Suosikki',
         UNBOOKMARK: 'Poista suosikki',
         READ_MORE: 'Lue lisää',
-        SEARCH_RESULTS: 'Hakutulokset'
+        SEARCH_RESULTS: 'Hakutulokset',
+        NO_SEARCH_RESULTS: 'Ei hakutuloksia'
       },
 
       parts: {

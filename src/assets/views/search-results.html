@@ -1,15 +1,17 @@
 <div class="search-results">
-<a ng-click="closeSearch()" class="back-button" translate>{{'defaults.BACK'}}</a>
-    <h1 translate>{{'defaults.SEARCH_RESULTS'}}</h1>
-    <ul ng-repeat="hit in searchableData | searchHits:search.value">
-        <li>
-            <a href="/#/{{lang}}{{hit.url}}">
-                <h3>{{hit.content.HEADER}}</h3>
-                <p ng-repeat="parsed in hit.parsedHits">
-                    <span ng-bind-html="parsed | highlight:search.value"></span>
-                </p>
-                <span class="read-more" translate>{{'defaults.READ_MORE'}}</span>
-            </a>
-      </li>
-    </ul>
+    <a ng-click="closeSearch()" class="back-button" translate>{{'defaults.BACK'}}</a>
+        <h1><span translate>{{'defaults.SEARCH_RESULTS'}}:</span><span ng-show="search.value !== ''"> "{{search.value}}" ({{hits.length}})</span></h1>
+        <ul ng-repeat="hit in hits = (searchableData | searchHits:search.value)">
+            <li>
+                <a href="/#/{{lang}}{{hit.url}}">
+                    <h3>{{hit.content.HEADER}}</h3>
+                    <p ng-repeat="parsed in hit.parsedHits">
+                        <span ng-bind-html="parsed | highlight:search.value"></span>
+                    </p>
+                    <!-- <span class="read-more" translate>{{'defaults.READ_MORE'}}</span> -->
+                </a>
+          </li>
+        </ul>
+        <h3 ng-show="!hits || hits.length === 0" translate>{{'defaults.NO_SEARCH_RESULTS'}}</h3>
+        <a  ng-show="hits.length > 0" ng-click="closeSearch()" class="back-button" translate>{{'defaults.BACK'}}</a>
 </div>

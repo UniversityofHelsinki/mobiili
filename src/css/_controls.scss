@@ -96,19 +96,16 @@ table {
     }
 }
 
-.fa.search {
-
-    &:before {
-        content: '\f002';
-        position: absolute;
-        height: inherit;
-        padding: 14px 5px;
-        z-index: 1;
-    }
+li.fa.search {
 
     input[type=search] {
-        padding-left: 20px;
-        border-radius: 12px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .button {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
     }
 
 }

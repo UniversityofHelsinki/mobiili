@@ -6,7 +6,12 @@ angular.module('HY')
     $scope.search = Search;
     $scope.searchableData = Routes.getIndexedData($scope.lang);
     $scope.subNav = ['prelude', 'part1', 'part2', 'part3', 'part4', 'part5'];
-    $scope.addClasses = $stateParams.partId && $stateParams.pageId ? '' : 'part-divider-active';
+
+    if ($state.current.name === 'app.bookmarks' || $state.current.name === 'app.search') {
+      $scope.addClasses = 'hide-controls';
+    } else if (!$stateParams.pageId) {
+      $scope.addClasses = 'part-divider-active';
+    }
 
     $scope.getBookmarkState = function(isBookmarked) {
       if (typeof isBookmarked === 'undefined') {
