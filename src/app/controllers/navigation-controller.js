@@ -45,7 +45,7 @@ angular.module('HY')
           retVal.url = routes[partIndex + 1].id;
         }
 
-        retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;
+        if (retVal.url) {retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;}
         return retVal;
       })();
 
@@ -67,7 +67,7 @@ angular.module('HY')
           retVal.url = back.id + '/' + back.routes[back.routes.length - 1].type + '/' + back.routes[back.routes.length - 1].id;
         }
 
-        retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;
+        if (retVal.url) {retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;}
         return retVal;
       })();
 
@@ -77,14 +77,13 @@ angular.module('HY')
 
       angular.element($window).on('keydown', function(e) {
         // Key navigation
-        if (e.keyIdentifier === 'Left') {
+        if (e.keyIdentifier === 'Left' && $scope.back.fullUrl) {
           e.preventDefault();
           e.stopPropagation();
-          $location.path($scope.back.fullUrl);
           $scope.$apply(function() {
             $location.path($scope.back.fullUrl);
           });
-        } else if (e.keyIdentifier === 'Right') {
+        } else if (e.keyIdentifier === 'Right' && $scope.forward.fullUrl) {
           e.preventDefault();
           e.stopPropagation();
           $scope.$apply(function() {

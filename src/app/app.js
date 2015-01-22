@@ -39,7 +39,12 @@ angular.module('HY', [
         UNBOOKMARK: 'Poista suosikki',
         READ_MORE: 'Lue lisää',
         SEARCH_RESULTS: 'Hakutulokset',
-        NO_SEARCH_RESULTS: 'Ei hakutuloksia'
+        NO_SEARCH_RESULTS: 'Ei hakutuloksia',
+        GURU: 'Guru',
+        EXPERT: 'Asiantuntija',
+        ADVANCED: 'Edistynyt',
+        INTERMEDIATE: 'Perehtynyt',
+        BEGINNER: 'Aloittelija'
       },
 
       parts: {

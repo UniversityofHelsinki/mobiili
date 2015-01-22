@@ -1,12 +1,12 @@
 angular.module('HY')
-  .controller('MainController', function($scope, $state, $stateParams, $translate, $location, SessionData, Search) {
-
-    // Get last url from localStorage
-    $scope.lastUrl = SessionData.get().lastUrl;
+  .controller('MainController', function($scope, $state, $stateParams, $translate, $location, SessionData, Experience) {
 
     if (!$state.is('app.notFound')) {
-      // Set visited url information to localStorage data
+      // Set last url information to localStorage data
       SessionData.set({lastUrl: $location.path()});
+
+      // Set visited url information for progress use
+      Experience.set($location.path());
     }
 
     // Translation

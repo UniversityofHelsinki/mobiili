@@ -50,6 +50,6 @@
   <a ng-click="bookmark()" class="add-bookmark"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ bookmarkText }}</span></a>
 
   <div class="progress-wrapper">
-    <progressbar value="30" max="100"></progressbar> Beginner
+  <progressbar value="experience.value()" max="experience.total()" type="success"></progressbar> <span translate>{{'defaults.' + experience.level()}}</span>
   </div>
 </div>

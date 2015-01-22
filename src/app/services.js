@@ -94,13 +94,52 @@ angular.module('HY.services', [])
         return angular.fromJson(localStorage.getItem('hy_mobile') || {});
       },
       set: function(data) {
-        var oldData = angular.fromJson(localStorage.getItem('hy_mobile') || {});
+        var oldData = this.get();
         data = angular.extend(oldData, data);
         localStorage.setItem('hy_mobile', angular.toJson(data));
       }
     };
   })
-
+  .factory('Experience', function(Routes) {
+    return {
+      value: function() {
+        return this.getCount();
+      },
+      total: function() {
+        return this.getTotal();
+      },
+      level: function() {
+        var p = this.value() / this.total();
+        if (p >= 0.9) {
+          return 'GURU';
+        } else if (p >= 0.6) {
+          return 'EXPERT';
+        } else if (p >= 0.4) {
+          return 'ADVANCED';
+        } else if (p >= 0.2) {
+          return 'INTERMEDIATE';
+        } else {
+          return 'BEGINNER';
+        }
+      },
+      get: function() {
+        return angular.fromJson(localStorage.getItem('visited_urls') || []);
+      },
+      set: function(url) {
+        var oldData = this.get();
+        if (oldData.indexOf(url) === -1) {
+          oldData.push(url);
+          localStorage.setItem('visited_urls', angular.toJson(oldData));
+        }
+      },
+      getCount: function() {
+        return this.get().length;
+      },
+      getTotal: function() {
+        return _.flatten(Routes.get(), 'routes').length;
+      }
+    };
+  })
   .factory('Bookmarks', function() {
     return {
       list: function() {
@@ -110,7 +149,7 @@ angular.module('HY.services', [])
         return _.find(angular.fromJson(localStorage.getItem('bookmarks')) || [], {url: url});
       },
       set: function(data) {
-        var oldData = angular.fromJson(localStorage.getItem('bookmarks') || []),
+        var oldData = this.list(),
             existing = _.find(oldData, {url: data.url});
 
         if (typeof existing !== 'undefined') {
@@ -132,7 +171,7 @@ angular.module('HY.services', [])
         return angular.fromJson(localStorage.getItem('answers') || {});
       },
       set: function(data) {
-        var oldData = angular.fromJson(localStorage.getItem('answers') || {});
+        var oldData = this.get();
         data = angular.extend(oldData, data);
         localStorage.setItem('answers', angular.toJson(data));
       }
