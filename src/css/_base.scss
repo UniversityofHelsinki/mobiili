@@ -20,7 +20,7 @@ body {
 
 [ui-view=header], .progress-header, .content-wrapper {
     clear: both;
-    max-width: 1280px;
+    max-width: $limit-content-width;
     margin: auto;
     background-color: white;
 }
@@ -36,7 +36,7 @@ body {
     top: 160px;
     bottom: 0;
     background-color: $emo;
-    max-width: 1280px;
+    max-width: $limit-content-width;
     margin: auto;
     color: white;
     text-align: center;
