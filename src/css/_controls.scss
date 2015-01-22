@@ -43,6 +43,10 @@ nav[ui-view] {
 .button, button {
     // font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     outline: none;
+
+    &:hover, &.active {
+        background-color: $marine;
+    }
 }
 
 .pager {
