@@ -2,6 +2,12 @@ $header-height-small: 72px;
 $header-font-size: 17px;
 $header-smaller-font-size: 12px;
 
+[ui-view=header].part-divider-active {
+    .controls {
+        display: none;
+    }
+}
+
 header {
     clear: both;
     background-color: $panther;

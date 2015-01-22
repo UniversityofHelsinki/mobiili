@@ -9,11 +9,15 @@ nav[ui-view] {
     &.navigation {
         // border-top: 1px solid $emo;
 
-        a:first-of-type {
-            float: left;
-        }
-        a:last-of-type {
-            float: right;
+        a {
+            z-index: 1;
+
+            &:first-of-type {
+                float: left;
+            }
+            &:last-of-type {
+                float: right;
+            }
         }
     }
 

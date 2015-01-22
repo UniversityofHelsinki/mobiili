@@ -27,7 +27,7 @@ html {
     position: absolute;
     left: 0;
     right: 0;
-    top: 115px;
+    top: 160px;
     bottom: 0;
     background-color: $emo;
     max-width: 1280px;
@@ -44,18 +44,40 @@ html {
         left: 50%;
         @include translate(-50%, -50%);
     }
-
 }
 
 .question-mark, .exclamation-mark {
     position: absolute;
     right: 20px;
     top: 0;
-    @include scale(20);
-    transform-origin: right top;
+    font-size: 25rem;
+    line-height: 25rem;
+    // @include scale(20);
+    transform-origin: right center;
     color: $ocean;
-    opacity: 0.05;
+    opacity: 0.15;
     z-index: 0;
+
+    -webkit-animation: change-color 15s 5; /* Chrome, Safari, Opera */
+    animation: change-color 15s 5;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes change-color {
+    0% {color: $ocean;}
+    25% {color: $marine;}
+    50% {color: $emo;}
+    75% {color: $sea;}
+    100% {color: $ocean;}
+}
+
+/* Standard syntax */
+@keyframes change-color {
+    0% {color: $ocean;}
+    25% {color: $marine;}
+    50% {color: $emo;}
+    75% {color: $sea;}
+    100% {color: $ocean;}
 }
 
 .question-mark:after {
