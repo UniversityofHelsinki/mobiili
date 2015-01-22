@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('NavigationController', function($rootScope, $scope, $stateParams, $controller, $state, progress, Routes) {
+  .controller('NavigationController', function($window, $location, $rootScope, $scope, $stateParams, $controller, $state, progress, Routes) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
     var part,
         partIndex,
@@ -45,6 +45,7 @@ angular.module('HY')
           retVal.url = routes[partIndex + 1].id;
         }
 
+        retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;
         return retVal;
       })();
 
@@ -66,11 +67,28 @@ angular.module('HY')
           retVal.url = back.id + '/' + back.routes[back.routes.length - 1].type + '/' + back.routes[back.routes.length - 1].id;
         }
 
+        retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;
         return retVal;
       })();
 
       $scope.getTimes = function(n) {
         return new Array(n);
       };
+
+      angular.element($window).on('keydown', function(e) {
+        // Key navigation
+        e.preventDefault();
+        e.stopPropagation();
+        if (e.keyIdentifier === 'Left') {
+          $location.path($scope.back.fullUrl);
+          $scope.$apply(function() {
+            $location.path($scope.back.fullUrl);
+          });
+        } else if (e.keyIdentifier === 'Right') {
+          $scope.$apply(function() {
+            $location.path($scope.forward.fullUrl);
+          });
+        }
+      });
     }
   });
