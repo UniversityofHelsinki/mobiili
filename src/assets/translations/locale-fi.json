@@ -42,7 +42,8 @@
       "PART2": "Suunnitteluperiaatteet",
       "PART3": "Mobiiliratkaisut",
       "PART4": "Mobiiliweb",
-      "PART5": "Sovellukset"
+      "PART5": "Sovellukset",
+      "PART6": "Palveluhankinnan toteutus"
   },
   "date": {
       "MAY": "Maaliskuu {{value}}"
@@ -252,5 +253,57 @@
       "1": "Viime syksynä suurin osa yhdysvaltalaisista mobiilikäyttäjistä ei ollut viimeisen kuukauden aikana asentanut yhtään uutta sovellusta.",
       "HEADER": "Uusien sovellusten käyttöönottamiseen voi olla kynnys",
       "DOWNLOADS": "{{value}} sovellusta"
+  },
+  "lifeCycle": {
+      "HEADER": "Ohjelmistohankinta ei ole vain ohjelmistokehitystä",
+      "1": "Muista resursoida kaikki nettipalvelun elinkaareen kuuluvat vaiheet:",
+      "2": "- Palvelusuunnittelu",
+      "3": "- Ohjelmistokehitys",
+      "4": "- Sovelluskauppaan julkaisu",
+      "5": "- Ylläpito ja tuki"
+  },
+  "costs": {
+    "HEADER": "Ohjelmistokehityksen kustannukset",
+      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Esimerkkinä vaikkapa Twitter tai Eat.fi",
+      "2": "Laskelma uuden palvelun mobiilijulkaisulle",
+      "3": "Kolme natiiviapplikaatiota",
+      "4": "3x 15,000 €",
+      "5": "45,000 €",
+      "6": "Mobiiliweb",
+      "7": "1 x 25,000 €",
+      "8": "25,000 €",
+      "9": "Mobiiliweb + 3 paketoitua sovellusta",
+      "10": "1x 25,000 + 3x 5,000",
+      "11":"40,000 €",
+      "12":"+ konseptointi-, ylläpito- ja julkaisukustannukset"
+  },
+  "principles": {
+    "HEADER": "Suunnittelu edellyttää laajaa näkemystä myös muista periaatteista",
+      "1": "Laiteriippumattomuus ja avoimuus ovat tärkeitä juuri nyt.",
+      "2": "Jos palvelusi on saavutettava ja siitä on tullut tunnettu, myös seuraavien periaatteiden noudattaminen on tärkeää:",
+      "3": "Luotettavuus, suorituskyky, tietoturva ja käytettävyys"
+  },
+  "userCentredDesign": {
+    "HEADER": "",
+      "1": "Käyttäjäkeskeisyys:",
+      "2": "1. Ymmärrä käyttäjän tarpeet ja hänen palvelusta saamansa arvo",
+      "3": "2. Keskity käyttöliittymässä olennaisiin",
+      "4": "3. Testaa palvelua käyttäjillä palvelukehityksen aikana",
+      "5": "4. Seuraa sovelluksen käyttöä julkaisun jälkeen analytiikan avulla ja aseta käytölle ja jatkokehitykselle mitattavia tavoitteita"
+  },
+  "recommendations": {
+      HEADER": "Tietotekniikkakeskuksen suosituksia",
+      "1": "1. Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
+      "2": "2. Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
+      "3": "3. Jos jokin sovelluksen eduista on välttämätön, harkitse mille käyttöjärjestelmille palvelu pitää toteuttaa"
+    }
+  "contactUs": {
+    HEADER": "Apu kysymyksiin palveluhankinta-asioissa on lähellä",
+      "1": "Et ole yksin.",
+      "2": "Vastauksia kysymyksiin, joihin tämä opas ei vielä vastannut saat meiltä.",
+      "3": "Tietotekniikkakeskus neuvoo ja konsultoi HY yksikköjä teknisen arkkitehtuurin valinnoissa ja muissa hankintaan liittyvissä kysymyksissä, joihin tämä opas ei vastannut.",
+      "4": "Kysy meiltä heti, kun mietit palveluhankintoja."
   }
+  
+  
 }
