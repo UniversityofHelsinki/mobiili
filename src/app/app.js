@@ -6,7 +6,9 @@ angular.module('HY', [
     'pascalprecht.translate',
     'HY.services',
     'ngAnimate',
-    'tc.chartjs'
+    'tc.chartjs',
+    'angulartics',
+    'angulartics.google.analytics'
   ])
   .value('progress', {})
   .run(function($state, $rootScope) {

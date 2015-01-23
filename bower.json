@@ -10,7 +10,8 @@
     "angular-lodash": "~0.1.2",
     "ng-lodash": "~0.1.0",
     "tc-angular-chartjs": "~1.0.9",
-    "angular-translate-loader-static-files": "~2.5.2"
+    "angular-translate-loader-static-files": "~2.5.2",
+    "angulartics": "~0.17.2"
   },
   "devDependencies": {
     "foundation": "^5.0.0"
