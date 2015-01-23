@@ -77,13 +77,13 @@ angular.module('HY')
 
       angular.element($window).on('keydown', function(e) {
         // Key navigation
-        if (e.keyIdentifier === 'Left' && $scope.back.fullUrl) {
+        if (e.keyCode === 37 && $scope.back.fullUrl) {
           e.preventDefault();
           e.stopPropagation();
           $scope.$apply(function() {
             $location.path($scope.back.fullUrl);
           });
-        } else if (e.keyIdentifier === 'Right' && $scope.forward.fullUrl) {
+        } else if (e.keyCode === 39 && $scope.forward.fullUrl) {
           e.preventDefault();
           e.stopPropagation();
           $scope.$apply(function() {
