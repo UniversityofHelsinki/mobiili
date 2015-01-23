@@ -40,7 +40,7 @@ body {
     margin: auto;
     color: white;
     text-align: center;
-
+    z-index: 2;
 
     #{headings(all)} {
         position: absolute;
@@ -92,4 +92,8 @@ body {
 
 .exclamation-mark:after {
     content: '!';
+}
+
+.share {
+    text-align: center;
 }

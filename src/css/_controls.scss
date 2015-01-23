@@ -1,6 +1,7 @@
 nav[ui-view] {
     clear: both;
     position: relative;
+    z-index: 3;
 
     &.top-bar {
         overflow: hidden;
