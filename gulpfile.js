@@ -108,6 +108,7 @@ gulp.task('javascript', ['preprocess'], function() {
       'components/jquery/dist/jquery.js',
       'components/lodash/dist/lodash.compat.js',
       'components/angular/angular.js',
+      'components/angular-translate/angular-translate.js',
       'components/**/*.js',
       'templates.js',
       'app/**/*.js'

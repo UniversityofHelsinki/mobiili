@@ -342,17 +342,26 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('Routes', function(translations) {
+  .factory('Routes', function($http) {
     return {
-      getIndexedData: function(lang) {
-        var routes = this.get();
+      translations: {},
+      loadTranslations: function(lang) {
+        var _this = this;
+        return $http.get('/assets/translations/locale-' + lang + '.json').success(function(data) {
+          _this.translations = data;
+        });
+      },
+      getIndexedData: function() {
+        var routes = this.get(),
+            translations = this.translations;
+
         // Index content (translations) with routes for search filter
         return _.flatten(_.map(routes, function(part) {
           // Reject init views = part dividers
           return _.map(_.reject(part.routes, {id: 'init'}), function(route) {
             return {
               id: '/' + part.id + '/' + route.type + '/' + route.id,
-              content: translations[lang][route.translationNamespace],
+              content: translations[route.translationNamespace],
               url: '/' + part.id + '/' + route.type + '/' + route.id
             };
           });

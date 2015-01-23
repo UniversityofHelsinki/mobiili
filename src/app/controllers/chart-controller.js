@@ -1,16 +1,19 @@
 angular.module('HY')
-  .controller('ChartController', function($scope, $controller, MobileVsDT, PlatformComparison, MobileUsers, MobilePlatforms, AppDownloads, Search, Utils) {
+  .controller('ChartController', function($scope, $controller, $translate, $stateParams, MobileVsDT, PlatformComparison, MobileUsers, MobilePlatforms, AppDownloads, Search, Utils) {
 
     // Get search state for view visibility
     $scope.search = Search;
 
-    $scope.mobileVsDt = MobileVsDT.get();
-    $scope.mobileUsers = MobileUsers.get();
-    $scope.mobilePlatforms = MobilePlatforms.getPie();
-    $scope.appDownloads = AppDownloads.get();
+    // Use promise to get correct languges to charts because of asynchronous translation load
+    $translate.use($stateParams.lang).then(function() {
+      $scope.mobileVsDt = MobileVsDT.get();
+      $scope.mobileUsers = MobileUsers.get();
+      $scope.mobilePlatforms = MobilePlatforms.getPie();
+      $scope.appDownloads = AppDownloads.get();
 
-    PlatformComparison.get().then(function(xhr) {
-      $scope.platformComparison = Utils.parseJsonData(xhr.data);
+      PlatformComparison.get().then(function(xhr) {
+        $scope.platformComparison = Utils.parseJsonData(xhr.data);
+      });
     });
 
     // Chart.js Options

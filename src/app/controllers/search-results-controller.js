@@ -6,7 +6,9 @@ angular.module('HY')
 
     // Get search val from Service
     $scope.search = Search;
-    $scope.searchableData = Routes.getIndexedData($scope.lang);
+    Routes.loadTranslations($scope.lang).then(function() {
+      $scope.searchableData = Routes.getIndexedData();
+    });
 
     $scope.closeSearch = function() {
       $scope.search.value = '';

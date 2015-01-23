@@ -4,7 +4,9 @@ angular.module('HY')
     $scope.lang = $stateParams.lang;
     $scope.progress = progress;
     $scope.search = Search;
-    $scope.searchableData = Routes.getIndexedData($scope.lang);
+    Routes.loadTranslations($scope.lang).then(function() {
+      $scope.searchableData = Routes.getIndexedData();
+    });
     $scope.subNav = ['prelude', 'part1', 'part2', 'part3', 'part4', 'part5'];
     $scope.experience = Experience;
 
