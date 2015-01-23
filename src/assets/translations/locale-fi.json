@@ -284,21 +284,21 @@
       "3": "Luotettavuus, suorituskyky, tietoturva ja käytettävyys"
   },
   "userCentredDesign": {
-    "HEADER": "",
-      "1": "Käyttäjäkeskeisyys:",
+    "HEADER": "Käyttäjäkeskeisen suunnittelu auttaa onnistumaan",
+      "1": "Käyttäjäkeskeisyyden soveltaminen ohjelmisto projektin eri vaiheissa:",
       "2": "1. Ymmärrä käyttäjän tarpeet ja hänen palvelusta saamansa arvo",
       "3": "2. Keskity käyttöliittymässä olennaisiin",
       "4": "3. Testaa palvelua käyttäjillä palvelukehityksen aikana",
       "5": "4. Seuraa sovelluksen käyttöä julkaisun jälkeen analytiikan avulla ja aseta käytölle ja jatkokehitykselle mitattavia tavoitteita"
   },
   "recommendations": {
-      HEADER": "Tietotekniikkakeskuksen suosituksia",
+      "HEADER": "Tietotekniikkakeskuksen suosituksia",
       "1": "1. Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
       "2": "2. Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
       "3": "3. Jos jokin sovelluksen eduista on välttämätön, harkitse mille käyttöjärjestelmille palvelu pitää toteuttaa"
     }
   "contactUs": {
-    HEADER": "Apu kysymyksiin palveluhankinta-asioissa on lähellä",
+    "HEADER": "Apu kysymyksiin palveluhankinta-asioissa on lähellä",
       "1": "Et ole yksin.",
       "2": "Vastauksia kysymyksiin, joihin tämä opas ei vielä vastannut saat meiltä.",
       "3": "Tietotekniikkakeskus neuvoo ja konsultoi HY yksikköjä teknisen arkkitehtuurin valinnoissa ja muissa hankintaan liittyvissä kysymyksissä, joihin tämä opas ei vastannut.",
