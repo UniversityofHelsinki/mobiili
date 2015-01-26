@@ -12,7 +12,6 @@ angular.module('HY')
     $scope.getBookmarkState = function(isBookmarked) {
       if (typeof isBookmarked === 'undefined') {
         isBookmarked = typeof Bookmarks.get($location.path()) !== 'undefined';
-        console.log('isBookmarked', isBookmarked);
       }
       $scope.isBookmarked = isBookmarked;
       $scope.bookmarkIcon = isBookmarked ? 'fa fa-heart active' : 'fa fa-heart-o';
