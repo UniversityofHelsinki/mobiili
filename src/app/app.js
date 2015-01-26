@@ -8,7 +8,8 @@ angular.module('HY', [
     'ngAnimate',
     'tc.chartjs',
     'angulartics',
-    'angulartics.google.analytics'
+    'angulartics.google.analytics',
+    'ngTouch'
   ])
   .value('progress', {})
   .run(function($state, $rootScope) {

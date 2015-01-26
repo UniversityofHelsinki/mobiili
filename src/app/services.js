@@ -345,6 +345,20 @@ angular.module('HY.services', [])
   .factory('Routes', function($http) {
     return {
       translations: {},
+      nextUrl: '',
+      previousUrl: '',
+      setNextUrl: function(url) {
+        this.nextUrl = url;
+      },
+      setPreviousUrl: function(url) {
+        this.previousUrl = url;
+      },
+      getNextUrl: function() {
+        return this.nextUrl;
+      },
+      getPreviousUrl: function() {
+        return this.previousUrl;
+      },
       loadTranslations: function(lang) {
         var _this = this;
         return $http.get('/assets/translations/locale-' + lang + '.json').success(function(data) {

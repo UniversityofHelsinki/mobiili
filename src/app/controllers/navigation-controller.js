@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('NavigationController', function($window, $location, $rootScope, $scope, $stateParams, $controller, $state, progress, Routes) {
+  .controller('NavigationController', function($window, $location, $rootScope, $scope, $stateParams, $controller, $state, $swipe, progress, Routes) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
     var part,
         partIndex,
@@ -45,7 +45,7 @@ angular.module('HY')
           retVal.url = routes[partIndex + 1].id;
         }
 
-        if (retVal.url) {retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;}
+        retVal.url ? Routes.setNextUrl('/' + $scope.lang + '/' + retVal.url) : Routes.setNextUrl('');
         return retVal;
       })();
 
@@ -67,29 +67,12 @@ angular.module('HY')
           retVal.url = back.id + '/' + back.routes[back.routes.length - 1].type + '/' + back.routes[back.routes.length - 1].id;
         }
 
-        if (retVal.url) {retVal.fullUrl = '/' + $scope.lang + '/' + retVal.url;}
+        retVal.url ? Routes.setPreviousUrl('/' + $scope.lang + '/' + retVal.url) : Routes.setPreviousUrl('');
         return retVal;
       })();
 
       $scope.getTimes = function(n) {
         return new Array(n);
       };
-
-      angular.element($window).on('keydown', function(e) {
-        // Key navigation
-        if (e.keyCode === 37 && $scope.back.fullUrl) {
-          e.preventDefault();
-          e.stopPropagation();
-          $scope.$apply(function() {
-            $location.path($scope.back.fullUrl);
-          });
-        } else if (e.keyCode === 39 && $scope.forward.fullUrl) {
-          e.preventDefault();
-          e.stopPropagation();
-          $scope.$apply(function() {
-            $location.path($scope.forward.fullUrl);
-          });
-        }
-      });
     }
   });
