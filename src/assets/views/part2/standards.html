@@ -1,4 +1,7 @@
-<h4 translate>{{ 'standards.HEADER' }}</h4>
+<h4>
+    <span translate>{{ 'standards.HEADER' }}</span>
+    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
+</h4>
 <p translate>{{ 'standards.1' }}</p>
 <p translate>{{ 'standards.2' }}</p>
 <p translate>{{ 'standards.3' }}</p>

@@ -122,23 +122,10 @@ header {
 }
 
 .controls {
-    padding: 10px 0;
+    text-align: right;
 
-    .add-bookmark {
-        margin-left: 15px;
-        color: $emo;
-
-        i {
-            margin-right: 5px;
-
-            &.active {
-                color: $ocean;
-            }
-        }
-    }
     .progress-wrapper {
         display: inline-block;
-        float: right;
         font-size: 0.8rem;
         line-height: 31px;
         margin-right: 10px;

@@ -1,4 +1,7 @@
-<h4 translate>{{ 'appDownloads.HEADER' }}</h4>
+<h4>
+    <span translate>{{ 'appDownloads.HEADER' }}</span>
+    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
+</h4>
 <p translate>{{ 'appDownloads.1' }}</p>
 
 <div class="chart-wrapper">

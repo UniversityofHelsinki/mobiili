@@ -1,5 +1,7 @@
-<h4 translate>{{ 'apps.HEADER' }}</h4>
-
+<h4>
+    <span translate>{{ 'apps.HEADER' }}</span>
+    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
+</h4>
 <p translate>{{ 'apps.1' }}</p>
 <p translate>{{ 'apps.2' }}</p>
 <p translate>{{ 'apps.3' }}</p>

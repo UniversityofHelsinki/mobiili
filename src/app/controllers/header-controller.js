@@ -1,12 +1,9 @@
 angular.module('HY')
-  .controller('HeaderController', function($state, $stateParams, $scope, $translate, $location, progress, Bookmarks, Routes, Search, SessionData, Experience) {
+  .controller('HeaderController', function($state, $stateParams, $scope, $translate, $location, progress, Routes, Search, SessionData, Experience) {
 
     $scope.lang = $stateParams.lang;
     $scope.progress = progress;
     $scope.search = Search;
-    Routes.loadTranslations($scope.lang).then(function() {
-      $scope.searchableData = Routes.getIndexedData();
-    });
     $scope.subNav = ['prelude', 'part1', 'part2', 'part3', 'part4', 'part5'];
     $scope.experience = Experience;
 
@@ -16,31 +13,12 @@ angular.module('HY')
       $scope.addClasses = 'part-divider-active';
     }
 
-    $scope.getBookmarkState = function(isBookmarked) {
-      if (typeof isBookmarked === 'undefined') {
-        isBookmarked = Bookmarks.get($location.path());
-      }
-      $scope.isBookmarked = isBookmarked;
-      $scope.bookmarkIcon = isBookmarked ? 'fa fa-heart active' : 'fa fa-heart-o';
-      $scope.bookmarkText = isBookmarked ? 'defaults.UNBOOKMARK' : 'defaults.BOOKMARK';
-    };
-
-    $scope.getBookmarkState();
-
     $scope.changeLanguage = function(langKey) {
       $state.go($state.current.name, angular.extend($state.params, {lang: langKey}), {reload: true});
     };
 
     $scope.showLang = function(langKey) {
       return $scope.lang !== langKey;
-    };
-
-    $scope.bookmark = function() {
-      var path = '/' + _.rest($location.path().split('/'), 2).join('/'),
-          pageHeader = _.find($scope.searchableData, {id: path}).content.HEADER || '';
-
-      Bookmarks.set({ url: $location.path(), title:  pageHeader});
-      $scope.getBookmarkState(!$scope.isBookmarked);
     };
 
     $scope.$watch('search', function(newVal, oldVal) {

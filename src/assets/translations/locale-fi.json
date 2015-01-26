@@ -297,7 +297,7 @@
       "1": "1. Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
       "2": "2. Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
       "3": "3. Jos jokin sovelluksen eduista on välttämätön, harkitse mille käyttöjärjestelmille palvelu pitää toteuttaa"
-    }
+    },
   "contactUs": {
     "HEADER": "Apu kysymyksiin palveluhankinta-asioissa on lähellä",
       "1": "Et ole yksin.",

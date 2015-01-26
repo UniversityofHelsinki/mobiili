@@ -1,4 +1,7 @@
-<h4 translate>{{ 'comparison.HEADER' }}</h4>
+<h4>
+    <span translate>{{ 'comparison.HEADER' }}</span>
+    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
+</h4>
 <table>
   <thead>
     <tr>

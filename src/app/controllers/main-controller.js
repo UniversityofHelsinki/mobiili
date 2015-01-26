@@ -11,4 +11,5 @@ angular.module('HY')
 
     // Translation
     $translate.use($stateParams.lang);
+
   });

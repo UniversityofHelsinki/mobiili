@@ -1,5 +1,9 @@
 <div class="question-mark"></div>
-<h4 translate>{{ 'questions1.HEADER' }}</h4>
+
+<h4>
+    <span translate>{{ 'questions1.HEADER' }}</span>
+    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
+</h4>
 
 <p translate>{{ 'questions1.1' }}</p>
 <ul class="button-group round stack-for-small">

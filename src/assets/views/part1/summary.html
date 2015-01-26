@@ -1,5 +1,9 @@
 <div class="exclamation-mark"></div>
-<h4 translate>{{ 'summary1.HEADER' }}</h4>
+
+<h4>
+    <span translate>{{ 'summary1.HEADER' }}</span>
+    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
+</h4>
 
 <p translate>{{ 'questions1.1' }}</p>
 <p>

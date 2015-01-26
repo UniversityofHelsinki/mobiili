@@ -1,4 +1,7 @@
-<h4 translate>{{ 'appStrength.HEADER' }}</h4>
+<h4>
+    <span translate>{{ 'appStrength.HEADER' }}</span>
+    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
+</h4>
 
 <ul>
     <li translate>{{ 'appStrength.1' }}</li>

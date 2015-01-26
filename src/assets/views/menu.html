@@ -29,7 +29,7 @@
       <section class="top-bar-section">
         <ul class="right top-bar-controls">
           <li>
-              <a href="/#/{{lang}}/bookmarks"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARKS' }}</span></a>
+              <a href="/#/{{lang}}/bookmarks"><i class="fa fa-heart active"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARKS' }}</span></a>
           </li>
           <li class="divider"></li>
         </ul>
@@ -46,9 +46,6 @@
 </div>
 
 <div class="controls">
-
-  <a ng-click="bookmark()" class="add-bookmark"><i ng-class="bookmarkIcon"></i><span class="hide-for-small-only" translate>{{ bookmarkText }}</span></a>
-
   <div class="progress-wrapper">
   <progressbar value="experience.value()" max="experience.total()" type="success"></progressbar> <span translate>{{'defaults.' + experience.level()}}</span>
   </div>
