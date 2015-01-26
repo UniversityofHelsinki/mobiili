@@ -104,6 +104,9 @@ table {
 li.fa.search {
 
     input[type=search] {
+        // IE fix
+        font-family: $font-family-sans-serif;
+
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
     }

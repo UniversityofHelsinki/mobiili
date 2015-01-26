@@ -42,6 +42,11 @@ body {
     text-align: center;
     z-index: 2;
 
+    @media screen and (min-width: $limit-content-width) {
+        // IE fix
+        width: $limit-content-width;
+    }
+
     #{headings(all)} {
         position: absolute;
         color: white;
