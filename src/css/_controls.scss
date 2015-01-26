@@ -3,10 +3,6 @@ nav[ui-view] {
     position: relative;
     z-index: 3;
 
-    &.top-bar {
-        overflow: hidden;
-    }
-
     &.navigation {
         // border-top: 1px solid $emo;
 
@@ -39,6 +35,12 @@ nav[ui-view] {
             display: none;
         }
     }
+}
+
+nav.top-bar {
+    overflow: hidden;
+    max-width: $limit-content-width;
+    margin: auto;
 }
 
 .button-group {

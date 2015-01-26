@@ -37,6 +37,15 @@
     </nav>
 </div>
 
+<div class="controls">
+  <div class="progress-wrapper">
+    <div class="progress-inner-wrapper">
+      <span translate class="show-for-medium-up">{{'defaults.YOUR_PROGRESS'}}</span>
+      <progressbar value="experience.value()" max="experience.total()" type="success"></progressbar> <span translate>{{'defaults.' + experience.level()}}</span>
+    </div>
+  </div>
+</div>
+
 <div class="progress-header show-for-medium-up">
   <dl class="sub-nav">
     <dd ng-class="{active: $index==progress.currentPart-1}" ng-repeat="value in subNav">
@@ -45,8 +54,3 @@
   </dl>
 </div>
 
-<div class="controls">
-  <div class="progress-wrapper">
-  <progressbar value="experience.value()" max="experience.total()" type="success"></progressbar> <span translate>{{'defaults.' + experience.level()}}</span>
-  </div>
-</div>

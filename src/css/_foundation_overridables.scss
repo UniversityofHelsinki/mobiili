@@ -1200,7 +1200,7 @@ $button-bg-hover: $marine;
 // $include-html-nav-classes: $include-html-classes;
 
 // We use these to control margin and padding
-$sub-nav-list-margin: 5px 0px 0px;
+$sub-nav-list-margin: 0;
 // $sub-nav-list-padding-top: rem-calc(4);
 
 // We use this to control the definition
@@ -1363,8 +1363,8 @@ $sub-nav-active-bg: $secondary-color;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $soil;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: rem-calc(45);

@@ -26,7 +26,8 @@
     "EXPERT": "Asiantuntija",
     "ADVANCED": "Edistynyt",
     "INTERMEDIATE": "Perehtynyt",
-    "BEGINNER": "Aloittelija"
+    "BEGINNER": "Aloittelija",
+    "YOUR_PROGRESS": "Edistymisesi"
   },
   "parts": {
       "PRELUDE": "Tervetuloa tutustumaan Helsingin Yliopiston mobiilistrategiaan",

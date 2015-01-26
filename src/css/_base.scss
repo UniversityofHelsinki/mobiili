@@ -3,8 +3,7 @@ html {
 }
 
 body {
-    background-color: $asphalt;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEUlEQVQIW2M8e/ZsvbGxcSMAFaoEArcjceEAAAAASUVORK5CYII=) repeat;
+    background-color: white;
 }
 
 /* A simple test case to verify Compass build works ok */
@@ -20,9 +19,12 @@ body {
 
 [ui-view=header], .progress-header, .content-wrapper {
     clear: both;
+    background-color: white;
+}
+
+.sub-nav, .content-wrapper {
     max-width: $limit-content-width;
     margin: auto;
-    background-color: white;
 }
 
 .content {
@@ -33,19 +35,13 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 160px;
+    top: 119px;
     bottom: 0;
     background-color: $emo;
-    max-width: $limit-content-width;
-    margin: auto;
     color: white;
     text-align: center;
     z-index: 2;
-
-    @media screen and (min-width: $limit-content-width) {
-        // IE fix
-        width: $limit-content-width;
-    }
+    margin: 0;
 
     #{headings(all)} {
         position: absolute;

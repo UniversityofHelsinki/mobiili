@@ -3,9 +3,7 @@ $header-font-size: 17px;
 $header-smaller-font-size: 12px;
 
 [ui-view=header] {
-    &.part-divider-active > .controls {
-        display: none;
-    }
+    background-color: $panther;
 
     &.hide-controls {
         & > .controls, .progress-header {
@@ -17,7 +15,6 @@ $header-smaller-font-size: 12px;
 
 header {
     clear: both;
-    background-color: $panther;
     background-image: url('/assets/images/helsinki_university_53x50.png');
     background-repeat: no-repeat;
     background-position: 16px 50%;
@@ -25,6 +22,8 @@ header {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     text-transform: uppercase;
     height: $header-height-small;
+    max-width: $limit-content-width;
+    margin: auto;
 
     #{headings(all)} {
         display: inline-block;
@@ -89,7 +88,6 @@ header {
 .navigation-header {
     clear: both;
     position: relative;
-    top: -2px;
     background-color: $soil;
     color: $asphalt;
 
@@ -113,6 +111,7 @@ header {
 
 .progress-header {
     clear: both;
+    padding-top: 5px;
     ul {
 
         li {
@@ -123,12 +122,19 @@ header {
 
 .controls {
     text-align: right;
+    background-color: white;
+    border-bottom: 1px solid $asphalt;
 
     .progress-wrapper {
-        display: inline-block;
+        display: block;
         font-size: 0.8rem;
         line-height: 31px;
-        margin-right: 10px;
+        margin: auto;
+        max-width: $limit-content-width;
+
+        .progress-inner-wrapper {
+            display: inline;
+        }
 
         .progress {
             width: 200px;
