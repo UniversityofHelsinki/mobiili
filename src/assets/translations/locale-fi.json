@@ -266,18 +266,18 @@
   },
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
-      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Esimerkkinä vaikkapa Twitter tai Eat.fi",
-      "2": "Laskelma uuden palvelun mobiilijulkaisulle",
-      "3": "Kolme natiiviapplikaatiota",
-      "4": "3x 15,000 €",
-      "5": "45,000 €",
-      "6": "Mobiiliweb",
-      "7": "1 x 25,000 €",
-      "8": "25,000 €",
-      "9": "Mobiiliweb + 3 paketoitua sovellusta",
-      "10": "1x 25,000 + 3x 5,000",
-      "11":"40,000 €",
-      "12":"+ konseptointi-, ylläpito- ja julkaisukustannukset"
+      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Esimerkkinä vaikkapa yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
+      "2": "Laskelma uuden palvelun mobiilijulkaisun kustannuksista kolmen vuoden ajalla, poislukien suunnittelu ja käyttäjätuki.",
+      "3": "Strategia:",
+      "4": "Mobiiliweb",
+      "5": "Mobiiliweb + 3 paketoitua sovellusta",
+      "6": "Kolme natiiviapplikaatiota",
+      "7": "Julkaisua edeltävä kehitys",
+      "8": "Laskelma",
+      "9": "Välisumma",
+      "10": "3 vuoden ylläpito ja jatkokehitys",
+      "11":"Laskelma",
+      "12":"Yhteensä"
   },
   "principles": {
     "HEADER": "Suunnittelu edellyttää laajaa näkemystä myös muista periaatteista",
@@ -297,7 +297,7 @@
       "HEADER": "Tietotekniikkakeskuksen suosituksia",
       "1": "1. Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
       "2": "2. Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
-      "3": "3. Jos jokin sovelluksen eduista on välttämätön, harkitse mille käyttöjärjestelmille palvelu pitää toteuttaa"
+      "3": "3. Jos natiivisovellus on välttämätön, mieti miten voit varmistaa, että eri laitteita käyttävät voivat sitä käyttää"
     },
   "contactUs": {
     "HEADER": "Apu kysymyksiin palveluhankinta-asioissa on lähellä",
