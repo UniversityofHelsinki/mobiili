@@ -4,7 +4,7 @@ angular.module('HY')
     $scope.lang = $stateParams.lang;
     $scope.progress = progress;
     $scope.search = Search;
-    $scope.subNav = ['prelude', 'part1', 'part2', 'part3', 'part4', 'part5'];
+    $scope.subNav = ['prelude', 'part1', 'part2', 'part3', 'part4', 'part5', 'part6'];
     $scope.experience = Experience;
 
     if ($state.current.name === 'app.bookmarks' || $state.current.name === 'app.search') {

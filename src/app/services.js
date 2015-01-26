@@ -431,8 +431,20 @@ angular.module('HY.services', [])
               {id: 'comparison', type: 'info', translationNamespace: 'comparison'},
               {id: 'stats', type: 'chart', translationNamespace: 'stats5'},
               {id: 'app-strength', type: 'info', translationNamespace: 'appStrength'},
-              {id: 'apps', type: 'info', translationNamespace: ''},
+              {id: 'apps', type: 'info', translationNamespace: 'apps'},
               {id: 'app-downloads', type: 'chart', translationNamespace: 'appDownloads'}
+            ]
+          },
+          {
+            id: 'part6',
+            routes: [
+              {id: 'init', addClasses: 'part-divider-view'},
+              {id: 'lifecycle', type: 'info', transNS: 'questions1', translationNamespace: 'lifeCycle'},
+              {id: 'costs', type: 'info', translationNamespace: 'costs'},
+              {id: 'principles', type: 'info', translationNamespace: 'principles'},
+              {id: 'user-centred-design', type: 'chart', translationNamespace: 'userCentredDesign'},
+              {id: 'recommendations', type: 'info', translationNamespace: 'recommendations'},
+              {id: 'contact-us', type: 'info', translationNamespace: 'contactUs'}
             ]
           }
         ];

@@ -255,7 +255,7 @@
       "HEADER": "Uusien sovellusten käyttöönottamiseen voi olla kynnys",
       "DOWNLOADS": "{{value}} sovellusta"
   },
-  "lifeCycle": {
+  "lifecycle": {
       "HEADER": "Ohjelmistohankinta ei ole vain ohjelmistokehitystä",
       "1": "Muista resursoida kaikki nettipalvelun elinkaareen kuuluvat vaiheet:",
       "2": "- Palvelusuunnittelu",
