@@ -34,7 +34,8 @@
       "PART2": "II. Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus",
       "PART3": "III. Ratkaisuvaihtoehtoja mobiiliin",
       "PART4": "IV. Mobiiliweb",
-      "PART5": "V. Sovellukset"
+      "PART5": "V. Sovellukset",
+      "PART6": "VI. Palveluhankinnan käytännön vaatimukset"
   },
   "partHeadings": {
       "PRELUDE": "Esittely",
@@ -304,6 +305,4 @@
       "3": "Tietotekniikkakeskus neuvoo ja konsultoi HY yksikköjä teknisen arkkitehtuurin valinnoissa ja muissa hankintaan liittyvissä kysymyksissä, joihin tämä opas ei vastannut.",
       "4": "Kysy meiltä heti, kun mietit palveluhankintoja."
   }
-  
-  
 }
