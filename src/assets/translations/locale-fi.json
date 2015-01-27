@@ -7,7 +7,7 @@
     "YES": "Kyllä",
     "NO": "Ei",
     "MOBILE": "Mobiili",
-    "DESKTOP": "Työasema",
+    "DESKTOP": "Työasema tai läppäri",
     "TABLET": "Tabletti",
     "ANSWER": "Vastaus",
     "CORRECT": "Oikein",
@@ -27,10 +27,10 @@
     "ADVANCED": "Edistynyt",
     "INTERMEDIATE": "Perehtynyt",
     "BEGINNER": "Aloittelija",
-    "YOUR_PROGRESS": "Edistymisesi"
+    "YOUR_PROGRESS": "Perehtyneisyys"
   },
   "parts": {
-      "PRELUDE": "Tervetuloa tutustumaan Helsingin Yliopiston mobiilistrategiaan",
+      "PRELUDE": "Tulevaisuuden kestäviä verkkopalveluja",
       "PART1": "I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015",
       "PART2": "II. Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus",
       "PART3": "III. Ratkaisuvaihtoehtoja mobiiliin",
@@ -39,7 +39,7 @@
       "PART6": "VI. Palveluhankinnan käytännön vaatimukset"
   },
   "partHeadings": {
-      "PRELUDE": "Esittely",
+      "PRELUDE": "Johdanto",
       "PART1": "Trendit",
       "PART2": "Suunnitteluperiaatteet",
       "PART3": "Mobiiliratkaisut",
@@ -54,10 +54,11 @@
       "MOBILE_VS_DT": "Mobile Vs Desktop"
   },
   "index": {
-      "1": "Tässä verkkosovelluksessa kerromme mitä modernilta verkkopalvelulta vaaditaan ja mitä hankintoja suunnitellessa pitää tietää.",
+      "1": "Tässä verkkosovelluksessa kerromme mitä modernilta verkkopalvelulta vaaditaan ja mitä hankintoja suunnitellessa pitää tietää, jotta hankinnan hyödyt käyttäjille ovat pitkäikäiset. ",
       "2": "Keskitymme kahteen periaatteeseen: päätelaiteriippumattomuuteen ja avoimuuteen. ",
-      "3": "Aloitamme siitä, miksi nämä periaatteet ovat ajankohtaisia juuri nyt.",
-      "4": "Kun suunnittelet verkkopalveluhankintaa, muista ottaa huomioon myös luotettavuus, suorituskyky, tietoturva ja käytettävyys.",
+      "3": "Keskitymme kahteen suunnitteluperiaatteeseen: laiteriippumattomuuteen ja avoimuuteen. Aloitamme siitä, miksi nämä periaatteet ovat ajankohtaisia juuri nyt.",
+      "4": "Tämän lisäksi kerromme millaisia vaihtoehtoja mobiiliweb ja mobiilisovellukset tarjoavat verkkopalveluille.",
+      "5": "Tämä opas on osa Helsingin yliopiston mobiilistrategian dokumentaatiota ja se on jaettu kuuteen osaan:",
       "HEADER": "Tulevaisuuden kestäviä verkkopalveluja"
   },
   "warmup": {
@@ -119,6 +120,7 @@
   "questions2": {
       "1": "Vuonna 2015 paras teknologiasuositus verkkopalvelun esittämiseen on",
       "2": "Vuonna 2015 huomattavin open source tallennuspaikka",
+      "3": "Mikä seuraavista ei ole open sourcea",
       "HEADER": "Tiedätkö..."
   },
   "deviceIndependency": {
