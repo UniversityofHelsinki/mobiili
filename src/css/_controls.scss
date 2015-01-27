@@ -159,3 +159,8 @@ li.fa.search {
 .joyride-content-wrapper .button {
     height: inherit;
 }
+
+a[disabled] {
+    pointer-events: none;
+    // opacity: 1 !important;
+}

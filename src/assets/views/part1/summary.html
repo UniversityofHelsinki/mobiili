@@ -5,20 +5,26 @@
 
 
 <p translate>{{ 'questions1.1' }}</p>
-<p>
-    <span translate>{{'defaults.ANSWER'}}</span>: {{correct.hyMobileUsage}}
-    <span translate="{{'defaults.CORRECT'}}" ng-show="checkAnswer({{hyMobileUsage}})"></span>
-    <span translate="{{'defaults.INCORRECT'}}" ng-show="!checkAnswer(hyMobileUsage)"></span>
-</p>
+<ul class="button-group round stack-for-small">
+    <li><a disabled type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="10" ng-class="isCorrect(hyMobileUsage)">10%</a></li>
+    <li><a disabled type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="20" ng-class="isCorrect(hyMobileUsage)">20%</a></li>
+    <li><a disabled type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="40" ng-class="isCorrect(hyMobileUsage)">40%</a></li>
+    <li><a disabled type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="60" ng-class="isCorrect(hyMobileUsage)">60%</a></li>
+</ul>
+
+
 <p translate>{{ 'questions1.2' }}</p>
-<p>
-    <span translate>{{'defaults.ANSWER'}}</span>: {{correct.overallMobileUsage}}
-    <span translate="{{'defaults.CORRECT'}}" ng-show="checkAnswer(overallMobileUsage)"></span>
-    <span translate="{{'defaults.INCORRECT'}}" ng-show="!checkAnswer(overallMobileUsage)"></span>
-</p>
+<ul class="button-group round stack-for-small">
+    <li><a disabled type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="10" ng-class="isCorrect(overallMobileUsage)">10%</a></li>
+    <li><a disabled type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="20" ng-class="isCorrect(overallMobileUsage)">20%</a></li>
+    <li><a disabled type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="40" ng-class="isCorrect(overallMobileUsage)">40%</a></li>
+    <li><a disabled type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="60" ng-class="isCorrect(overallMobileUsage)">60%</a></li>
+</ul>
+
 <p translate>{{ 'questions1.3' }}</p>
-<p>
-    <span translate>{{'defaults.ANSWER'}}</span>: {{correct.mobileGoogleSearch}}
-    <span translate="{{'defaults.CORRECT'}}" ng-show="checkAnswer(mobileGoogleSearch)"></span>
-    <span translate="{{'defaults.INCORRECT'}}" ng-show="!checkAnswer(mobileGoogleSearch)"></span>
-</p>
+<ul class="button-group round stack-for-small">
+    <li><a disabled type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="10" ng-class="isCorrect(mobileGoogleSearch)">10%</a></li>
+    <li><a disabled type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="20" ng-class="isCorrect(mobileGoogleSearch)">20%</a></li>
+    <li><a disabled type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="40" ng-class="isCorrect(mobileGoogleSearch)">40%</a></li>
+    <li><a disabled type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="60" ng-class="isCorrect(mobileGoogleSearch)">60%</a></li>
+</ul>
