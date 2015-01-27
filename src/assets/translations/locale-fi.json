@@ -27,7 +27,9 @@
     "ADVANCED": "Edistynyt",
     "INTERMEDIATE": "Perehtynyt",
     "BEGINNER": "Aloittelija",
-    "YOUR_PROGRESS": "Perehtyneisyys"
+    "YOUR_PROGRESS": "Perehtyneisyys",
+    "HELP": "Ohje",
+    "END": "Loppu"
   },
   "parts": {
       "PRELUDE": "Tulevaisuuden kestäviä verkkopalveluja",
@@ -37,6 +39,13 @@
       "PART4": "IV. Mobiiliweb",
       "PART5": "V. Sovellukset",
       "PART6": "VI. Palveluhankinnan käytännön vaatimukset"
+  },
+  "tutorial": {
+    "1": "Pääset siirtymään tässä oppaassa sivulta toiselle helposti pyyhkäisemällä oikealle tai vasemmalle käyttäessäsi kosketusnäyttöä tai näppäimistön nuolinäppäimillä.",
+    "2": "Perehtyneisyysmittari näyttää kuinka paljon oppaasta olet lukenut.",
+    "3": "Sydän-painikkeella tallennat sivun oppaan suosikiksi.",
+    "4": "Lista suosikeista löytyy täältä. Tämä oli viimeinen ohje.",
+    "5": "Voit palata ohjeisiin uudestan täältä."
   },
   "partHeadings": {
       "PRELUDE": "Johdanto",

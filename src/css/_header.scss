@@ -4,6 +4,7 @@ $header-smaller-font-size: 12px;
 
 [ui-view=header] {
     background-color: $panther;
+    margin-bottom: 20px;
 
     &.hide-controls {
         & > .controls, .progress-header {

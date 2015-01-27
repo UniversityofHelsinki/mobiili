@@ -1,11 +1,5 @@
 <h4 translate>{{ 'index.HEADER' }}</h4>
-<a
-ng-controller="BookmarksController"
-ng-click="bookmark()"
-class="add-bookmark label secondary"
-step-text="{{'tutorial.3' | translate}}"
-step-index="3"
-step-placement="bottom">
+<a ng-controller="BookmarksController" ng-click="bookmark()" class="add-bookmark label secondary">
   <i ng-class="bookmarkIcon"></i><span translate>{{ bookmarkText }}</span>
 </a>
 

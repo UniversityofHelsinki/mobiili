@@ -39,7 +39,10 @@
 
   <div class="content-wrapper">
 
-    <div class="content" ui-view="content" ng-class="addClasses">
+    <div class="content" ui-view="content" ng-class="addClasses"
+      step-text="{{'tutorial.3' | translate}}"
+      step-index="3"
+      step-placement="top">
     </div>
 
     <nav
@@ -48,7 +51,7 @@
     ng-class="addClasses"
     step-text="{{'tutorial.1' | translate}}"
     step-index="1"
-    modal="true"
+    step-append-to-body="true"
     step-placement="top">
     </nav>
 
