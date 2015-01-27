@@ -1,7 +1,6 @@
-<h4>
-    <span translate>{{ 'mobileFriendly.HEADER' }}</span>
-    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
-</h4>
+<h4 translate>{{ 'mobileFriendly.HEADER' }}</h4>
+<a ng-controller="BookmarksController" ng-click="bookmark()" class="add-bookmark label secondary"><i ng-class="bookmarkIcon"></i><span translate>{{ bookmarkText }}</span></a>
+
 <h5 translate>{{ 'mobileFriendly.1' }}</h5>
 <p translate>{{ 'mobileFriendly.2' }}</p>
 <h5 translate>{{ 'mobileFriendly.3' }}</h5>

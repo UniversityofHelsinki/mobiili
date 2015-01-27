@@ -15,6 +15,8 @@ angular.module('HY')
       }
       $scope.isBookmarked = isBookmarked;
       $scope.bookmarkIcon = isBookmarked ? 'fa fa-heart active' : 'fa fa-heart-o';
+      $scope.bookmarkText = isBookmarked ? 'defaults.UNBOOKMARK' : 'defaults.BOOKMARK';
+
     };
 
     $scope.getBookmarkState();

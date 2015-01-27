@@ -1,7 +1,6 @@
-<h4>
-    <span translate>{{ 'appStrength.HEADER' }}</span>
-    <a ng-controller="BookmarksController" ng-click="bookmark()"><i ng-class="bookmarkIcon" class="add-bookmark"></i></a>
-</h4>
+<h4 translate>{{ 'appStrength.HEADER' }}</h4>
+<a ng-controller="BookmarksController" ng-click="bookmark()" class="add-bookmark label secondary"><i ng-class="bookmarkIcon"></i><span translate>{{ bookmarkText }}</span></a>
+
 
 <ul>
     <li translate>{{ 'appStrength.1' }}</li>

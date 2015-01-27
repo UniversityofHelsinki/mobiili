@@ -146,11 +146,12 @@ li.fa.search {
 
 }
 
-.add-bookmark {
-    margin-left: 10px;
-    color: $ocean;
+.add-bookmark.label.secondary {
+    color: white;
+    margin-bottom: 20px;
 
     i {
-        margin-right: 5px;
+        color: $ocean;
+        margin-right: 10px;
     }
 }
