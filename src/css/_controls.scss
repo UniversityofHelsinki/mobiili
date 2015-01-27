@@ -52,8 +52,33 @@ nav.top-bar {
     // font-family: 'Open Sans', Helvetica, Arial, sans-serif, Nimbus Sans L;
     outline: none;
 
-    &:hover, &.active {
+    &:hover {
         background-color: $marine;
+    }
+
+    &.active.correct {
+        background-color: $meadow;
+
+        &:after {
+            content: '\f00c';
+            font: normal normal normal 14px/1 FontAwesome;
+            padding-left: 10px;
+            position: absolute;
+            right: 12px;
+            top: 20px;
+        }
+    }
+    &.active.incorrect {
+        background-color: $rose;
+
+        &:after {
+            content: '\f00d';
+            font: normal normal normal 14px/1 FontAwesome;
+            padding-left: 10px;
+            position: absolute;
+            right: 12px;
+            top: 20px;
+        }
     }
 }
 

@@ -25,6 +25,10 @@ angular.module('HY')
       return model.value === $scope.correct[model.key];
     };
 
+    $scope.isCorrect = function(model) {
+      return $scope.checkAnswer(model) ? 'correct' : 'incorrect';
+    };
+
     $scope.mobileUsage = $scope.getModel('mobileUsage', 50);
     $scope.tender =  $scope.getModel('tender', false);
     $scope.needNative =  $scope.getModel('needNative', false);

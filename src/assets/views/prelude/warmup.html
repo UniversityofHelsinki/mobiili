@@ -8,16 +8,16 @@
 
 <p translate>{{ 'warmup.Q1' }}</p>
 <div class="button-group">
-    <button type="button" class="button" ng-model="tender.value" ng-change="updateModel(tender)" btn-radio="'true'" translate>{{ 'YES' }}</button>
-    <button type="button" class="button" ng-model="tender.value" ng-change="updateModel(tender)" btn-radio="'false'" translate>{{ 'NO'  }}</button>
+    <button type="button" class="button" ng-model="tender.value" ng-change="updateModel(tender)" btn-radio="'true'" translate ng-class="isCorrect(tender)">{{ 'defaults.YES' }}</button>
+    <button type="button" class="button" ng-model="tender.value" ng-change="updateModel(tender)" btn-radio="'false'" translate ng-class="isCorrect(tender)">{{ 'defaults.NO'  }}</button>
 </div>
 <p translate>{{ 'warmup.Q2' }}</p>
 <div class="button-group">
-    <button type="button" class="button" ng-model="needNative.value" ng-change="updateModel(needNative)" btn-radio="'true'" translate>{{ 'YES' }}</button>
-    <button type="button" class="button" ng-model="needNative.value" ng-change="updateModel(needNative)" btn-radio="'false'" translate>{{ 'NO' }}</button>
+    <button type="button" class="button" ng-model="needNative.value" ng-change="updateModel(needNative)" btn-radio="'true'" translate ng-class="isCorrect(needNative)">{{ 'defaults.YES' }}</button>
+    <button type="button" class="button" ng-model="needNative.value" ng-change="updateModel(needNative)" btn-radio="'false'" translate ng-class="isCorrect(needNative)">{{ 'defaults.NO' }}</button>
 </div>
 <p translate>{{ 'warmup.Q3' }}</p>
 <div class="button-group">
-    <button type="button" class="button" ng-model="securityRisk.value" ng-change="updateModel(securityRisk)" btn-radio="'true'" translate>{{ 'YES' }}</button>
-    <button type="button" class="button" ng-model="securityRisk.value" ng-change="updateModel(securityRisk)" btn-radio="'false'" translate>{{ 'NO' }}</button>
+    <button type="button" class="button" ng-model="securityRisk.value" ng-change="updateModel(securityRisk)" btn-radio="'true'" translate ng-class="isCorrect(securityRisk)">{{ 'defaults.YES' }}</button>
+    <button type="button" class="button" ng-model="securityRisk.value" ng-change="updateModel(securityRisk)" btn-radio="'false'" translate ng-class="isCorrect(securityRisk)">{{ 'defaults.NO' }}</button>
 </div>

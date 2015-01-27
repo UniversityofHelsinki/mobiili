@@ -181,18 +181,21 @@ angular.module('HY.services', [])
   .factory('CorrectAnswers', function() {
     var answers = {
       mobileUsage: 0,
-      tender: 0,
-      needNative: 0,
-      securityRisk: 0,
+      tender: 'false',
+      needNative: 'false',
+      securityRisk: 'false',
       hyMobileUsage: 20,
       overallMobileUsage: 60,
       mobileGoogleSearch: 60,
       textInputMobile: 0,
       tech: 'HTML5',
       openSource: 'GitHub',
-      mobileUrl:  false,
-      useCamera:  true,
-      useLocation: true
+      mobileUrl:  'false',
+      useCamera:  'true',
+      useLocation: 'true',
+      mobileOs: 'iOS (Apple)',
+      appType: 'windows',
+      appsInstalled: 0
     };
 
     return {
@@ -440,7 +443,7 @@ angular.module('HY.services', [])
             id: 'part5',
             routes: [
               {id: 'init', addClasses: 'part-divider-view'},
-              {id: 'questions', type: 'quiz', transNS: 'questions1', translationNamespace: 'questions4'},
+              {id: 'questions', type: 'quiz', translationNamespace: 'questions4'},
               {id: 'native-hybrid', type: 'info', translationNamespace: 'nativeHybrid'},
               {id: 'comparison', type: 'info', translationNamespace: 'comparison'},
               {id: 'stats', type: 'chart', translationNamespace: 'stats5'},

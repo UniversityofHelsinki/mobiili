@@ -6,16 +6,16 @@
 
 <p translate>{{ 'questions2.1' }}</p>
 <ul class="button-group round stack-for-small">
-    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Java'">Java</a></li>
-    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Flash'">Flash</a></li>
-    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'HTML5'">HTML5</a></li>
-    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'C#'">C#</a></li>
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Java'" ng-class="isCorrect(tech)">Java</a></li>
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'Flash'" ng-class="isCorrect(tech)">Flash</a></li>
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'HTML5'" ng-class="isCorrect(tech)">HTML5</a></li>
+    <li><a type="button" class="button" ng-model="tech.value" ng-change="updateModel(tech)" btn-radio="'C#'" ng-class="isCorrect(tech)">C#</a></li>
 </ul>
 
 <p translate>{{ 'questions2.2' }}</p>
 <ul class="button-group round stack-for-small">
-    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'iCloud'">iCloud</a></li>
-    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'GitHub'">GitHub</a></li>
-    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Wikipedia'">Wikipedia</a></li>
-    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Box.net'">Box.net</a></li>
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'iCloud'" ng-class="isCorrect(openSource)">iCloud</a></li>
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'GitHub'" ng-class="isCorrect(openSource)">GitHub</a></li>
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Wikipedia'" ng-class="isCorrect(openSource)">Wikipedia</a></li>
+    <li><a type="button" class="button" ng-model="openSource.value" ng-change="updateModel(openSource)" btn-radio="'Box.net'" ng-class="isCorrect(openSource)">Box.net</a></li>
 </ul>
