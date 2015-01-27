@@ -42,7 +42,14 @@
     <div class="content" ui-view="content" ng-class="addClasses">
     </div>
 
-    <nav class="navigation" ui-view="nav" ng-class="addClasses">
+    <nav
+    class="navigation"
+    ui-view="nav"
+    ng-class="addClasses"
+    step-text="{{'tutorial.1' | translate}}"
+    step-index="1"
+    modal="true"
+    step-placement="top">
     </nav>
 
   </div>

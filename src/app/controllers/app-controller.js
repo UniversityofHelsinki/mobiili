@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('AppController', function($scope, $location, $window, Routes) {
+  .controller('AppController', function($scope, $location, $window, $tour, Routes) {
 
   // Key navigation
   angular.element($window).on('keydown', function(e) {
@@ -25,5 +25,7 @@ angular.module('HY')
   $scope.swipeRight = function() {
     $location.path(Routes.getPreviousUrl());
   };
+
+  $scope.startTour = $tour.start;
 
 });

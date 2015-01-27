@@ -28,10 +28,23 @@
       </ul>
       <section class="top-bar-section">
         <ul class="left top-bar-controls">
-          <li>
-              <a href="/#/{{lang}}/bookmarks"><i class="fa fa-heart active"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARKS' }}</span></a>
+          <li
+            step-text="{{'tutorial.4' | translate}}"
+            step-index="4"
+            step-placement="bottom"
+            step-append-to-body="true">
+              <a href="/#/{{lang}}/bookmarks">
+                <i class="fa fa-heart active"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARKS' }}</span></a>
           </li>
           <li class="divider"></li>
+          <li
+            step-text="{{'tutorial.5' | translate}}"
+            step-index="5"
+            step-placement="bottom"
+            step-append-to-body="true">
+              <a ng-click="startTour()">
+                <i class="fa fa-question-circle"></i><span class="hide-for-small-only" translate>{{ 'defaults.HELP' }}</span></a>
+          </li>
         </ul>
       </section>
     </nav>
@@ -39,7 +52,12 @@
 
 <div class="controls">
   <div class="progress-wrapper">
-    <div class="progress-inner-wrapper">
+    <div
+    class="progress-inner-wrapper"
+    step-text="{{'tutorial.2' | translate}}"
+    step-index="2"
+    step-placement="bottom"
+    step-append-to-body="true">
       <span translate class="show-for-medium-up">{{'defaults.YOUR_PROGRESS'}}</span>
       <progressbar value="experience.value()" max="experience.total()" type="success"></progressbar> <span translate>{{'defaults.' + experience.level()}}</span>
     </div>
