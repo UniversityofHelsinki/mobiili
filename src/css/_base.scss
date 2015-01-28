@@ -51,6 +51,7 @@ body {
 
     #{headings(all)} {
         position: absolute;
+        max-width: $limit-content-width;
         word-break: break-word;
         padding-bottom: 80px;
         color: white;
