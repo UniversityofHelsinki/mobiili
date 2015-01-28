@@ -190,6 +190,7 @@ angular.module('HY.services', [])
       textInputMobile: 0,
       tech: 'HTML5',
       openSource: 'GitHub',
+      openSource2: 'YouTube',
       mobileUrl:  'false',
       useCamera:  'true',
       useLocation: 'true',

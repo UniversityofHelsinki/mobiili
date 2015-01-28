@@ -39,6 +39,7 @@ angular.module('HY')
     $scope.textInputMobile = $scope.getModel('textInputMobile', false);
     $scope.tech = $scope.getModel('tech', '');
     $scope.openSource = $scope.getModel('openSource', '');
+    $scope.openSource2 = $scope.getModel('openSource2', '');
     $scope.mobileUrl = $scope.getModel('mobileUrl', '');
     $scope.useCamera = $scope.getModel('useCamera', '');
     $scope.useLocation = $scope.getModel('useLocation', '');
