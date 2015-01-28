@@ -3,6 +3,7 @@
 
   "validateIndentation": 2,
   "requireMultipleVarDecl": true,
+  "requireCamelCaseOrUpperCaseIdentifiers": null,
 
   "excludeFiles": [
     "node_modules/**",

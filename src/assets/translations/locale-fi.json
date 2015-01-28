@@ -29,7 +29,10 @@
     "BEGINNER": "Aloittelija",
     "YOUR_PROGRESS": "Perehtyneisyys",
     "HELP": "Ohje",
-    "END": "Loppu"
+    "END": "Loppu",
+    "TRY": "Kokeile",
+    "SEARCHING": "Etsitään",
+    "GENERAL_ERROR": "Jotain meni pieleen"
   },
   "parts": {
       "PRELUDE": "Tulevaisuuden kestäviä verkkopalveluja",
