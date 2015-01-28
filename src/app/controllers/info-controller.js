@@ -1,6 +1,17 @@
 angular.module('HY')
   .controller('InfoController', function($scope, $q, $window, Utils) {
 
+    $scope.addToHomescreen = function() {
+      $window.addToHomescreen({
+        lifespan: 0,
+        maxDisplayCount: 0,
+        icon: true,
+        autostart: false,
+        displayPace: 0,
+        startDelay: 0
+      }).show();
+    };
+
     $scope.address = Utils.translate('defaults.TRY');
 
     $scope.addressPromise = $q.defer();
