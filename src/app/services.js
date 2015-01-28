@@ -181,9 +181,6 @@ angular.module('HY.services', [])
   .factory('CorrectAnswers', function() {
     var answers = {
       mobileUsage: 0,
-      tender: 'false',
-      needNative: 'false',
-      securityRisk: 'false',
       hyMobileUsage: 20,
       overallMobileUsage: 60,
       mobileGoogleSearch: 60,
@@ -402,8 +399,7 @@ angular.module('HY.services', [])
             id: 'prelude',
             routes: [
               {id: 'init', addClasses: 'part-divider-view'},
-              {id: 'index', type: 'info', translationNamespace: 'index'},
-              {id: 'warmup', type: 'quiz', translationNamespace: 'warmup'}
+              {id: 'index', type: 'info', translationNamespace: 'index'}
             ]
           },
           {
