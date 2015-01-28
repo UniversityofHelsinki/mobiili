@@ -30,6 +30,11 @@ body {
 
 .content {
     position: relative;
+
+    h5, h6 {
+        // Sub heading margin
+        margin-top: 30px;
+    }
 }
 
 [ui-view].part-divider {
