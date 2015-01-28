@@ -1,5 +1,5 @@
 <h4 translate>{{ 'stats3.HEADER' }}</h4>
-<a ng-controller="BookmarksController" ng-click="bookmark()" class="add-bookmark label secondary"><i ng-class="bookmarkIcon"></i><span translate>{{ bookmarkText }}</span></a>
+<div ng-include src="'/assets/views/add-bookmark-btn.html'"></div>
 
 <div class="chart-wrapper">
     <canvas tc-chartjs-bar chart-options="options" chart-data="mobileUsers" class="chart" auto-legend></canvas>

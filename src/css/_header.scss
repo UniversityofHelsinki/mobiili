@@ -11,6 +11,12 @@ $header-smaller-font-size: 12px;
             display: none !important;
         }
     }
+
+    &.part-divider-active {
+        .top-bar .help {
+            visibility: hidden;
+        }
+    }
 }
 
 
@@ -36,12 +42,17 @@ header {
     }
 
     .title {
-        display: none;
+        display: inline-block;
         padding-left: 85px;
+
+        &:after {
+            content: attr(data-text-min);
+        }
     }
 
     .title-link {
         float: left;
+
     }
 
     a {
@@ -69,8 +80,8 @@ header {
         #{headings(all)} {
             line-height: $header-height-small;
         }
-        .title {
-            display: inline-block;
+        .title:after {
+            content: attr(data-text);
         }
 
         .languages {

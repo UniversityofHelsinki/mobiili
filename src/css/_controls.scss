@@ -137,6 +137,13 @@ li.fa.search {
 
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
+
+        width: 175px;
+
+        @media only screen and (min-width: $medium-screen-width) {
+            width: auto;
+        }
+
     }
 
     .button {

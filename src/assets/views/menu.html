@@ -1,5 +1,5 @@
 <header>
-    <a href="/#/{{lang}}/prelude" class="title-link"><h3 class="title">Helsingin Yliopisto</h3></a>
+    <a href="/#/{{lang}}/prelude" class="title-link"><h3 class="title" data-text="Helsingin Yliopisto" data-text-min="HY"></h3></a>
     <div class="languages">
         <a ng-click="changeLanguage('fi')" data-text="Suomi" data-text-min="Fi" ng-show="showLang('fi')"></a>
         <a ng-click="changeLanguage('en')" data-text="English" data-text-min="En" ng-show="showLang('en')"></a>
@@ -37,7 +37,7 @@
                 <i class="fa fa-heart active"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARKS' }}</span></a>
           </li>
           <li class="divider"></li>
-          <li
+          <li class="help"
             step-text="{{'tutorial.5' | translate}}"
             step-index="5"
             step-placement="bottom"
