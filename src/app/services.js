@@ -41,7 +41,7 @@ angular.module('HY.services', [])
         angular.forEach(data.data || data.datasets, function(elem, index) {
           angular.extend(elem, {
             // Bar
-            fillColor: 'rgba(' + colors[index] + ',0.2)',
+            fillColor: 'rgba(' + colors[index] + ',0.5)',
             strokeColor: 'rgba(' + colors[index] + ',1)',
             highlightFill: 'rgba(' + colors[index] + ',0.75)',
             highlightStroke: 'rgba(' + colors[index] + ',1)',
@@ -265,7 +265,18 @@ angular.module('HY.services', [])
             {
               label: Utils.translate('stats3.DATA4'),
               data:[52]
-            },
+            }
+          ]
+        });
+      }
+    };
+  })
+  .factory('MobileUsersHy', function(Utils) {
+    return {
+      get: function() {
+        return Utils.applyChartColors({
+          labels: ['%'],
+          datasets: [
             {
               label: Utils.translate('stats3.DATA5'),
               data:[44]
@@ -402,7 +413,7 @@ angular.module('HY.services', [])
               {id: 'stats1', type: 'chart', translationNamespace: 'stats1'},
               {id: 'stats2', type: 'chart', translationNamespace: 'stats2'},
               {id: 'stats3', type: 'chart', translationNamespace: 'stats3'},
-              {id: 'stats4', type: 'chart', translationNamespace: 'stats4'},
+              // {id: 'stats4', type: 'chart', translationNamespace: 'stats4'},
               {id: 'opportunities', type: 'info', translationNamespace: 'opportunities'},
               {id: 'problem', type: 'info', translationNamespace: 'problem'},
               {id: 'summary', type: 'quiz', translationNamespace: 'summary1'}

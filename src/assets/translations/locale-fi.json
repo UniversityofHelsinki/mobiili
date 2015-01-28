@@ -97,6 +97,7 @@
   "stats3": {
       "1": "18-25v suomalaisista älypuhelimen käyttäjistä (93% kaikista)",
       "HEADER": "Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa",
+      "HEADER2": "Googlesta liikennettä HY sivustoille",
       "DATA1": "Käyttää älypuhelinta",
       "DATA2": "Käyttää mobiiliwebbiä päivittäin",
       "DATA3": "Potentiaalisia mobiiliweb-käyttäjiä",
@@ -105,11 +106,6 @@
       "DATA6": "Flammaan",
       "DATA7": "HY ext",
       "DATA8": "HY flamma"
-  },
-  "stats4": {
-      "1": "Julkinen verkkosivusto 21% mobiili (puhelin ja tablet)",
-      "2": "Flamma 7% mobiili, näistä valtaosa tablet-käyttäjiä",
-      "HEADER": "HY verkkopalvelujen mobiilikäyttö jäi joulukuussa 2014 alle 20%:n"
   },
   "opportunities": {
       "1": "Mobiililaite on aina mukana",
