@@ -32,7 +32,8 @@
     "END": "Loppu",
     "TRY": "Kokeile",
     "SEARCHING": "Etsitään",
-    "GENERAL_ERROR": "Jotain meni pieleen"
+    "GENERAL_ERROR": "Jotain meni pieleen",
+    "APPS": "Sovellukset"
   },
   "parts": {
       "PRELUDE": "Tulevaisuuden kestäviä verkkopalveluja",

@@ -41,7 +41,7 @@ angular.module('HY.services', [])
         angular.forEach(data.data || data.datasets, function(elem, index) {
           angular.extend(elem, {
             // Bar
-            fillColor: 'rgba(' + colors[index] + ',0.5)',
+            fillColor: 'rgba(' + colors[index] + ',0.25)',
             strokeColor: 'rgba(' + colors[index] + ',1)',
             highlightFill: 'rgba(' + colors[index] + ',0.75)',
             highlightStroke: 'rgba(' + colors[index] + ',1)',
@@ -61,7 +61,8 @@ angular.module('HY.services', [])
         return data;
       },
       parseJsonData: function(data) {
-        var parsed = {};
+        var _this = this,
+            parsed = {};
         parsed.labels = [];
         parsed.datasets = [];
 
@@ -70,12 +71,13 @@ angular.module('HY.services', [])
             if (key === 'Date') {
               parsed.labels.push(value);
             } else if (key !== 'Console') {
-              var obj = _.find(parsed.datasets, {label: key});
+              var transKey = _this.translate('defaults.' + key.toUpperCase()),
+                  obj = _.find(parsed.datasets, {label: transKey});
               if (obj) {
                 obj.data.push(value);
               } else {
                 parsed.datasets.push({
-                  label: key,
+                  label: transKey,
                   data: [value]
                 });
               }
@@ -83,7 +85,6 @@ angular.module('HY.services', [])
           });
         }
 
-        parsed.data = parsed.datasets.data;
         return this.applyChartColors(parsed);
       }
     };
@@ -220,25 +221,10 @@ angular.module('HY.services', [])
       }
     };
   })
-  .factory('MobileVsDT', function(Utils) {
+  .factory('MobileVsDT', function($http) {
     return {
       get: function() {
-        return Utils.applyChartColors({
-          labels: [
-            Utils.translate('date.MAY', {value: 2013}),
-            Utils.translate('date.MAY', {value: 2014})
-          ],
-          datasets: [
-            {
-              label: Utils.translate('defaults.MOBILE'),
-              data: [50, 50]
-            },
-            {
-              label: Utils.translate('defaults.DESKTOP'),
-              data: [60, 40]
-            }
-          ]
-        });
+        return $http.get('/assets/data/mobileVsDt.json');
       }
     };
   })

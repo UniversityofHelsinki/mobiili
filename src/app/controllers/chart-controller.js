@@ -6,7 +6,6 @@ angular.module('HY')
 
     // Use promise to get correct languges to charts because of asynchronous translation load
     $translate.use($stateParams.lang).then(function() {
-      $scope.mobileVsDt = MobileVsDT.get();
       $scope.mobileUsers = MobileUsers.get();
       $scope.MobileUsersHy = MobileUsersHy.get();
       $scope.mobilePlatforms = MobilePlatforms.getPie();
@@ -14,6 +13,9 @@ angular.module('HY')
 
       PlatformComparison.get().then(function(xhr) {
         $scope.platformComparison = Utils.parseJsonData(xhr.data);
+      });
+      MobileVsDT.get().then(function(xhr) {
+        $scope.mobileVsDt = Utils.parseJsonData(xhr.data);
       });
     });
 
