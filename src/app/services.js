@@ -410,7 +410,6 @@ angular.module('HY.services', [])
               {id: 'stats1', type: 'chart', translationNamespace: 'stats1'},
               {id: 'stats2', type: 'chart', translationNamespace: 'stats2'},
               {id: 'stats3', type: 'chart', translationNamespace: 'stats3'},
-              // {id: 'stats4', type: 'chart', translationNamespace: 'stats4'},
               {id: 'opportunities', type: 'info', translationNamespace: 'opportunities'},
               {id: 'problem', type: 'info', translationNamespace: 'problem'},
               {id: 'summary', type: 'quiz', translationNamespace: 'summary1'}
@@ -422,12 +421,12 @@ angular.module('HY.services', [])
               {id: 'init', type: '', addClasses: 'part-divider-view'},
               {id: 'questions', type: 'quiz', translationNamespace: 'questions2'},
               {id: 'device-independency', type: 'info', translationNamespace: 'deviceIndependency'},
-              {id: 'future-predict', type: 'chart', translationNamespace: 'futurePredict'},
               {id: 'standards', type: 'chart', translationNamespace: 'standards'},
               {id: 'open-principals', type: 'info', translationNamespace: 'openPrincipals'},
               {id: 'open-data', type: 'info', translationNamespace: 'openData'},
               {id: 'open-source', type: 'info', translationNamespace: 'openSource'},
-              {id: 'open-source2', type: 'info', translationNamespace: 'openSource2'}
+              {id: 'open-source2', type: 'info', translationNamespace: 'openSource2'},
+              {id: 'summary', type: 'quiz', translationNamespace: 'summary1'}
             ]
           },
           {
@@ -444,7 +443,8 @@ angular.module('HY.services', [])
               {id: 'questions', type: 'quiz', translationNamespace: 'questions3'},
               {id: 'mobile-web', type: 'info', translationNamespace: 'mobileWeb1'},
               {id: 'mobile-web2', type: 'info', translationNamespace: 'mobileWeb2'},
-              {id: 'features', type: 'info', translationNamespace: 'features'}
+              {id: 'features', type: 'info', translationNamespace: 'features'},
+              {id: 'summary', type: 'quiz', translationNamespace: 'summary1'}
             ]
           },
           {
@@ -457,7 +457,8 @@ angular.module('HY.services', [])
               {id: 'stats', type: 'chart', translationNamespace: 'stats5'},
               {id: 'app-strength', type: 'info', translationNamespace: 'appStrength'},
               {id: 'apps', type: 'info', translationNamespace: 'apps'},
-              {id: 'app-downloads', type: 'chart', translationNamespace: 'appDownloads'}
+              {id: 'app-downloads', type: 'chart', translationNamespace: 'appDownloads'},
+              {id: 'summary', type: 'quiz', translationNamespace: 'summary1'}
             ]
           },
           {

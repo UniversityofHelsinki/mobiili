@@ -134,16 +134,14 @@
       "3": "Toteutetaan yliopiston yhdenvertaisuusperiaatetta",
       "HEADER": "Laiteriippumattomuus"
   },
-  "futurePredict": {
+  "standards": {
+      "HEADER": "Tulevaisuuden ennakointi on haaste",
+      "HEADER2": "Standardit kestävät aikaa parhaiten",
       "1": "iPad tuli 2010. Google Glass 2012. Älykellot 2013. Mitä tapahtuu vuonna 2015?",
       "2": "Jos palvelu suunniteltiin 2009, niin miten se toimii nyt uusilla laitteilla?",
-      "HEADER": "Tulevaisuuden ennakointi on haaste"
-  },
-  "standards": {
-      "1": "Toimittajat vaihtuvat, perusteknologia säilyy",
-      "2": "Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen",
-      "3": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti",
-      "HEADER": "Standardit kestävät aikaa parhaiten"
+      "3": "Toimittajat vaihtuvat, perusteknologia säilyy",
+      "4": "Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen",
+      "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti"
   },
   "openPrincipals": {
       "1": "Open data",
