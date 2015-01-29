@@ -4,7 +4,7 @@ angular.module('HY')
     $scope.lang = $stateParams.lang;
     $scope.progress = progress;
     $scope.search = Search;
-    $scope.subNav = ['prelude', 'part1', 'part2', 'part3', 'part4', 'part5', 'part6'];
+    $scope.subNav = ['part1', 'part2', 'part3', 'part4', 'part5', 'part6'];
     $scope.experience = Experience;
 
     if ($state.current.name === 'app.bookmarks' || $state.current.name === 'app.search') {
@@ -31,5 +31,22 @@ angular.module('HY')
         $location.path(SessionData.get().lastUrl);
       }
     }, true);
+
+    $scope.romanize = function(num) {
+      if (!+num) {
+        return '';
+      }
+      var digits = String(+num).split(''),
+          key = ['', 'C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM',
+                 '', 'X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC',
+                 '', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
+          roman = '',
+          i = 3;
+      while (i--) {
+        roman = (key[+digits.pop() + (i * 10)] || '') + roman;
+      }
+
+      return Array(+digits.join('') + 1).join('M') + roman;
+    };
 
   });

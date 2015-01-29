@@ -165,5 +165,18 @@ header {
 dl.sub-nav {
     dd {
         margin-bottom: 15px;
+        margin-left: 12px;
+
+        @media only screen and (min-width: 345px) {
+            margin-left: 1rem;
+        }
+
+    }
+    a:after {
+        content: attr(data-text-min);
+
+        @media only screen and (min-width: 925px) {
+            content: attr(data-text);
+        }
     }
 }
