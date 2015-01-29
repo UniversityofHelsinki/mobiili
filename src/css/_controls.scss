@@ -176,6 +176,7 @@ a[disabled] {
 .table-wrapper {
     max-width: 100%;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 
     table {
         min-width: 400px; // Override this for each table if necessary

@@ -9,7 +9,7 @@ angular.module('HY', [
     'tc.chartjs',
     'angulartics',
     'angulartics.google.analytics',
-    'ngTouch'
+    'hmTouchEvents'
   ])
   .value('progress', {})
   .run(function($state, $rootScope) {

@@ -39,12 +39,12 @@
   <!-- inject:js -->
   <!-- endinject -->
 </head>
-<body ng-controller="AppController" ng-swipe-left="swipeLeft($event)" ng-swipe-right="swipeRight($event)">
+<body ng-controller="AppController">
   <base href="/">
 
   <div  ui-view="header" ng-class="addClasses"></div>
 
-  <div class="content-wrapper">
+  <div class="content-wrapper" hm-swipeleft="swipeLeft" hm-swiperight="swipeRight" hm-manager-options='{"domEvents": true, "touchAction": "auto"}'>
 
     <div class="content" ui-view="content" ng-class="addClasses">
     </div>

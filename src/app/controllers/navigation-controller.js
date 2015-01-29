@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('NavigationController', function($window, $location, $rootScope, $scope, $stateParams, $controller, $state, $swipe, progress, Routes) {
+  .controller('NavigationController', function($window, $location, $rootScope, $scope, $stateParams, $controller, $state, progress, Routes) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
     var part,
         partIndex,
