@@ -23,11 +23,27 @@ angular.module('HY')
   });
 
   // Swipe events for body
-  $scope.swipeLeft = function() {
-    if (!$tour.isActive()) {$location.path(Routes.getNextUrl())};
+  $scope.swipeLeft = function($event) {
+    console.log('SWIPE', $event);
+    // Do not change page if tour is active or if user is scrolling table content
+    if (!$tour.isActive() && $($event.target).parents('.table-wrapper').length === 0) {
+      $location.path(Routes.getNextUrl());
+    // } else {
+    //   $event.stopPropagation();
+    }
   };
-  $scope.swipeRight = function() {
-    if (!$tour.isActive()) {$location.path(Routes.getPreviousUrl())};
+  $scope.swipeRight = function($event) {
+    console.log('SWIPE', $event);
+    if (!$tour.isActive() && $($event.target).parents('.table-wrapper').length === 0) {
+      $location.path(Routes.getPreviousUrl());
+    // } else {
+    //   $event.stopPropagation();
+    }
+  };
+
+  $scope.cancelSwipe = function($event) {
+    console.log('CANCEL SWIPE');
+    $event.stopPropagation();
   };
 
   $scope.startTour = $tour.start;

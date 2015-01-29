@@ -172,3 +172,13 @@ a[disabled] {
     pointer-events: none;
     // opacity: 1 !important;
 }
+
+.table-wrapper {
+    max-width: 100%;
+    overflow-x: scroll;
+
+    table {
+        min-width: 400px; // Override this for each table if necessary
+        max-width: 100%;
+    }
+}

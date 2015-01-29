@@ -1,45 +1,47 @@
 <h4 translate>{{ 'comparison.HEADER' }}</h4>
 <div ng-include src="'/assets/views/add-bookmark-btn.html'"></div>
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th translate class="centered">{{ 'comparison.WEB' }}</th>
-      <th translate class="centered">{{ 'comparison.HYBRID' }}</th>
-      <th translate class="centered">{{ 'comparison.NATIVE' }}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td translate>{{ 'comparison.1' }}</td>
-        <td></td>
-        <td class="centered">x</td>
-        <td class="centered">x</td>
-    </tr>
-    <tr>
-        <td translate>{{ 'comparison.2' }}</td>
-        <td translate class="centered">{{ 'comparison.3' }}</td>
-        <td class="centered">x</td>
-        <td class="centered">x</td>
-    </tr>
-    <tr>
-        <td translate>{{ 'comparison.4' }}</td>
-        <td class="centered">x</td>
-        <td class="centered">x</td>
-        <td class="centered">x</td>
-    </tr>
-    <tr>
-        <td translate>{{ 'comparison.5' }}</td>
-        <td translate class="centered">{{ 'comparison.6' }}</td>
-        <td class="centered">x</td>
-        <td class="centered">x</td>
-    </tr>
-    <tr>
-        <td translate>{{ 'comparison.7' }}</td>
-        <td class="centered">HTML5</td>
-        <td class="centered">HTML5</td>
-        <td translate class="centered">{{ 'comparison.8' }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-wrapper" ng-swipeLeft="cancelSwipe($event)" ng-swipe-right="cancelSwipe($event)">
+    <table style="min-width:650px;">
+      <thead>
+        <tr>
+          <th></th>
+          <th translate class="centered">{{ 'comparison.WEB' }}</th>
+          <th translate class="centered">{{ 'comparison.HYBRID' }}</th>
+          <th translate class="centered">{{ 'comparison.NATIVE' }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td translate>{{ 'comparison.1' }}</td>
+            <td></td>
+            <td class="centered">x</td>
+            <td class="centered">x</td>
+        </tr>
+        <tr>
+            <td translate>{{ 'comparison.2' }}</td>
+            <td translate class="centered">{{ 'comparison.3' }}</td>
+            <td class="centered">x</td>
+            <td class="centered">x</td>
+        </tr>
+        <tr>
+            <td translate>{{ 'comparison.4' }}</td>
+            <td class="centered">x</td>
+            <td class="centered">x</td>
+            <td class="centered">x</td>
+        </tr>
+        <tr>
+            <td translate>{{ 'comparison.5' }}</td>
+            <td translate class="centered">{{ 'comparison.6' }}</td>
+            <td class="centered">x</td>
+            <td class="centered">x</td>
+        </tr>
+        <tr>
+            <td translate>{{ 'comparison.7' }}</td>
+            <td class="centered">HTML5</td>
+            <td class="centered">HTML5</td>
+            <td translate class="centered">{{ 'comparison.8' }}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

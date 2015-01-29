@@ -24,7 +24,7 @@ angular.module('HY.services', [])
         }
         return retVal;
       },
-      applyChartColors: function(data) {
+      applyChartColors: function(data, options) {
         var colors = [
           '17,90,140',
           '2,180,158',
@@ -36,12 +36,13 @@ angular.module('HY.services', [])
           '243,117,96',
           '225,66,152',
           '189,54,46'
-        ];
+        ],
+            noFill = options && options.onlyFillColor ? true : false;
 
         angular.forEach(data.data || data.datasets, function(elem, index) {
           angular.extend(elem, {
             // Bar
-            fillColor: 'rgba(' + colors[index] + ',0.25)',
+            fillColor: noFill ? 'transparent' : 'rgba(' + colors[index] + ',0.25)',
             strokeColor: 'rgba(' + colors[index] + ',1)',
             highlightFill: 'rgba(' + colors[index] + ',0.75)',
             highlightStroke: 'rgba(' + colors[index] + ',1)',
@@ -56,11 +57,16 @@ angular.module('HY.services', [])
             color: 'rgba(' + colors[index] + ',1)',
             highlight: 'rgba(' + colors[index] + ',1)'
           });
+
+          if (options && options.onlyFillColor && options.onlyFillColor.indexOf(elem.key) >= 0) {
+            // Ignore fill color
+            elem.fillColor = 'rgba(' + colors[index] + ',0.25)';
+          }
         });
 
         return data;
       },
-      parseJsonData: function(data) {
+      parseJsonData: function(data, options) {
         var _this = this,
             parsed = {};
         parsed.labels = [];
@@ -72,12 +78,13 @@ angular.module('HY.services', [])
               parsed.labels.push(value);
             } else if (key !== 'Console') {
               var transKey = _this.translate('defaults.' + key.toUpperCase()),
-                  obj = _.find(parsed.datasets, {label: transKey});
+                  obj = _.find(parsed.datasets, {label: transKey, key: key});
               if (obj) {
                 obj.data.push(value);
               } else {
                 parsed.datasets.push({
                   label: transKey,
+                  key: key,
                   data: [value]
                 });
               }
@@ -85,7 +92,7 @@ angular.module('HY.services', [])
           });
         }
 
-        return this.applyChartColors(parsed);
+        return this.applyChartColors(parsed, options);
       }
     };
   })
@@ -333,6 +340,7 @@ angular.module('HY.services', [])
           ],
           datasets: [
             {
+              label: Utils.translate('appDownloads.LEGEND', {value: 2014}),
               data: [65.5, 8.4, 8.9, 6.2, 3.7, 4.8, 2.4]
             }
           ]
@@ -456,7 +464,14 @@ angular.module('HY.services', [])
               {id: 'principles', type: 'info', translationNamespace: 'principles'},
               {id: 'user-centred-design', type: 'chart', translationNamespace: 'userCentredDesign'},
               {id: 'recommendations', type: 'info', translationNamespace: 'recommendations'},
-              {id: 'contact-us', type: 'info', translationNamespace: 'contactUs'}
+              {id: 'contact-us', type: 'info', translationNamespace: 'contactUs'},
+              {id: 'example', type: 'info', translationNamespace: 'example'}
+            ]
+          },
+          {
+            id: 'end',
+            routes: [
+              {id: 'init', addClasses: 'part-divider-view'}
             ]
           }
         ];

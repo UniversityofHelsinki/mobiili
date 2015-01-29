@@ -42,7 +42,8 @@
       "PART3": "III. Ratkaisuvaihtoehtoja mobiiliin",
       "PART4": "IV. Mobiiliweb",
       "PART5": "V. Sovellukset",
-      "PART6": "VI. Palveluhankinnan käytännön vaatimukset"
+      "PART6": "VI. Palveluhankinnan käytännön vaatimukset",
+      "END": "Loppu"
   },
   "tutorial": {
     "1": "Pääset siirtymään tässä oppaassa sivulta toiselle helposti pyyhkäisemällä oikealle tai vasemmalle käyttäessäsi kosketusnäyttöä tai näppäimistön nuolinäppäimillä.",
@@ -58,7 +59,8 @@
       "PART3": "Mobiiliratkaisut",
       "PART4": "Mobiiliweb",
       "PART5": "Sovellukset",
-      "PART6": "Palveluhankinnan toteutus"
+      "PART6": "Palveluhankinnan toteutus",
+      "END": "Loppu"
   },
   "date": {
       "MAY": "Maaliskuu {{value}}"
@@ -91,17 +93,20 @@
   "stats1": {
       "1": "Vuodesta 2014 lähtien pohjois-amerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).",
       "2": "Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen kannalta.",
-      "HEADER": "Internet muuttui mobiiliksi 2014"
+      "HEADER": "Internet muuttui mobiiliksi 2014",
+      "CHART_HEADER": "Ajankäytön jakautuminen %"
   },
   "stats2": {
       "1": "Jo nyt merkittävillä kotimaisilla sivustoilla 60% käyttäjistä selaa mobiililaitteella.",
       "2": "Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla",
-      "HEADER": "Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa"
+      "HEADER": "Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa",
+      "CHART_HEADER": "Internetin käytttö Suomessa eri laitteilla"
   },
   "stats3": {
-      "1": "18-25v suomalaisista älypuhelimen käyttäjistä (93% kaikista)",
       "HEADER": "Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa",
-      "HEADER2": "Googlesta liikennettä HY sivustoille",
+      "1": "",
+      "HEADER2": "18-25v suomalaisista älypuhelimen käyttäjistä (93% kaikista)",
+      "HEADER3": "Googlesta liikennettä HY sivustoille",
       "DATA1": "Käyttää älypuhelinta",
       "DATA2": "Käyttää mobiiliwebbiä päivittäin",
       "DATA3": "Potentiaalisia mobiiliweb-käyttäjiä",
@@ -256,22 +261,23 @@
       "2": "Sovellusten sisältöjä on vaikea jakaa eikä Google ei osaa hakea sisältöjä sovellusten sisältä.",
       "3": "Jos haluat sovelluksen sisällön saavutettavaksi tarvitset myös verkkopalvelun.",
       "HEADER": "Muista tämä sovelluksista",
-      "SUMMARY": "App Storen suosituimmat hakusanat vuoteen 2012",
+      "SUMMARY": "Chomp & Google Playn suosituimmat hakusanat vuoteen 2012",
       "KEYWORD": "Hakusana",
       "VOLUME": "Kuukausivolyymi"
   },
   "appDownloads": {
       "1": "Viime syksynä suurin osa yhdysvaltalaisista mobiilikäyttäjistä ei ollut viimeisen kuukauden aikana asentanut yhtään uutta sovellusta.",
       "HEADER": "Uusien sovellusten käyttöönottamiseen voi olla kynnys",
-      "DOWNLOADS": "{{value}} sovellusta"
+      "DOWNLOADS": "{{value}} sovellusta",
+      "LEGEND": "Mobiilikäyttäjien kesällä {{value}} lataamien sovellusten määrä %"
   },
   "lifecycle": {
       "HEADER": "Ohjelmistohankinta ei ole vain ohjelmistokehitystä",
       "1": "Muista resursoida kaikki nettipalvelun elinkaareen kuuluvat vaiheet:",
-      "2": "- Palvelusuunnittelu",
-      "3": "- Ohjelmistokehitys",
-      "4": "- Sovelluskauppaan julkaisu",
-      "5": "- Ylläpito ja tuki"
+      "2": "Palvelusuunnittelu",
+      "3": "Ohjelmistokehitys",
+      "4": "Sovelluskauppaan julkaisu",
+      "5": "Ylläpito ja tuki"
   },
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
@@ -297,17 +303,20 @@
   "userCentredDesign": {
     "HEADER": "Käyttäjäkeskeisen suunnittelu auttaa onnistumaan",
       "1": "Käyttäjäkeskeisyyden soveltaminen ohjelmisto projektin eri vaiheissa:",
-      "2": "1. Ymmärrä käyttäjän tarpeet ja hänen palvelusta saamansa arvo",
-      "3": "2. Keskity käyttöliittymässä olennaisiin",
-      "4": "3. Testaa palvelua käyttäjillä palvelukehityksen aikana",
-      "5": "4. Seuraa sovelluksen käyttöä julkaisun jälkeen analytiikan avulla ja aseta käytölle ja jatkokehitykselle mitattavia tavoitteita"
+      "2": "Ymmärrä käyttäjän tarpeet ja hänen palvelusta saamansa arvo",
+      "3": "Keskity käyttöliittymässä olennaisiin",
+      "4": "Testaa palvelua käyttäjillä palvelukehityksen aikana",
+      "5": "Seuraa sovelluksen käyttöä julkaisun jälkeen analytiikan avulla ja aseta käytölle ja jatkokehitykselle mitattavia tavoitteita"
   },
   "recommendations": {
       "HEADER": "Tietotekniikkakeskuksen suosituksia",
-      "1": "1. Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
-      "2": "2. Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
-      "3": "3. Jos natiivisovellus on välttämätön, mieti miten voit varmistaa, että eri laitteita käyttävät voivat sitä käyttää"
+      "1": "Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
+      "2": "Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
+      "3": "Jos natiivisovellus on välttämätön, mieti miten voit varmistaa, että eri laitteita käyttävät voivat sitä käyttää"
     },
+  "example": {
+    "HEADER": "Esimerkki web-applikaatiosta"
+  },
   "contactUs": {
     "HEADER": "Apu kysymyksiin palveluhankinta-asioissa on lähellä",
       "1": "Et ole yksin.",

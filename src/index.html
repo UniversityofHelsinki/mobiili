@@ -39,7 +39,7 @@
   <!-- inject:js -->
   <!-- endinject -->
 </head>
-<body ng-controller="AppController" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" ng-swipe-disable-mouse>
+<body ng-controller="AppController" ng-swipe-left="swipeLeft($event)" ng-swipe-right="swipeRight($event)">
   <base href="/">
 
   <div  ui-view="header" ng-class="addClasses"></div>

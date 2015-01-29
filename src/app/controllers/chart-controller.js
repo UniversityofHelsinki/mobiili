@@ -15,7 +15,7 @@ angular.module('HY')
         $scope.platformComparison = Utils.parseJsonData(xhr.data);
       });
       MobileVsDT.get().then(function(xhr) {
-        $scope.mobileVsDt = Utils.parseJsonData(xhr.data);
+        $scope.mobileVsDt = Utils.parseJsonData(xhr.data, {onlyFillColor: ['Apps']});
       });
     });
 
