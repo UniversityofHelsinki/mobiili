@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "DESCRIPTION": ""
+    },
   "defaults": {
     "START": "Aloita",
     "NEXT": "Seuraava",
@@ -322,7 +325,7 @@
   },
   "questions6": {
     "1": "Paljonko kalliimpaa on kehittää ja ylläpitää kolme mobiilisovellusta kolmen vuoden ajan kuin yhtä mobiiliweb-sivustoa?"
-  },  
+  },
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
       "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Kuten yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
