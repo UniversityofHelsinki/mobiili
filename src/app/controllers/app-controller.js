@@ -28,18 +28,14 @@ angular.module('HY')
   // Swipe events for body
   $scope.swipeLeft = function(event) {
     // Do not change page if tour is active or if user is scrolling table content
-    if (!$tour.isActive() && $(event.target).parents('.table-wrapper').length === 0) {
+    if (event.pointerType !== 'mouse' && !$tour.isActive() && $(event.target).parents('.table-wrapper').length === 0) {
       $location.path(Routes.getNextUrl());
-    } else {
-      event.stopPropagation();
     }
   };
   $scope.swipeRight = function(event) {
     // Do not change page if tour is active or if user is scrolling table content
-    if (!$tour.isActive() && $(event.target).parents('.table-wrapper').length === 0) {
+    if (event.pointerType !== 'mouse' && !$tour.isActive() && $(event.target).parents('.table-wrapper').length === 0) {
       $location.path(Routes.getPreviousUrl());
-    } else {
-      event.stopPropagation();
     }
   };
 

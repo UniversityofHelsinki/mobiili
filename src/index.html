@@ -46,7 +46,7 @@
 
   <div  ui-view="header" ng-class="addClasses"></div>
 
-  <div class="content-wrapper" hm-swipeleft="swipeLeft" hm-swiperight="swipeRight" hm-manager-options='{"domEvents": true, "touchAction": "auto"}'>
+  <div class="content-wrapper" hm-swipeleft="swipeLeft" hm-swiperight="swipeRight" hm-manager-options='{"domEvents": true, "touchAction": "auto", "cssProps": {"userSelect": true}}'>
 
     <div class="content" ui-view="content" ng-class="addClasses">
     </div>
