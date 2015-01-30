@@ -1,11 +1,13 @@
 angular.module('HY')
-  .controller('NavigationController', function($window, $location, $rootScope, $scope, $stateParams, $controller, $state, progress, Routes) {
+  .controller('NavigationController', function($window, $location, $rootScope, $scope, $stateParams, $controller, $state, progress, Routes, Meta, Utils) {
     angular.extend(this, $controller('MainController', {$scope: $scope}));
+
     var part,
         partIndex,
         partRoutes,
         currentRoute,
-        routes = Routes.get();
+        routes = Routes.get(),
+        headerTranslationLocation = '';
 
     // Set progress info
     progress.partsCount = routes.length;
@@ -20,6 +22,12 @@ angular.module('HY')
       partIndex = _.findIndex(routes, {id: $stateParams.partId});
       partRoutes = part.routes;
       currentRoute = _.find(partRoutes, { id: $stateParams.pageId || 'init' });
+
+      // Set page metadata
+      headerTranslationLocation = $stateParams.pageId ? currentRoute.translationNamespace + '.HEADER' : 'parts.' + $stateParams.partId.toUpperCase();
+      Meta.title = Utils.translate(headerTranslationLocation) + ' - HY';
+      Meta.description = Utils.translate('meta.DESCRIPTION');
+      Meta.siteName = Utils.translate('parts.PRELUDE');
 
       // Set progress info
       progress.currentPart = partIndex + 1;

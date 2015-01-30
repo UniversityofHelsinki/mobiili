@@ -1,5 +1,8 @@
 angular.module('HY')
-  .controller('AppController', function($scope, $location, $window, $tour, Routes) {
+  .controller('AppController', function($scope, $location, $window, $tour, Routes, Meta) {
+
+  // Set metadata for head
+  $scope.Meta = Meta;
 
   // Key navigation
   angular.element($window).on('keydown', function(e) {

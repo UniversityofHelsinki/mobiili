@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html ng-app="HY">
-<head>
+<html ng-app="HY" ng-controller="AppController">
+<head ng-controller="NavigationController">
   <meta charset="utf-8" />
-  <title>HY</title>
-  <meta property="og:title" content="Mobiilistrategia">
+  <title ng-bind="Meta.title"></title>
+  <meta name="description" content="{{ Meta.description }}">
+  <meta name="keywords" content="{{ Meta.keywords }}">
+  <meta property="og:title" content="{{ Meta.title }}">
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://hy.fi/" />
+  <meta property="og:url" content="https://hy.sc5.io/" />
   <meta property="og:image" content="/assets/images/hy.jpg" />
-  <meta property="og:description" content="Helsingin yliopiston mobiilistrategia." />
-  <meta property="og:site_name" content="HY Mobiili" />
+  <meta property="og:description" content="{{ Meta.description }}" />
+  <meta property="og:site_name" content="{{ Meta.siteName }}" />
 
   <link href="/assets/images/hy_large.png" rel="apple-touch-icon" sizes="1024x1024" />
   <link href="/assets/images/hy_large.png" rel="icon" sizes="1024x1024" />
@@ -39,7 +41,7 @@
   <!-- inject:js -->
   <!-- endinject -->
 </head>
-<body ng-controller="AppController">
+<body>
   <base href="/">
 
   <div  ui-view="header" ng-class="addClasses"></div>
