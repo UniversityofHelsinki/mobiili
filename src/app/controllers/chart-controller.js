@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('ChartController', function($scope, $controller, $translate, $stateParams, MobileVsDT, PlatformComparison, MobileUsers, MobileUsersHy, MobilePlatforms, AppDownloads, Search, Utils) {
+  .controller('ChartController', function($scope, $controller, $translate, $stateParams, MobileVsDT, PlatformComparison, MobileUsers, MobileUsersHy, MobilePlatforms, MobilePlatformsHy, AppDownloads, Search, Utils) {
 
     // Get search state for view visibility
     $scope.search = Search;
@@ -9,6 +9,7 @@ angular.module('HY')
       $scope.mobileUsers = MobileUsers.get();
       $scope.MobileUsersHy = MobileUsersHy.get();
       $scope.mobilePlatforms = MobilePlatforms.getPie();
+      $scope.mobilePlatformsHy = MobilePlatformsHy.getPie();
       $scope.appDownloads = AppDownloads.get();
 
       PlatformComparison.get().then(function(xhr) {
@@ -57,7 +58,7 @@ angular.module('HY')
     };
 
     $scope.pieOptions = angular.extend(_.clone($scope.options), {
-      legendTemplate: '<ul class="tc-chart-js-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>'
+      legendTemplate: '<ul class="tc-chart-js-legend"><% for (var i=0; i<segments.length; i++){%><li><span style="background-color:<%=segments[i].fillColor%>"></span><%if(segments[i].label){%><%=segments[i].label + " " + segments[i].value%><%}%></li><%}%></ul>'
     });
 
   });

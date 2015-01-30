@@ -14,6 +14,8 @@ angular.module('HY')
 
     $scope.address = Utils.translate('defaults.TRY');
 
+    $scope.subNav = ['part1', 'part2', 'part3', 'part4', 'part5', 'part6'];
+
     $scope.addressPromise = $q.defer();
     $scope.addressPromise.promise.then(function(result) {
       console.log('geo success', result);

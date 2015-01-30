@@ -225,7 +225,8 @@ angular.module('HY.services', [])
       useLocation: 'true',
       mobileOs: 'iOS (Apple)',
       appType: 'windows',
-      appsInstalled: 0
+      appsInstalled: 0,
+      costs: 2.3
     };
 
     return {
@@ -349,6 +350,42 @@ angular.module('HY.services', [])
       }
     };
   })
+  .factory('MobilePlatformsHy', function(Utils) {
+    return {
+      getBars: function() {
+        return Utils.applyChartColors({
+          labels: [
+            'Android',
+            'iOS',
+            'Windows Phone'
+          ],
+          datasets: [
+            {
+              data: [55.4, 32.9, 11.7]
+            }
+          ]
+        });
+      },
+      getPie: function() {
+        return Utils.applyChartColors({
+          data: [
+            {
+              value: 34,
+              label: 'Android'
+            },
+            {
+              value: 51,
+              label: 'iOS'
+            },
+            {
+              value: 14,
+              label: 'Windows Phone'
+            }
+          ]
+        });
+      }
+    };
+  })
   .factory('AppDownloads', function(Utils) {
     return {
       get: function() {
@@ -439,11 +476,14 @@ angular.module('HY.services', [])
               {id: 'init', type: '', addClasses: 'part-divider-view'},
               {id: 'questions', type: 'quiz', translationNamespace: 'questions2'},
               {id: 'device-independency', type: 'info', translationNamespace: 'deviceIndependency'},
+              {id: 'emulation-test', type: 'info', translationNamespace: 'emulationTest'},
               {id: 'standards', type: 'chart', translationNamespace: 'standards'},
               {id: 'open-principals', type: 'info', translationNamespace: 'openPrincipals'},
               {id: 'open-data', type: 'info', translationNamespace: 'openData'},
+              {id: 'open-data2', type: 'info', translationNamespace: 'openData2'},
               {id: 'open-source', type: 'info', translationNamespace: 'openSource'},
               {id: 'open-source2', type: 'info', translationNamespace: 'openSource2'},
+              {id: 'open-source3', type: 'info', translationNamespace: 'openSource3'},
               {id: 'summary', type: 'quiz', translationNamespace: 'summary1'}
             ]
           },
@@ -483,13 +523,15 @@ angular.module('HY.services', [])
             id: 'part6',
             routes: [
               {id: 'init', addClasses: 'part-divider-view'},
-              {id: 'lifecycle', type: 'info', transNS: 'questions1', translationNamespace: 'lifeCycle'},
+              {id: 'lifecycle', type: 'info', translationNamespace: 'lifeCycle'},
+              {id: 'questions', type: 'quiz', translationNamespace: 'questions6'},
               {id: 'costs', type: 'info', translationNamespace: 'costs'},
               {id: 'principles', type: 'info', translationNamespace: 'principles'},
               {id: 'user-centred-design', type: 'chart', translationNamespace: 'userCentredDesign'},
               {id: 'recommendations', type: 'info', translationNamespace: 'recommendations'},
+              {id: 'example', type: 'info', translationNamespace: 'example'},
               {id: 'contact-us', type: 'info', translationNamespace: 'contactUs'},
-              {id: 'example', type: 'info', translationNamespace: 'example'}
+              {id: 'summary', type: 'quiz', translationNamespace: 'questions6'}
             ]
           },
           {

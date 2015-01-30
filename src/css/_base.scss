@@ -37,6 +37,10 @@ body {
     }
 }
 
+img {
+    border: 1px solid $emo;
+}
+
 [ui-view].part-divider {
     position: absolute;
     left: 0;

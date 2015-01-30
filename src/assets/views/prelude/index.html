@@ -1,7 +1,14 @@
-<h4 translate>{{ 'index.HEADER' }}</h4>
+<h2 translate>{{ 'index.HEADER' }}</h2>
 <div ng-include src="'/assets/views/add-bookmark-btn.html'"></div>
 
 <p translate>{{ 'index.1' }}</p>
 <p translate>{{ 'index.2' }}</p>
 <p translate>{{ 'index.3' }}</p>
 <p translate>{{ 'index.4' }}</p>
+<p translate>{{ 'index.5' }}</p>
+
+<ol type="I" class="part-list">
+  <li ng-repeat="value in subNav" translate>
+    {{ 'partHeadings.' + value.toUpperCase() }}
+  </li>
+</ol>

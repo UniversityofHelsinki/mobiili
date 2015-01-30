@@ -66,7 +66,8 @@
       "END": "Loppu"
   },
   "date": {
-      "MAY": "Maaliskuu {{value}}"
+      "MAY": "Maaliskuu {{value}}",
+      "Y": "v"
   },
   "charts": {
       "MOBILE_VS_DT": "Mobile vs. Desktop"
@@ -161,7 +162,8 @@
       "2": "Jos palvelu suunniteltiin 2009, niin miten se toimii nyt näillä uusilla laitteilla? Mitä uusi laitteita nähdään vuonna 2015?",
       "3": "Toimittajat vaihtuvat, perusteknologia säilyy.",
       "4": "Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen.",
-      "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti."
+      "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti.",
+      "6": "Selaimien ja web-teknologioiden kehityskaari"
   },
   "openPrincipals": {
       "1": "Avoimuus kiteytyy kahteen toimintamalliin:",
@@ -189,7 +191,9 @@
       "HEADER": "Mitä on avoin lähdekoodi? (open source)"
   },
   "openSource2": {
-      "1": "Tämän oppaan lähdekoodi on tallennettu GitHubiin, kaikille avoimessa pienten ja jättimäisten toimijoiden käyttämässä koodivarastossa (repository). ",
+      "1": "Tämän oppaan lähdekoodi on tallennettu",
+      "1_1": "GitHubiin",
+      "1_2": ", kaikille avoimessa pienten ja jättimäisten toimijoiden käyttämässä koodivarastossa (repository). ",
       "2": "Kuka tahansa voi kopioida eli “forkata” lähdekoodin itselleen ja käyttää sitä tekijän valitseman lisenssin mukaisesti.",
       "3": "GitHubilla on miljoonia käyttäjiä. Se on kuudessa vuodessa kasvanut maailman suurimmaksi avoimeksi koodivarastoksi.",
       "4": "",
@@ -233,7 +237,8 @@
       "A_3": "Jos käytät mobiililaitetta, jonka voi kääntää, kokeile pyöräyttää näkymä 90 astetta.",
       "B_1": "Responsiivisen palvelun kuvat ovat oikean kokoisia suhteessa näyttöön ja taittoon. Ne voivat myös adaptoitua laitteen näyttöominaisuuksiin ja nettiyhteyden nopeuteen.",
       "B_2": "Suositun FullHD (1920x1080) näytössä on 9 kertaa enemmän informaatiota kuin pienen mobiililaitteen näytölle mahtuu.",
-      "B_3": "Palvelun kannattaa lähettää laitteen ominaisuuksiin sopivan kokoinen kuva"
+      "B_3": "Palvelun kannattaa lähettää laitteen ominaisuuksiin sopivan kokoinen kuva",
+      "2": "Esimerkki sivustosta joka ei ole responsiivinen vaan näyttää samalta eri laitteilla"
   },
   "features": {
       "0": "Kokeile näitä:",
@@ -284,7 +289,7 @@
   "stats5": {
       "1": "Suomessa on eniten käytössä Android (Google) ja iOs (Apple) käyttöjärjestelmien mobiililaitteita, mutta myös Windows Phonea (WP; Microsoft) käytetään.",
       "2": "Käyttöjärjestelmät ovat jakautuneet käyttäjäryhmittäin epätasaisesti. ",
-      "3": "Esimerkiksi HY:n ulkoisilla sivuilla iOs 51%, Android 34% ja WP 14%.",
+      "3": "Vertailu HY:n ulkoisilta sivuilta",
       "4": "",
       "LEGEND1":"Suomessa vuonna 2014 lopussa käytössä olleet mobiilikäyttöjärjestelmät Statcounterin mukaan",
       "HEADER": "Mobiililaitteiden käyttäjät jakautuvat epätasaisesti kolmeen leiriin"
@@ -324,13 +329,14 @@
       "5": "Ylläpito ja tuki"
   },
   "questions6": {
+    "HEADER": "Arvioi",
     "1": "Paljonko kalliimpaa on kehittää ja ylläpitää kolme mobiilisovellusta kolmen vuoden ajan kuin yhtä mobiiliweb-sivustoa?"
   },
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
       "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Kuten yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
       "2": "Tämä on laskelma uuden palvelun mobiilijulkaisun kustannuksista kolmen vuoden ajalla, poislukien suunnittelu ja käyttäjätuki.",
-      "3": "Julkaisutapa:",
+      "3": "Julkaisutapa",
       "4": "Mobiiliweb",
       "5": "Mobiiliweb + 3 paketoitua sovellusta",
       "6": "Kolme natiiviapplikaatiota",
@@ -339,7 +345,8 @@
       "9": "Välisumma",
       "10": "3 vuoden ylläpito ja jatkokehitys",
       "11":"Laskelma",
-      "12":"Yhteensä"
+      "12":"Yhteensä",
+      "13": "paketointi"
   },
   "principles": {
     "HEADER": "Suunnittelu edellyttää laajaa näkemystä myös muista periaatteista",
@@ -363,9 +370,9 @@
     },
   "example": {
     "INTRO":"Tämä sovellus toteutettiin tammikuussa 2015 käyttäen laajasti tunnettuja ja testattuja open source komponentteja. Tässä on hyödynnetty mm. seuraavia teknologioita: ",
-    "1":"HTML5",
-    "2":"SASS",
-    "3":"AngularJS",
+    "1":"HTML5...",
+    "2":"AngularJS...",
+    "3":"SASS...",
     "4":"",
     "5":"",
     "6":"",

@@ -46,6 +46,7 @@ angular.module('HY')
     $scope.mobileOs = $scope.getModel('mobileOs', '');
     $scope.appType = $scope.getModel('appType', '');
     $scope.appsInstalled = $scope.getModel('appsInstalled', ' ');
+    $scope.costs = $scope.getModel('costs', '');
 
     $scope.correct = correctAnswers;
 
