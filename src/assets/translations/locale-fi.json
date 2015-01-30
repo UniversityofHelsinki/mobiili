@@ -179,8 +179,7 @@
     "3": "Taustajärjestelmien (back end) avoimet rajapinnat helpottavat myös esimerkiksi nettipalvelun ulkoasun (front end) uudistamista ilman taustajärjestelmän muuttamista.",
     "4": "Avoin data ja avoin lähdekoodi sopivat hyvin yhteen.",
     "HEADER": "Avoin data kantaa pidemmälle"
-    
-  }
+  },
   "openSource": {
       "1": "Tiedettä on tehty aina jakamalla omat tulokset muiden arvioitaviksi ja opittaviksi. Open Source on yksinkertaistetusti saman periaatteen käyttämistä ohjelmistokehityksessä - täsmälleen samoista syistä.",
       "2": "Helsingin Yliopistosta lähtenyt Linux on maailman merkittävin avoimen lähdekoodin tuote.",
@@ -199,7 +198,7 @@
     "3":"Vaatimalla avointa lähdekoodia myös ulkoisissa hankinnoista et joudu koskaan yhden suljetun ohjelmistoratkaisun varaan. ",
     "4":"Tämän oppaan lähdekoodi on avointa ja käytettävissä Githubissa: {{gitURL}}",
     "HEADER":"Hyödynnä avointa lähdekoodia"
-  }
+  },
   "mobileFriendly": {
       "1": "Responsiivinen verkkopalvelu (mobiiliweb)",
       "2": "Verkkosivusto, joka on suunniteltu mobiilikäyttö huomioided.",
