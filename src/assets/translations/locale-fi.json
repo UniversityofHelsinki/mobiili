@@ -321,11 +321,14 @@
       "4": "Sovelluskauppaan julkaisu",
       "5": "Ylläpito ja tuki"
   },
+  "questions6": {
+    "1": "Paljonko kalliimpaa on kehittää ja ylläpitää kolme mobiilisovellusta kolmen vuoden ajan kuin yhtä mobiiliweb-sivustoa?"
+  }  
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
-      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Esimerkkinä vaikkapa yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
-      "2": "Laskelma uuden palvelun mobiilijulkaisun kustannuksista kolmen vuoden ajalla, poislukien suunnittelu ja käyttäjätuki.",
-      "3": "Strategia:",
+      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Kuten yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
+      "2": "Tämä on laskelma uuden palvelun mobiilijulkaisun kustannuksista kolmen vuoden ajalla, poislukien suunnittelu ja käyttäjätuki.",
+      "3": "Julkaisutapa:",
       "4": "Mobiiliweb",
       "5": "Mobiiliweb + 3 paketoitua sovellusta",
       "6": "Kolme natiiviapplikaatiota",
@@ -338,25 +341,29 @@
   },
   "principles": {
     "HEADER": "Suunnittelu edellyttää laajaa näkemystä myös muista periaatteista",
-      "1": "Laiteriippumattomuus ja avoimuus ovat tärkeitä juuri nyt.",
-      "2": "Jos palvelusi on saavutettava ja siitä on tullut tunnettu, myös seuraavien periaatteiden noudattaminen on tärkeää:",
+      "1": "Laiteriippumattomuus ja avoimuus ovat tärkeitä periaatteita juuri nyt.",
+      "2": "Jos palvelusi on saavutettava ja siitä on tullut tunnettu, myös seuraavien periaatteiden noudattaminen on tärkeää käyttäjäkokemuksen kannalta:",
       "3": "Luotettavuus, suorituskyky, tietoturva ja käytettävyys"
   },
   "userCentredDesign": {
     "HEADER": "Käyttäjäkeskeisen suunnittelu auttaa onnistumaan",
-      "1": "Käyttäjäkeskeisyyden soveltaminen ohjelmisto projektin eri vaiheissa:",
-      "2": "Ymmärrä käyttäjän tarpeet ja hänen palvelusta saamansa arvo",
-      "3": "Keskity käyttöliittymässä olennaisiin",
-      "4": "Testaa palvelua käyttäjillä palvelukehityksen aikana",
+      "1": "Käyttäjäkeskeisyyden soveltaminen ohjelmistoprojektin eri vaiheissa:",
+      "2": "Ymmärrä käyttäjän tarpeet ja hänen palvelustaan saamansa arvo",
+      "3": "Keskity käyttöliittymässä olennaiseen em. arvon kannalta",
+      "4": "Testaa palvelua käyttäjillä jo kehityksen aikana",
       "5": "Seuraa sovelluksen käyttöä julkaisun jälkeen analytiikan avulla ja aseta käytölle ja jatkokehitykselle mitattavia tavoitteita"
   },
   "recommendations": {
       "HEADER": "Tietotekniikkakeskuksen suosituksia",
-      "1": "Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
+      "1": "Varmista että palvelulle on laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
       "2": "Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
       "3": "Jos natiivisovellus on välttämätön, mieti miten voit varmistaa, että eri laitteita käyttävät voivat sitä käyttää"
     },
   "example": {
+    "INTRO":"Tämä sovellus toteutettiin tammikuussa 2015 käyttäen laajasti tunnettuja ja testattuja open source komponentteja. Tässä on hyödynnetty mm. seuraavia teknologioita: ",
+    "":"",
+    "":"",
+    "":"","":"",
     "HEADER": "Esimerkki web-applikaatiosta"
   },
   "contactUs": {
