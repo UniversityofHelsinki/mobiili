@@ -50,7 +50,7 @@
     "2": "Perehtyneisyysmittari näyttää kuinka paljon oppaasta olet lukenut.",
     "3": "Sydän-painikkeella tallennat sivun oppaan suosikiksi.",
     "4": "Lista suosikeista löytyy täältä. Tämä oli viimeinen ohje.",
-    "5": "Voit palata ohjeisiin uudestan täältä."
+    "5": "Voit palata takaisin ohjeisiin täältä."
   },
   "partHeadings": {
       "PRELUDE": "Johdanto",
@@ -66,7 +66,7 @@
       "MAY": "Maaliskuu {{value}}"
   },
   "charts": {
-      "MOBILE_VS_DT": "Mobile Vs Desktop"
+      "MOBILE_VS_DT": "Mobile vs. Desktop"
   },
   "index": {
       "1": "Tässä verkkosovelluksessa kerromme mitä modernilta verkkopalvelulta vaaditaan ja mitä hankintoja suunnitellessa pitää tietää, jotta hankinnan hyödyt käyttäjille ovat pitkäikäiset. ",
@@ -85,14 +85,14 @@
       "Q3": "Palveluni tietojen jakaminen ulkopuolisille on aina tietoturvariski"
   },
   "questions1": {
-      "1": "Kuinka suuri osa HY ulkoisen verkkosivuston lukijoista käyttää mobiilia?",
-      "2": "Kuinka suuri osa vierailijoista käytti mobiililaitetta suosituissa suomalaisissa verkkopalveluissa vuonna 2014?",
+      "1": "Kuinka suuri osa HY ulkoisen verkkosivuston vieruista tapahtui mobiililla joulukuussa 2014?",
+      "2": "Kuinka suuri osa vierailuista  suosituissa suomalaisissa verkkopalveluissa vuonna 2014 tapahtui mobiililaitetta?",
       "3": "Kuinka suuri osa opiskelijoiden ikäluokasta (18-25v) teki päivittäin mobiilista Google-hakuja vuonna 2013?",
       "HEADER": "Arvioi"
   },
   "stats1": {
       "1": "Vuodesta 2014 lähtien pohjois-amerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).",
-      "2": "Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen kannalta.",
+      "2": "Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen ja tiedonhaun kannalta.",
       "HEADER": "Internet muuttui mobiiliksi 2014",
       "CHART_HEADER": "Ajankäytön jakautuminen %"
   },
@@ -105,31 +105,31 @@
   "stats3": {
       "HEADER": "Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa",
       "1": "",
-      "HEADER2": "18-25v suomalaisista älypuhelimen käyttäjistä (93% kaikista)",
+      "HEADER2": "18-25v suomalaisista älypuhelimen käyttäjistä",
       "HEADER3": "Googlesta liikennettä HY sivustoille",
       "DATA1": "Käyttää älypuhelinta",
       "DATA2": "Käyttää mobiiliwebbiä päivittäin",
       "DATA3": "Potentiaalisia mobiiliweb-käyttäjiä",
-      "DATA4": "Hakee päivittäin Google puhelimella",
-      "DATA5": "Google-hausta HY verkkoliikennettä tulee HY ulkoiselle sivustolle",
-      "DATA6": "Flammaan",
-      "DATA7": "HY ext",
-      "DATA8": "HY flamma"
+      "DATA4": "Hakee päivittäin Googlesta puhelimella",
+      "DATA5": "HY ulkoisten sivujen Googlesta tuleva liikenne",
+      "DATA6": "Flammaan Googlesta tuleva liikenne",
+      "DATA7": "HY ulkoisten sivujen mobiililaitteilla vierailija",
+      "DATA8": "Flamman mobiililaitteilla vierailija"
   },
   "opportunities": {
-      "1": "Mobiililaite on aina mukana",
-      "2": "Mobiililaitteissa on enemmän ominaisuuksia kuin desktop-laitteissa (GPS, kamera, kiihtyvyysanturit)",
-      "3": "HY:n uusien ja uudistuvien palveluiden käyttöä voidaan parhaiten lisätä huomioimalla myös mobiilikäyttäjät",
+      "1": "Mobiililaite on aina mukana.",
+      "2": "Mobiililaitteissa on enemmän ominaisuuksia kuin desktop-laitteissa (GPS, kamera, kiihtyvyysanturit).",
+      "3": "HY:n uusien ja uudistuvien palveluiden käyttöä voidaan parhaiten lisätä huomioimalla myös mobiilikäyttäjät.",
       "HEADER": "Mobiili on mahdollisuus koska"
   },
   "problem": {
-      "1": "Mobiililaitteissa on pienempi ja usein pystysuuntainen näyttö",
-      "2": "Mobiililaitteilla tekstinsyöttö on kömpelömpää",
-      "3": "Mobiililaitteilla skrollailu voi olla helpompaa ja tutumpaa",
-      "HEADER": "Ongelma on selvä. Monet sivustot eivät toimi mobiilissa koska ne on suunniteltu desktopille"
+      "1": "Mobiililaitteissa on pienempi ja usein pystysuuntainen näyttö.",
+      "2": "Mobiililaitteilla tekstinsyöttö on kömpelömpää.",
+      "3": "Mobiililaitteilla skrollailu voi olla helpompaa ja tutumpaa.",
+      "HEADER": "Monet sivustot eivät toimi mobiilissa koska ne on suunniteltu desktopille"
   },
   "summary1": {
-      "HEADER": "Yhteenveto"
+      "HEADER": "Yhteenveto oikeista vastauksista"
   },
   "questions2": {
       "1": "Vuonna 2015 paras teknologiasuositus verkkopalvelun esittämiseen on",
