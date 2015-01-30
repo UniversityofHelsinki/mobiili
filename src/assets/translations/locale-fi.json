@@ -161,7 +161,7 @@
       "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti."
   },
   "openPrincipals": {
-      "1": "Avoimuus kiteytyy kahteen toimintamalliiin:",
+      "1": "Avoimuus kiteytyy kahteen toimintamalliin:",
       "2": "Avoin lähdekoodi (Open source)",
       "3": "Avoin data (Open data)" ,
       "HEADER": "Avoimuuden periaate"
@@ -201,37 +201,40 @@
     "HEADER":"Hyödynnä avointa lähdekoodia"
   }
   "mobileFriendly": {
-      "1": "Responsiivinen verkkopalvelu",
-      "2": "verkkosivusto, joka on suunniteltu mobiilikäyttöä ajatellen.",
+      "1": "Responsiivinen verkkopalvelu (mobiiliweb)",
+      "2": "Verkkosivusto, joka on suunniteltu mobiilikäyttö huomioided.",
       "3": "Sovellukset",
-      "4": "Jokaiselle käyttöjärjestelmälle oma sovellus, joita jaellaan Applen App Storessa, Google Play Storessa ja Windows Phone Storessa ja asennetaan laitteelle",
-      "HEADER": "Mobiiliystävälliset vaihtoehdot verkkopalvelulle"
+      "4": "Tietyille käyttöjärjestelmille laadittuja ohjelmia, joita jaellaan Applen App Storessa, Google Play Storessa tai Windows Phone Storessa ja asennetaan mobiililaitteille.",
+      "HEADER": "Mobiiliystävälliset vaihtoehdot Internet-palvelulle"
   },
   "questions3": {
-      "1": "Mobiililaitteille tarvitaan oma verkkosivustonsa, kuten m.helsinki.fi",
+      "1": "Mobiiliwebille tarvitaan oma verkkosivustonsa, kuten m.helsinki.fi",
       "2": "Mobiiliwebin avulla voi ottaa valokuva",
       "3": "Mobiiliwebin avulla voi luoda paikkatietoisia palveluja",
       "HEADER": "Arvioi"
   },
   "mobileWeb1": {
       "1": "Mobiiliweb tarkoittaa verkkopalvelua tai webapplikaatiota, joka toimii erilaisilla laitteilla tavallisessa selaimessa - joskus sovellusmaisesti.",
-      "2": "Aiemmin tehtiin usein myös oma verkko-osoitteensa, esim. http://m.hs.fi, mutta nykyään yhtä sivustoa pidetään parempana",
+      "2": "Aiemmin tehtiin usein myös oma verkko-osoitteensa, esim. http://m.hs.fi, mutta nykyään yhtä sivustoa pidetään parempana. Näin käyttäjää ei tarvitse ohjailla eri sivustojen välillä ja sama osoite toimii kaikilla laitteilla.",
       "HEADER": "Mobiiliweb - mobiiliystävällinen verkkopalvelu"
   },
   "mobileWeb2": {
       "HEADER": "Mobiiliystävälliset verkkosivustot ovat responsiivisia",
-      "HEADER2": "Responsiivisen/PLR verkkopalvelun tunnistaa näistä",
-      "SUB_HEADER": "Responsiivinen ulkoasu/taitto",
+      "0": "Responsiivinen palvelu mukautuu käytetyn laitteen näytön mittasuhteisiin ja säilyy käytettävänä eri laitteilla. Tämä opas on suunniteltu responsiiviseksi.",
+      "HEADER2": "Responsiivisen verkkopalvelun tunnistaa näistä ominaisuuksista",
+      "SUB_HEADER": "Responsiivinen taitto",
       "SUB_HEADER2": "Responsiiviset kuvat",
+      "1": "Responsiivisuuden lisäksi puhutaan mukautuvuudesta (adaptiivisuus), jolla tarkoitetaan palvelun laajempaa muuttumista käyttäjän, käyttöhistorian ja käyttötilanteen mukaan.",
       "TRY": "Kokeile",
-      "A_1": "Palvelu mukautuu käytetyn laitteen näytön mittasuhteisiin ja säilyy käytettävänä eri laitteilla.",
+      "A_1": "Responsiivisen palvelun sivutaitto mukautuu käytetyn laitteen näytön mittasuhteisiin ja säilyy käytettävänä eri laitteilla.",
       "A_2": "Jos luet tätä desktopilla, kokeile muuttaa tämän sivun kokoa vetämällä verkkoselaimen reunaa pienemmäksi ja sitten suuremmaksi.",
       "A_3": "Jos käytät mobiililaitetta, jonka voi kääntää, kokeile pyöräyttää näkymä 90 astetta.",
-      "B_1": "Kuvat, jotka ovat oikean kokoisia suhteessa näyttöön",
+      "B_1": "Responsiivisen palvelun kuvat ovat oikean kokoisia suhteessa näyttöön ja taittoon. Ne voivat myös adaptoitua laitteen näyttöominaisuuksiin ja nettiyhteyden nopeuteen.",
       "B_2": "Suositun FullHD (1920x1080) näytössä on 9 kertaa enemmän informaatiota kuin pienen mobiililaitteen näytölle mahtuu.",
       "B_3": "Palvelun kannattaa lähettää laitteen ominaisuuksiin sopivan kokoinen kuva"
   },
   "features": {
+      "0": "Kokeile näitä:"
       "1": "Et tarvitse sovellusta seuraaviin:",
       "2": "Valokuvien ottamiseen",
       "3": "Paikkatiedon käyttämiseen",
@@ -246,7 +249,7 @@
   "questions4": {
       "1": "Suomessa käytetyin mobiilikäyttöjärjestelmä on",
       "2": "Mitä seuraavista Applen mobiililaitteissa ei voi käyttää",
-      "3": "Syksyllä 2014 yhdysvaltalainen älypuhelimen käyttäjä asensi keskimäärin näin monta appia /kk",
+      "3": "Syksyllä 2014 yhdysvaltalainen älypuhelimen käyttäjä asensi keskimäärin näin monta appia per kk.",
       "HEADER": "Arvioi",
       "NATIVE": "Natiivi appeja",
       "HYBRID": "Hybridi appeja",
@@ -254,30 +257,35 @@
       "WEB": "Web appeja"
   },
   "nativeHybrid": {
-      "1": "Sanalla sovellus voidaan viitata ainakin kolmeen erilaiseen mobiililaitteissa toimivaan ohjelmistoon",
-      "2": "Web-applikaatiot ovat verkkoselaimessa toimivia, usein HTML5:en perustuvia sovelluksia. Niitä ei jaella sovelluskaupoissa eikä niitä voi ladata laitteille.",
-      "3": "Natiiviapplikaatiot on kehitetty alusta pitäen tietylle käyttöjärjestelmälle tietyllä kielellä: Android: Java, iOs: Objective C, C, Windows C#, C++",
-      "4": "Hybridiapplikaatio on sovellukseksi “paketoitu” web applikaatio, johon on usein lisätty joku natiiviapplikaation kielellä laadittu lisäosa",
-      "5": "Näiden lisäksi sovelluksia löytyy älytelevisioille, Facebookille ja monille muille ohjelmistoalustoille.",
+      "1": "Sanalla sovellus voidaan viitata ainakin kolmeen erilaiseen mobiililaitteissa toimivaan ohjelmistoon:",
+      "2": "Web-applikaatiot (kutsutaan myös nimillä verkkosovellukset ja selainsovellukset) ovat verkkoselaimessa toimivia, usein HTML5:en perustuvia sovelluksia. Niitä ei jaella sovelluskaupoissa eikä niitä voi ladata laitteille. ",
+      "3": "Natiiviapplikaatiot on kehitetty alusta pitäen tietylle käyttöjärjestelmälle tietyllä ohjelmointikielellä.",
+      "4": "Hybridiapplikaatio on sovellukseksi “paketoitu” web applikaatio, johon on usein lisätty natiiviapplikaation kielellä laadittu lisäosa.",
+      "5": "Näiden lisäksi sovelluksia löytyy älytelevisioille, Facebookille, Symbianille ja monille muille ohjelmistoalustoille.",
       "HEADER": "Natiivit ja hybridit"
   },
   "comparison": {
       "1": "Löydetään ja asennetaan sovelluskaupasta",
       "2": "Tuki mobiililaitteen ominaisuuksille (kamera, paikannus, kiihtyvyys, eleet...)",
       "3": "Osittainen tuki",
-      "4": "Ikoni kotinäyttöön",
-      "5": "Notifikaatiot",
-      "6": "vain esim. email",
+      "4": "Kuvake kotiruudulle",
+      "5": "Ilmoitukset",
+      "6": "Ei laitteessa (esim. email)",
       "7": "Toteutusteknologia",
       "8": "laitevalmistajakohtainen",
-      "HEADER": "Eri sovellusratkaisut",
-      "WEB": "Web appi",
-      "HYBRID": "Hybridi appi",
-      "NATIVE": "Natiivi appi"
+      "9": "Osittainen",
+      "HEADER": "Erilaisten sovellusten ominaisuuksia vertailussa",
+      "WEB": "Web-app.",
+      "HYBRID": "Hybridiapp.",
+      "NATIVE": "Natiiviapp."
   },
   "stats5": {
-      "1": "Suomessa on eniten käytössä Android (Google) iOs ja (Apple) käyttöjärjestelmien mobiililaitteita, mutta myös Windows Mobilea käytetään.",
-      "HEADER": "Sovellukset"
+      "1": "Suomessa on eniten käytössä Android (Google) ja iOs (Apple) käyttöjärjestelmien mobiililaitteita, mutta myös Windows Phonea (WP; Microsoft) käytetään.",
+      "2": "Käyttöjärjestelmät ovat jakautuneet käyttäjäryhmittäin epätasaisesti. ",
+      "3": "Esimerkiksi HY:n ulkoisilla sivuilla iOs 51%, Android 34% ja WP 14%.",
+      "4": "",
+      "LEGEND1":"Suomessa vuonna 2014 lopussa käytössä olleet mobiilikäyttöjärjestelmät Statcounterin mukaan",
+      "HEADER": "Mobiililaitteiden käyttäjät jakautuvat epätasaisesti kolmeen leiriin"
   },
   "appStrength": {
       "1": "Uusi kanava: näkyvyys sovelluskaupassa",
@@ -290,17 +298,18 @@
       "HEADER": "Sovellusten vahvuudet"
   },
   "apps": {
-      "1": "Ihmiset etsivät sovelluskaupoista tuttuja brändejä.",
+      "1": "Ihmiset etsivät sovelluskaupoista tuttuja brändejä ja toimintoja.",
       "2": "Sovellusten sisältöjä on vaikea jakaa eikä Google ei osaa hakea sisältöjä sovellusten sisältä.",
       "3": "Jos haluat sovelluksen sisällön saavutettavaksi tarvitset myös verkkopalvelun.",
-      "HEADER": "Muista tämä sovelluksista",
-      "SUMMARY": "Chomp & Google Playn suosituimmat hakusanat vuoteen 2012",
+      "HEADER": "Sovelluksilla on rajansa",
+      "SUMMARY": "Google Playn suosituimmat hakusanat kesällä 2012 Chompin mukaan",
       "KEYWORD": "Hakusana",
       "VOLUME": "Kuukausivolyymi"
   },
   "appDownloads": {
-      "1": "Viime syksynä suurin osa yhdysvaltalaisista mobiilikäyttäjistä ei ollut viimeisen kuukauden aikana asentanut yhtään uutta sovellusta.",
-      "HEADER": "Uusien sovellusten käyttöönottamiseen voi olla kynnys",
+      "1": "Kesällä 2014 suurin osa yhdysvaltalaisista mobiilikäyttäjistä ei ollut viimeisen kuukauden aikana asentanut yhtään uutta sovellusta.",
+      "2": "Millä vakuutat käyttäjän, että juuri sinun sovelluksesi on heille tärkeä?",
+      "HEADER": "Uuden sovelluksen hankkiminen on kynnys palvelun käytölle",
       "DOWNLOADS": "{{value}} sovellusta",
       "LEGEND": "Mobiilikäyttäjien kesällä {{value}} lataamien sovellusten määrä %"
   },
