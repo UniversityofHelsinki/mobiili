@@ -150,7 +150,7 @@
     "4": "Paina F12 (Windows) tai Cmd+Shift+I (Mac) käynnistääksesi Developer Tools lisäosan. Tämän jälkeen  lisäosan yläpalkista löytyvällä matkapuhelinsymbolilla avautuu mobiilisimulaattori. ",
     "5": "Uudesta yläpalkista voit valita haluamasi laitteen (Device) käyttäen alasvetovalikkoa (Select model). Lataamalla sivun uudestaan (Reload, Ctrl+R) näkymä päivittää vastaamaan simuloitua mobiililaitetta. Voit jatkaa selailua normaalisti, jolloin saat käsityksen miten sivusto toimii erilaisilla laitteilla. Sulje lisäosa lopuksi oikean yläkulman x-painikkeesta niin näkymä palautuu normaaliksi.",
     "HEADER":"Miten laiteriippumattomuutta voi testata?"
-    }
+    },
   "standards": {
       "HEADER": "Tulevaisuuden ennakointi on suunnitteluhaaste",
       "HEADER2": "Standardit kestävät aikaa parhaiten",
