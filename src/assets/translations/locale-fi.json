@@ -132,41 +132,74 @@
       "HEADER": "Yhteenveto oikeista vastauksista"
   },
   "questions2": {
-      "1": "Vuonna 2015 paras teknologiasuositus verkkopalvelun esittämiseen on",
+      "1": "Vuonna 2015 suositeltavin teknologia verkkopalvelun toteuttamiseen on",
       "2": "Vuonna 2015 huomattavin open source tallennuspaikka",
       "3": "Mikä seuraavista ei ole open sourcea",
       "HEADER": "Tiedätkö..."
   },
   "deviceIndependency": {
-      "1": "Periaatteen tavoitteena palvelujen erinomainen saavutettavuus ja käytettävyys",
-      "2": "Varmistetaan palvelu on mahdollisimman monen käytettävissä päätelaitteesta riippumatta",
-      "3": "Toteutetaan yliopiston yhdenvertaisuusperiaatetta",
-      "HEADER": "Laiteriippumattomuus"
+      "1": "(Pääte)laiteriippumattomuuden periaatteen tavoitteena on varmistaa, että palvelu on mahdollisimman monen käytettävissä päätelaitteesta riippumatta.",
+      "2": "Laiteriippumattoman palvelun käytettävyys on hyvä  päätelaitteesta riippumatta.",
+      "3": "Tämä edistää palvelujen saavutettavuutta ja toteuttaa samalla yliopiston yhdenvertaisuusperiaatetta.",
+      "HEADER": "Laiteriippumattomuus edistää yhdenvertaisuutta"
   },
+  "emulationTest" : {
+    "1": "Kokeile",
+    "2": "Jos käytössäsi on Google Chromen työpöytäselaimen ajantasainen versio, voit sen kehitystyökaluja käyttäen tarkastaa miten selaamasi sivusto toimii erilaisilla mobiililaitteilla. Koska Chrome on tällä hetkellä (vuoden 2015 alussa) Suomessa käytetyin selain, kannattaa sitä kokeilla kokeilla muutenkin.",
+    "3": "Tee näin",
+    "4": "Paina F12 (Windows) tai Cmd+Shift+I (Mac) käynnistääksesi Developer Tools lisäosan. Tämän jälkeen  lisäosan yläpalkista löytyvällä matkapuhelinsymbolilla avautuu mobiilisimulaattori. ",
+    "5": "Uudesta yläpalkista voit valita haluamasi laitteen (Device) käyttäen alasvetovalikkoa (Select model). Lataamalla sivun uudestaan (Reload, Ctrl+R) näkymä päivittää vastaamaan simuloitua mobiililaitetta. Voit jatkaa selailua normaalisti, jolloin saat käsityksen miten sivusto toimii erilaisilla laitteilla. Sulje lisäosa lopuksi oikean yläkulman x-painikkeesta niin näkymä palautuu normaaliksi.",
+    "HEADER":"Miten laiteriippumattomuutta voi testata?"
+    }
   "standards": {
-      "HEADER": "Tulevaisuuden ennakointi on haaste",
+      "HEADER": "Tulevaisuuden ennakointi on suunnitteluhaaste",
       "HEADER2": "Standardit kestävät aikaa parhaiten",
-      "1": "iPad tuli 2010. Google Glass 2012. Älykellot 2013. Mitä tapahtuu vuonna 2015?",
-      "2": "Jos palvelu suunniteltiin 2009, niin miten se toimii nyt uusilla laitteilla?",
-      "3": "Toimittajat vaihtuvat, perusteknologia säilyy",
-      "4": "Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen",
-      "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti"
+      "1": "iPad tuli vuonna 2010. Google Glass 2012. Älykellot 2013.",
+      "2": "Jos palvelu suunniteltiin 2009, niin miten se toimii nyt näillä uusilla laitteilla? Mitä uusi laitteita nähdään vuonna 2015?",
+      "3": "Toimittajat vaihtuvat, perusteknologia säilyy.",
+      "4": "Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen.",
+      "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti."
   },
   "openPrincipals": {
-      "1": "Open data",
-      "2": "Open source",
+      "1": "Avoimuus kiteytyy kahteen toimintamalliiin:",
+      "2": "Avoin lähdekoodi (Open source)",
+      "3": "Avoin data (Open data)" ,
       "HEADER": "Avoimuuden periaate"
   },
   "openData": {
-      "HEADER": "Open Data"
+      "1": "Julkaistujen tutkimusaineistojen datan pitäisi olla yhteiskäyttöistä ja avointa. Avoin data tarkoittaa tämän periaatteen toteuttamista tietojärjestelmien tasolla.",
+      "2": "Jos data on sen arvoista, että se kannattaa esittää käyttäjälle jossakin palvelussa, se kannattaa ehdottomasti myös tarjota koneluettavassa muodossa ohjelmointirajapinnassa (eli API:ssa)",
+      "3": "Ohjelmointirajapintojen avulla tietojärjestelmät voivat hallitusti ja turvallisesti vaihtaa tietoja keskenään.",
+      "4": "",
+      "HEADER": "Mitä on avoin data? (Open data)"
   },
+  "openData2": {
+    "1": "Avoimet rajapinnat mahdollistavat järjestelmien innovatiivisen yhdistämisen ja tietojen uudelleen käyttämisen. ",
+    "2": "Esimerkiksi Google karttojen rajapinnan varaan on rakennettu lukemattomia palveluita kuten Eat.fi ja AuratKartalla.com. ",
+    "3": "Taustajärjestelmien (back end) avoimet rajapinnat helpottavat myös esimerkiksi nettipalvelun ulkoasun (front end) uudistamista ilman taustajärjestelmän muuttamista.",
+    "4": "Avoin data ja avoin lähdekoodi sopivat hyvin yhteen.",
+    "HEADER": "Avoin data kantaa pidemmälle"
+    
+  }
   "openSource": {
-      "HEADER": "Open Source"
+      "1": "Tiedettä on tehty aina jakamalla omat tulokset muiden arvioitaviksi ja opittaviksi. Open Source on yksinkertaistetusti saman periaatteen käyttämistä ohjelmistokehityksessä - täsmälleen samoista syistä.",
+      "2": "Helsingin Yliopistosta lähtenyt Linux on maailman merkittävin avoimen lähdekoodin tuote.",
+      "HEADER": "Mitä on avoin lähdekoodi? (open source)"
   },
   "openSource2": {
-      "1": "Lähdekoodi GitHubissa",
-      "HEADER": "Tämäkin projekti on open sourcea"
+      "1": "Tämän oppaan lähdekoodi on tallennettu GitHubiin, kaikille avoimessa pienten ja jättimäisten toimijoiden käyttämässä koodivarastossa (repository). ",
+      "2": "Kuka tahansa voi kopioida eli “forkata” lähdekoodin itselleen ja käyttää sitä tekijän valitseman lisenssin mukaisesti.",
+      "3": "GitHubilla on miljoonia käyttäjiä. Se on kuudessa vuodessa kasvanut maailman suurimmaksi avoimeksi koodivarastoksi.",
+      "4": "",
+      "HEADER": "Tämänkin oppaan lähdekoodi on avointa"
   },
+  "openSource3": {
+    "1":"Avoin lähdekoodi auttaa sinua ja muita.",
+    "2":"Avoimen lähdekoodin ympärille on mahdollista kehittää kannattavaa liiketoimintaa, vaikka ohjelmistolisenssien myynti ei ole mahdollista. Tällaisia tuotteita ovat mm. Android, WordPress, MySQL, Mozilla, Enterprise Linuxit ja OpenOffice, Google Chromium.",
+    "3":"Vaatimalla avointa lähdekoodia myös ulkoisissa hankinnoista et joudu koskaan yhden suljetun ohjelmistoratkaisun varaan. ",
+    "4":"Tämän oppaan lähdekoodi on avointa ja käytettävissä Githubissa: {{gitURL}}",
+    "HEADER":"Hyödynnä avointa lähdekoodia"
+  }
   "mobileFriendly": {
       "1": "Responsiivinen verkkopalvelu",
       "2": "verkkosivusto, joka on suunniteltu mobiilikäyttöä ajatellen.",
