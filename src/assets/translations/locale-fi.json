@@ -50,7 +50,7 @@
     "2": "Perehtyneisyysmittari näyttää kuinka paljon oppaasta olet lukenut.",
     "3": "Sydän-painikkeella tallennat sivun oppaan suosikiksi.",
     "4": "Lista suosikeista löytyy täältä. Tämä oli viimeinen ohje.",
-    "5": "Voit palata ohjeisiin uudestan täältä."
+    "5": "Voit palata takaisin ohjeisiin täältä."
   },
   "partHeadings": {
       "PRELUDE": "Johdanto",
@@ -66,7 +66,7 @@
       "MAY": "Maaliskuu {{value}}"
   },
   "charts": {
-      "MOBILE_VS_DT": "Mobile Vs Desktop"
+      "MOBILE_VS_DT": "Mobile vs. Desktop"
   },
   "index": {
       "1": "Tässä verkkosovelluksessa kerromme mitä modernilta verkkopalvelulta vaaditaan ja mitä hankintoja suunnitellessa pitää tietää, jotta hankinnan hyödyt käyttäjille ovat pitkäikäiset. ",
@@ -85,14 +85,14 @@
       "Q3": "Palveluni tietojen jakaminen ulkopuolisille on aina tietoturvariski"
   },
   "questions1": {
-      "1": "Kuinka suuri osa HY ulkoisen verkkosivuston lukijoista käyttää mobiilia?",
-      "2": "Kuinka suuri osa vierailijoista käytti mobiililaitetta suosituissa suomalaisissa verkkopalveluissa vuonna 2014?",
+      "1": "Kuinka suuri osa HY ulkoisen verkkosivuston vieruista tapahtui mobiililla joulukuussa 2014?",
+      "2": "Kuinka suuri osa vierailuista  suosituissa suomalaisissa verkkopalveluissa vuonna 2014 tapahtui mobiililaitetta?",
       "3": "Kuinka suuri osa opiskelijoiden ikäluokasta (18-25v) teki päivittäin mobiilista Google-hakuja vuonna 2013?",
       "HEADER": "Arvioi"
   },
   "stats1": {
       "1": "Vuodesta 2014 lähtien pohjois-amerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).",
-      "2": "Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen kannalta.",
+      "2": "Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen ja tiedonhaun kannalta.",
       "HEADER": "Internet muuttui mobiiliksi 2014",
       "CHART_HEADER": "Ajankäytön jakautuminen %"
   },
@@ -105,100 +105,135 @@
   "stats3": {
       "HEADER": "Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa",
       "1": "",
-      "HEADER2": "18-25v suomalaisista älypuhelimen käyttäjistä (93% kaikista)",
+      "HEADER2": "18-25v suomalaisista älypuhelimen käyttäjistä",
       "HEADER3": "Googlesta liikennettä HY sivustoille",
       "DATA1": "Käyttää älypuhelinta",
       "DATA2": "Käyttää mobiiliwebbiä päivittäin",
       "DATA3": "Potentiaalisia mobiiliweb-käyttäjiä",
-      "DATA4": "Hakee päivittäin Google puhelimella",
-      "DATA5": "Google-hausta HY verkkoliikennettä tulee HY ulkoiselle sivustolle",
-      "DATA6": "Flammaan",
-      "DATA7": "HY ext",
-      "DATA8": "HY flamma"
+      "DATA4": "Hakee päivittäin Googlesta puhelimella",
+      "DATA5": "HY ulkoisten sivujen Googlesta tuleva liikenne",
+      "DATA6": "Flammaan Googlesta tuleva liikenne",
+      "DATA7": "HY ulkoisten sivujen mobiililaitteilla vierailija",
+      "DATA8": "Flamman mobiililaitteilla vierailija"
   },
   "opportunities": {
-      "1": "Mobiililaite on aina mukana",
-      "2": "Mobiililaitteissa on enemmän ominaisuuksia kuin desktop-laitteissa (GPS, kamera, kiihtyvyysanturit)",
-      "3": "HY:n uusien ja uudistuvien palveluiden käyttöä voidaan parhaiten lisätä huomioimalla myös mobiilikäyttäjät",
+      "1": "Mobiililaite on aina mukana.",
+      "2": "Mobiililaitteissa on enemmän ominaisuuksia kuin desktop-laitteissa (GPS, kamera, kiihtyvyysanturit).",
+      "3": "HY:n uusien ja uudistuvien palveluiden käyttöä voidaan parhaiten lisätä huomioimalla myös mobiilikäyttäjät.",
       "HEADER": "Mobiili on mahdollisuus koska"
   },
   "problem": {
-      "1": "Mobiililaitteissa on pienempi ja usein pystysuuntainen näyttö",
-      "2": "Mobiililaitteilla tekstinsyöttö on kömpelömpää",
-      "3": "Mobiililaitteilla skrollailu voi olla helpompaa ja tutumpaa",
-      "HEADER": "Ongelma on selvä. Monet sivustot eivät toimi mobiilissa koska ne on suunniteltu desktopille"
+      "1": "Mobiililaitteissa on pienempi ja usein pystysuuntainen näyttö.",
+      "2": "Mobiililaitteilla tekstinsyöttö on kömpelömpää.",
+      "3": "Mobiililaitteilla skrollailu voi olla helpompaa ja tutumpaa.",
+      "HEADER": "Monet sivustot eivät toimi mobiilissa koska ne on suunniteltu desktopille"
   },
   "summary1": {
-      "HEADER": "Yhteenveto"
+      "HEADER": "Yhteenveto oikeista vastauksista"
   },
   "questions2": {
-      "1": "Vuonna 2015 paras teknologiasuositus verkkopalvelun esittämiseen on",
+      "1": "Vuonna 2015 suositeltavin teknologia verkkopalvelun toteuttamiseen on",
       "2": "Vuonna 2015 huomattavin open source tallennuspaikka",
       "3": "Mikä seuraavista ei ole open sourcea",
       "HEADER": "Tiedätkö..."
   },
   "deviceIndependency": {
-      "1": "Periaatteen tavoitteena palvelujen erinomainen saavutettavuus ja käytettävyys",
-      "2": "Varmistetaan palvelu on mahdollisimman monen käytettävissä päätelaitteesta riippumatta",
-      "3": "Toteutetaan yliopiston yhdenvertaisuusperiaatetta",
-      "HEADER": "Laiteriippumattomuus"
+      "1": "(Pääte)laiteriippumattomuuden periaatteen tavoitteena on varmistaa, että palvelu on mahdollisimman monen käytettävissä päätelaitteesta riippumatta.",
+      "2": "Laiteriippumattoman palvelun käytettävyys on hyvä  päätelaitteesta riippumatta.",
+      "3": "Tämä edistää palvelujen saavutettavuutta ja toteuttaa samalla yliopiston yhdenvertaisuusperiaatetta.",
+      "HEADER": "Laiteriippumattomuus edistää yhdenvertaisuutta"
   },
+  "emulationTest" : {
+    "1": "Kokeile",
+    "2": "Jos käytössäsi on Google Chromen työpöytäselaimen ajantasainen versio, voit sen kehitystyökaluja käyttäen tarkastaa miten selaamasi sivusto toimii erilaisilla mobiililaitteilla. Koska Chrome on tällä hetkellä (vuoden 2015 alussa) Suomessa käytetyin selain, kannattaa sitä kokeilla kokeilla muutenkin.",
+    "3": "Tee näin",
+    "4": "Paina F12 (Windows) tai Cmd+Shift+I (Mac) käynnistääksesi Developer Tools lisäosan. Tämän jälkeen  lisäosan yläpalkista löytyvällä matkapuhelinsymbolilla avautuu mobiilisimulaattori. ",
+    "5": "Uudesta yläpalkista voit valita haluamasi laitteen (Device) käyttäen alasvetovalikkoa (Select model). Lataamalla sivun uudestaan (Reload, Ctrl+R) näkymä päivittää vastaamaan simuloitua mobiililaitetta. Voit jatkaa selailua normaalisti, jolloin saat käsityksen miten sivusto toimii erilaisilla laitteilla. Sulje lisäosa lopuksi oikean yläkulman x-painikkeesta niin näkymä palautuu normaaliksi.",
+    "HEADER":"Miten laiteriippumattomuutta voi testata?"
+    },
   "standards": {
-      "HEADER": "Tulevaisuuden ennakointi on haaste",
+      "HEADER": "Tulevaisuuden ennakointi on suunnitteluhaaste",
       "HEADER2": "Standardit kestävät aikaa parhaiten",
-      "1": "iPad tuli 2010. Google Glass 2012. Älykellot 2013. Mitä tapahtuu vuonna 2015?",
-      "2": "Jos palvelu suunniteltiin 2009, niin miten se toimii nyt uusilla laitteilla?",
-      "3": "Toimittajat vaihtuvat, perusteknologia säilyy",
-      "4": "Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen",
-      "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti"
+      "1": "iPad tuli vuonna 2010. Google Glass 2012. Älykellot 2013.",
+      "2": "Jos palvelu suunniteltiin 2009, niin miten se toimii nyt näillä uusilla laitteilla? Mitä uusi laitteita nähdään vuonna 2015?",
+      "3": "Toimittajat vaihtuvat, perusteknologia säilyy.",
+      "4": "Ensimmäisen HTML standardin mukaan 1995 luodut sivut toimivat edelleen.",
+      "5": "HTML5 standardia kehitetään edelleen ja tuki sille parantuu jatkuvasti."
   },
   "openPrincipals": {
-      "1": "Open data",
-      "2": "Open source",
+      "1": "Avoimuus kiteytyy kahteen toimintamalliin:",
+      "2": "Avoin lähdekoodi (Open source)",
+      "3": "Avoin data (Open data)" ,
       "HEADER": "Avoimuuden periaate"
   },
   "openData": {
-      "HEADER": "Open Data"
+      "1": "Julkaistujen tutkimusaineistojen datan pitäisi olla yhteiskäyttöistä ja avointa. Avoin data tarkoittaa tämän periaatteen toteuttamista tietojärjestelmien tasolla.",
+      "2": "Jos data on sen arvoista, että se kannattaa esittää käyttäjälle jossakin palvelussa, se kannattaa ehdottomasti myös tarjota koneluettavassa muodossa ohjelmointirajapinnassa (eli API:ssa)",
+      "3": "Ohjelmointirajapintojen avulla tietojärjestelmät voivat hallitusti ja turvallisesti vaihtaa tietoja keskenään.",
+      "4": "",
+      "HEADER": "Mitä on avoin data? (Open data)"
+  },
+  "openData2": {
+    "1": "Avoimet rajapinnat mahdollistavat järjestelmien innovatiivisen yhdistämisen ja tietojen uudelleen käyttämisen. ",
+    "2": "Esimerkiksi Google karttojen rajapinnan varaan on rakennettu lukemattomia palveluita kuten Eat.fi ja AuratKartalla.com. ",
+    "3": "Taustajärjestelmien (back end) avoimet rajapinnat helpottavat myös esimerkiksi nettipalvelun ulkoasun (front end) uudistamista ilman taustajärjestelmän muuttamista.",
+    "4": "Avoin data ja avoin lähdekoodi sopivat hyvin yhteen.",
+    "HEADER": "Avoin data kantaa pidemmälle"
   },
   "openSource": {
-      "HEADER": "Open Source"
+      "1": "Tiedettä on tehty aina jakamalla omat tulokset muiden arvioitaviksi ja opittaviksi. Open Source on yksinkertaistetusti saman periaatteen käyttämistä ohjelmistokehityksessä - täsmälleen samoista syistä.",
+      "2": "Helsingin Yliopistosta lähtenyt Linux on maailman merkittävin avoimen lähdekoodin tuote.",
+      "HEADER": "Mitä on avoin lähdekoodi? (open source)"
   },
   "openSource2": {
-      "1": "Lähdekoodi GitHubissa",
-      "HEADER": "Tämäkin projekti on open sourcea"
+      "1": "Tämän oppaan lähdekoodi on tallennettu GitHubiin, kaikille avoimessa pienten ja jättimäisten toimijoiden käyttämässä koodivarastossa (repository). ",
+      "2": "Kuka tahansa voi kopioida eli “forkata” lähdekoodin itselleen ja käyttää sitä tekijän valitseman lisenssin mukaisesti.",
+      "3": "GitHubilla on miljoonia käyttäjiä. Se on kuudessa vuodessa kasvanut maailman suurimmaksi avoimeksi koodivarastoksi.",
+      "4": "",
+      "HEADER": "Tämänkin oppaan lähdekoodi on avointa"
+  },
+  "openSource3": {
+    "1":"Avoin lähdekoodi auttaa sinua ja muita.",
+    "2":"Avoimen lähdekoodin ympärille on mahdollista kehittää kannattavaa liiketoimintaa, vaikka ohjelmistolisenssien myynti ei ole mahdollista. Tällaisia tuotteita ovat mm. Android, WordPress, MySQL, Mozilla, Enterprise Linuxit ja OpenOffice, Google Chromium.",
+    "3":"Vaatimalla avointa lähdekoodia myös ulkoisissa hankinnoista et joudu koskaan yhden suljetun ohjelmistoratkaisun varaan. ",
+    "4":"Tämän oppaan lähdekoodi on avointa ja käytettävissä Githubissa: {{gitURL}}",
+    "HEADER":"Hyödynnä avointa lähdekoodia"
   },
   "mobileFriendly": {
-      "1": "Responsiivinen verkkopalvelu",
-      "2": "verkkosivusto, joka on suunniteltu mobiilikäyttöä ajatellen.",
+      "1": "Responsiivinen verkkopalvelu (mobiiliweb)",
+      "2": "Verkkosivusto, joka on suunniteltu mobiilikäyttö huomioided.",
       "3": "Sovellukset",
-      "4": "Jokaiselle käyttöjärjestelmälle oma sovellus, joita jaellaan Applen App Storessa, Google Play Storessa ja Windows Phone Storessa ja asennetaan laitteelle",
-      "HEADER": "Mobiiliystävälliset vaihtoehdot verkkopalvelulle"
+      "4": "Tietyille käyttöjärjestelmille laadittuja ohjelmia, joita jaellaan Applen App Storessa, Google Play Storessa tai Windows Phone Storessa ja asennetaan mobiililaitteille.",
+      "HEADER": "Mobiiliystävälliset vaihtoehdot Internet-palvelulle"
   },
   "questions3": {
-      "1": "Mobiililaitteille tarvitaan oma verkkosivustonsa, kuten m.helsinki.fi",
+      "1": "Mobiiliwebille tarvitaan oma verkkosivustonsa, kuten m.helsinki.fi",
       "2": "Mobiiliwebin avulla voi ottaa valokuva",
       "3": "Mobiiliwebin avulla voi luoda paikkatietoisia palveluja",
       "HEADER": "Arvioi"
   },
   "mobileWeb1": {
       "1": "Mobiiliweb tarkoittaa verkkopalvelua tai webapplikaatiota, joka toimii erilaisilla laitteilla tavallisessa selaimessa - joskus sovellusmaisesti.",
-      "2": "Aiemmin tehtiin usein myös oma verkko-osoitteensa, esim. http://m.hs.fi, mutta nykyään yhtä sivustoa pidetään parempana",
+      "2": "Aiemmin tehtiin usein myös oma verkko-osoitteensa, esim. http://m.hs.fi, mutta nykyään yhtä sivustoa pidetään parempana. Näin käyttäjää ei tarvitse ohjailla eri sivustojen välillä ja sama osoite toimii kaikilla laitteilla.",
       "HEADER": "Mobiiliweb - mobiiliystävällinen verkkopalvelu"
   },
   "mobileWeb2": {
       "HEADER": "Mobiiliystävälliset verkkosivustot ovat responsiivisia",
-      "HEADER2": "Responsiivisen/PLR verkkopalvelun tunnistaa näistä",
-      "SUB_HEADER": "Responsiivinen ulkoasu/taitto",
+      "0": "Responsiivinen palvelu mukautuu käytetyn laitteen näytön mittasuhteisiin ja säilyy käytettävänä eri laitteilla. Tämä opas on suunniteltu responsiiviseksi.",
+      "HEADER2": "Responsiivisen verkkopalvelun tunnistaa näistä ominaisuuksista",
+      "SUB_HEADER": "Responsiivinen taitto",
       "SUB_HEADER2": "Responsiiviset kuvat",
+      "1": "Responsiivisuuden lisäksi puhutaan mukautuvuudesta (adaptiivisuus), jolla tarkoitetaan palvelun laajempaa muuttumista käyttäjän, käyttöhistorian ja käyttötilanteen mukaan.",
       "TRY": "Kokeile",
-      "A_1": "Palvelu mukautuu käytetyn laitteen näytön mittasuhteisiin ja säilyy käytettävänä eri laitteilla.",
+      "A_1": "Responsiivisen palvelun sivutaitto mukautuu käytetyn laitteen näytön mittasuhteisiin ja säilyy käytettävänä eri laitteilla.",
       "A_2": "Jos luet tätä desktopilla, kokeile muuttaa tämän sivun kokoa vetämällä verkkoselaimen reunaa pienemmäksi ja sitten suuremmaksi.",
       "A_3": "Jos käytät mobiililaitetta, jonka voi kääntää, kokeile pyöräyttää näkymä 90 astetta.",
-      "B_1": "Kuvat, jotka ovat oikean kokoisia suhteessa näyttöön",
+      "B_1": "Responsiivisen palvelun kuvat ovat oikean kokoisia suhteessa näyttöön ja taittoon. Ne voivat myös adaptoitua laitteen näyttöominaisuuksiin ja nettiyhteyden nopeuteen.",
       "B_2": "Suositun FullHD (1920x1080) näytössä on 9 kertaa enemmän informaatiota kuin pienen mobiililaitteen näytölle mahtuu.",
       "B_3": "Palvelun kannattaa lähettää laitteen ominaisuuksiin sopivan kokoinen kuva"
   },
   "features": {
+      "0": "Kokeile näitä:",
       "1": "Et tarvitse sovellusta seuraaviin:",
       "2": "Valokuvien ottamiseen",
       "3": "Paikkatiedon käyttämiseen",
@@ -213,7 +248,7 @@
   "questions4": {
       "1": "Suomessa käytetyin mobiilikäyttöjärjestelmä on",
       "2": "Mitä seuraavista Applen mobiililaitteissa ei voi käyttää",
-      "3": "Syksyllä 2014 yhdysvaltalainen älypuhelimen käyttäjä asensi keskimäärin näin monta appia /kk",
+      "3": "Syksyllä 2014 yhdysvaltalainen älypuhelimen käyttäjä asensi keskimäärin näin monta appia per kk.",
       "HEADER": "Arvioi",
       "NATIVE": "Natiivi appeja",
       "HYBRID": "Hybridi appeja",
@@ -221,30 +256,35 @@
       "WEB": "Web appeja"
   },
   "nativeHybrid": {
-      "1": "Sanalla sovellus voidaan viitata ainakin kolmeen erilaiseen mobiililaitteissa toimivaan ohjelmistoon",
-      "2": "Web-applikaatiot ovat verkkoselaimessa toimivia, usein HTML5:en perustuvia sovelluksia. Niitä ei jaella sovelluskaupoissa eikä niitä voi ladata laitteille.",
-      "3": "Natiiviapplikaatiot on kehitetty alusta pitäen tietylle käyttöjärjestelmälle tietyllä kielellä: Android: Java, iOs: Objective C, C, Windows C#, C++",
-      "4": "Hybridiapplikaatio on sovellukseksi “paketoitu” web applikaatio, johon on usein lisätty joku natiiviapplikaation kielellä laadittu lisäosa",
-      "5": "Näiden lisäksi sovelluksia löytyy älytelevisioille, Facebookille ja monille muille ohjelmistoalustoille.",
+      "1": "Sanalla sovellus voidaan viitata ainakin kolmeen erilaiseen mobiililaitteissa toimivaan ohjelmistoon:",
+      "2": "Web-applikaatiot (kutsutaan myös nimillä verkkosovellukset ja selainsovellukset) ovat verkkoselaimessa toimivia, usein HTML5:en perustuvia sovelluksia. Niitä ei jaella sovelluskaupoissa eikä niitä voi ladata laitteille. ",
+      "3": "Natiiviapplikaatiot on kehitetty alusta pitäen tietylle käyttöjärjestelmälle tietyllä ohjelmointikielellä.",
+      "4": "Hybridiapplikaatio on sovellukseksi “paketoitu” web applikaatio, johon on usein lisätty natiiviapplikaation kielellä laadittu lisäosa.",
+      "5": "Näiden lisäksi sovelluksia löytyy älytelevisioille, Facebookille, Symbianille ja monille muille ohjelmistoalustoille.",
       "HEADER": "Natiivit ja hybridit"
   },
   "comparison": {
       "1": "Löydetään ja asennetaan sovelluskaupasta",
       "2": "Tuki mobiililaitteen ominaisuuksille (kamera, paikannus, kiihtyvyys, eleet...)",
       "3": "Osittainen tuki",
-      "4": "Ikoni kotinäyttöön",
-      "5": "Notifikaatiot",
-      "6": "vain esim. email",
+      "4": "Kuvake kotiruudulle",
+      "5": "Ilmoitukset",
+      "6": "Ei laitteessa (esim. email)",
       "7": "Toteutusteknologia",
       "8": "laitevalmistajakohtainen",
-      "HEADER": "Eri sovellusratkaisut",
-      "WEB": "Web appi",
-      "HYBRID": "Hybridi appi",
-      "NATIVE": "Natiivi appi"
+      "9": "Osittainen",
+      "HEADER": "Erilaisten sovellusten ominaisuuksia vertailussa",
+      "WEB": "Web-app.",
+      "HYBRID": "Hybridiapp.",
+      "NATIVE": "Natiiviapp."
   },
   "stats5": {
-      "1": "Suomessa on eniten käytössä Android (Google) iOs ja (Apple) käyttöjärjestelmien mobiililaitteita, mutta myös Windows Mobilea käytetään.",
-      "HEADER": "Sovellukset"
+      "1": "Suomessa on eniten käytössä Android (Google) ja iOs (Apple) käyttöjärjestelmien mobiililaitteita, mutta myös Windows Phonea (WP; Microsoft) käytetään.",
+      "2": "Käyttöjärjestelmät ovat jakautuneet käyttäjäryhmittäin epätasaisesti. ",
+      "3": "Esimerkiksi HY:n ulkoisilla sivuilla iOs 51%, Android 34% ja WP 14%.",
+      "4": "",
+      "LEGEND1":"Suomessa vuonna 2014 lopussa käytössä olleet mobiilikäyttöjärjestelmät Statcounterin mukaan",
+      "HEADER": "Mobiililaitteiden käyttäjät jakautuvat epätasaisesti kolmeen leiriin"
   },
   "appStrength": {
       "1": "Uusi kanava: näkyvyys sovelluskaupassa",
@@ -257,17 +297,18 @@
       "HEADER": "Sovellusten vahvuudet"
   },
   "apps": {
-      "1": "Ihmiset etsivät sovelluskaupoista tuttuja brändejä.",
+      "1": "Ihmiset etsivät sovelluskaupoista tuttuja brändejä ja toimintoja.",
       "2": "Sovellusten sisältöjä on vaikea jakaa eikä Google ei osaa hakea sisältöjä sovellusten sisältä.",
       "3": "Jos haluat sovelluksen sisällön saavutettavaksi tarvitset myös verkkopalvelun.",
-      "HEADER": "Muista tämä sovelluksista",
-      "SUMMARY": "Chomp & Google Playn suosituimmat hakusanat vuoteen 2012",
+      "HEADER": "Sovelluksilla on rajansa",
+      "SUMMARY": "Google Playn suosituimmat hakusanat kesällä 2012 Chompin mukaan",
       "KEYWORD": "Hakusana",
       "VOLUME": "Kuukausivolyymi"
   },
   "appDownloads": {
-      "1": "Viime syksynä suurin osa yhdysvaltalaisista mobiilikäyttäjistä ei ollut viimeisen kuukauden aikana asentanut yhtään uutta sovellusta.",
-      "HEADER": "Uusien sovellusten käyttöönottamiseen voi olla kynnys",
+      "1": "Kesällä 2014 suurin osa yhdysvaltalaisista mobiilikäyttäjistä ei ollut viimeisen kuukauden aikana asentanut yhtään uutta sovellusta.",
+      "2": "Millä vakuutat käyttäjän, että juuri sinun sovelluksesi on heille tärkeä?",
+      "HEADER": "Uuden sovelluksen hankkiminen on kynnys palvelun käytölle",
       "DOWNLOADS": "{{value}} sovellusta",
       "LEGEND": "Mobiilikäyttäjien kesällä {{value}} lataamien sovellusten määrä %"
   },
@@ -279,11 +320,14 @@
       "4": "Sovelluskauppaan julkaisu",
       "5": "Ylläpito ja tuki"
   },
+  "questions6": {
+    "1": "Paljonko kalliimpaa on kehittää ja ylläpitää kolme mobiilisovellusta kolmen vuoden ajan kuin yhtä mobiiliweb-sivustoa?"
+  },  
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
-      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Esimerkkinä vaikkapa yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
-      "2": "Laskelma uuden palvelun mobiilijulkaisun kustannuksista kolmen vuoden ajalla, poislukien suunnittelu ja käyttäjätuki.",
-      "3": "Strategia:",
+      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Kuten yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
+      "2": "Tämä on laskelma uuden palvelun mobiilijulkaisun kustannuksista kolmen vuoden ajalla, poislukien suunnittelu ja käyttäjätuki.",
+      "3": "Julkaisutapa:",
       "4": "Mobiiliweb",
       "5": "Mobiiliweb + 3 paketoitua sovellusta",
       "6": "Kolme natiiviapplikaatiota",
@@ -296,25 +340,33 @@
   },
   "principles": {
     "HEADER": "Suunnittelu edellyttää laajaa näkemystä myös muista periaatteista",
-      "1": "Laiteriippumattomuus ja avoimuus ovat tärkeitä juuri nyt.",
-      "2": "Jos palvelusi on saavutettava ja siitä on tullut tunnettu, myös seuraavien periaatteiden noudattaminen on tärkeää:",
+      "1": "Laiteriippumattomuus ja avoimuus ovat tärkeitä periaatteita juuri nyt.",
+      "2": "Jos palvelusi on saavutettava ja siitä on tullut tunnettu, myös seuraavien periaatteiden noudattaminen on tärkeää käyttäjäkokemuksen kannalta:",
       "3": "Luotettavuus, suorituskyky, tietoturva ja käytettävyys"
   },
   "userCentredDesign": {
     "HEADER": "Käyttäjäkeskeisen suunnittelu auttaa onnistumaan",
-      "1": "Käyttäjäkeskeisyyden soveltaminen ohjelmisto projektin eri vaiheissa:",
-      "2": "Ymmärrä käyttäjän tarpeet ja hänen palvelusta saamansa arvo",
-      "3": "Keskity käyttöliittymässä olennaisiin",
-      "4": "Testaa palvelua käyttäjillä palvelukehityksen aikana",
+      "1": "Käyttäjäkeskeisyyden soveltaminen ohjelmistoprojektin eri vaiheissa:",
+      "2": "Ymmärrä käyttäjän tarpeet ja hänen palvelustaan saamansa arvo",
+      "3": "Keskity käyttöliittymässä olennaiseen em. arvon kannalta",
+      "4": "Testaa palvelua käyttäjillä jo kehityksen aikana",
       "5": "Seuraa sovelluksen käyttöä julkaisun jälkeen analytiikan avulla ja aseta käytölle ja jatkokehitykselle mitattavia tavoitteita"
   },
   "recommendations": {
       "HEADER": "Tietotekniikkakeskuksen suosituksia",
-      "1": "Varmista että palvelulle on yksi laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
+      "1": "Varmista että palvelulle on laiteriippumaton väylä, esim. mobiiliystävällinen verkkosivusto",
       "2": "Jos palvelun voi toteuttaa web-applikaationa, tee ensisijaisesti näin",
       "3": "Jos natiivisovellus on välttämätön, mieti miten voit varmistaa, että eri laitteita käyttävät voivat sitä käyttää"
     },
   "example": {
+    "INTRO":"Tämä sovellus toteutettiin tammikuussa 2015 käyttäen laajasti tunnettuja ja testattuja open source komponentteja. Tässä on hyödynnetty mm. seuraavia teknologioita: ",
+    "1":"HTML5",
+    "2":"SASS",
+    "3":"AngularJS",
+    "4":"",
+    "5":"",
+    "6":"",
+    "":"",
     "HEADER": "Esimerkki web-applikaatiosta"
   },
   "contactUs": {
