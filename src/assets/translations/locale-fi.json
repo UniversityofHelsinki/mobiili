@@ -323,7 +323,7 @@
   },
   "questions6": {
     "1": "Paljonko kalliimpaa on kehittää ja ylläpitää kolme mobiilisovellusta kolmen vuoden ajan kuin yhtä mobiiliweb-sivustoa?"
-  }  
+  },  
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
       "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Kuten yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
@@ -361,9 +361,13 @@
     },
   "example": {
     "INTRO":"Tämä sovellus toteutettiin tammikuussa 2015 käyttäen laajasti tunnettuja ja testattuja open source komponentteja. Tässä on hyödynnetty mm. seuraavia teknologioita: ",
+    "1":"HTML5",
+    "2":"SASS",
+    "3":"AngularJS",
+    "4":"",
+    "5":"",
+    "6":"",
     "":"",
-    "":"",
-    "":"","":"",
     "HEADER": "Esimerkki web-applikaatiosta"
   },
   "contactUs": {
