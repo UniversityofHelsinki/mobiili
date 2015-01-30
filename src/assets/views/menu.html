@@ -66,7 +66,7 @@
 
 <div class="progress-header">
   <dl class="sub-nav">
-    <dd ng-class="{active: $index==progress.currentPart-1}" ng-repeat="value in subNav">
+    <dd ng-class="{active: $index==progress.currentPart - 2}" ng-repeat="value in subNav">
       <a href="/#/{{lang}}/{{value}}" data-text-min="{{romanize($index + 1)}}" data-text="{{'partHeadings.' + value.toUpperCase() | translate}}" translate></a>
     </dd>
   </dl>
