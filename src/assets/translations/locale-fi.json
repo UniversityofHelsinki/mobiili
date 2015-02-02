@@ -73,8 +73,7 @@
   },
   "index": {
       "1": "Tässä verkkosovelluksessa kerromme mitä modernilta verkkopalvelulta vaaditaan ja mitä hankintoja suunnitellessa pitää tietää, jotta hankinnan hyödyt käyttäjille ovat pitkäikäiset. ",
-      "2": "Keskitymme kahteen periaatteeseen: päätelaiteriippumattomuuteen ja avoimuuteen. ",
-      "3": "Keskitymme kahteen suunnitteluperiaatteeseen: laiteriippumattomuuteen ja avoimuuteen. Aloitamme siitä, miksi nämä periaatteet ovat ajankohtaisia juuri nyt.",
+      "2": "Keskitymme kahteen suunnitteluperiaatteeseen: laiteriippumattomuuteen ja avoimuuteen. Aloitamme siitä, miksi nämä periaatteet ovat ajankohtaisia juuri nyt.",
       "4": "Tämän lisäksi kerromme millaisia vaihtoehtoja mobiiliweb ja mobiilisovellukset tarjoavat verkkopalveluille.",
       "5": "Tämä opas on osa Helsingin yliopiston mobiilistrategian dokumentaatiota ja se on jaettu kuuteen osaan:",
       "HEADER": "Tulevaisuuden kestäviä verkkopalveluja"
@@ -88,7 +87,7 @@
       "Q3": "Palveluni tietojen jakaminen ulkopuolisille on aina tietoturvariski"
   },
   "questions1": {
-      "1": "Kuinka suuri osa HY ulkoisen verkkosivuston vieruista tapahtui mobiililla joulukuussa 2014?",
+      "1": "Kuinka suuri osa HY:n ulkoisen verkkosivuston vieruista tapahtui mobiililla joulukuussa 2014?",
       "2": "Kuinka suuri osa vierailuista  suosituissa suomalaisissa verkkopalveluissa vuonna 2014 tapahtui mobiililaitetta?",
       "3": "Kuinka suuri osa opiskelijoiden ikäluokasta (18-25v) teki päivittäin mobiilista Google-hakuja vuonna 2013?",
       "HEADER": "Arvioi"
@@ -101,7 +100,7 @@
   },
   "stats2": {
       "1": "Jo nyt merkittävillä kotimaisilla sivustoilla 60% käyttäjistä selaa mobiililaitteella.",
-      "2": "Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla",
+      "2": "Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla.",
       "HEADER": "Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa",
       "CHART_HEADER": "Internetin käytttö Suomessa eri laitteilla"
   },
@@ -109,7 +108,7 @@
       "HEADER": "Suomalaisista opiskelijoista vähintään 76% on jo mobiilissa",
       "1": "",
       "HEADER2": "18-25v suomalaisista älypuhelimen käyttäjistä",
-      "HEADER3": "Googlesta liikennettä HY sivustoille",
+      "HEADER3": "Googlesta liikennettä HY:n sivustoille",
       "DATA1": "Käyttää älypuhelinta",
       "DATA2": "Käyttää mobiiliwebbiä päivittäin",
       "DATA3": "Potentiaalisia mobiiliweb-käyttäjiä",
@@ -123,26 +122,26 @@
       "1": "Mobiililaite on aina mukana.",
       "2": "Mobiililaitteissa on enemmän ominaisuuksia kuin desktop-laitteissa (GPS, kamera, kiihtyvyysanturit).",
       "3": "HY:n uusien ja uudistuvien palveluiden käyttöä voidaan parhaiten lisätä huomioimalla myös mobiilikäyttäjät.",
-      "HEADER": "Mobiili on mahdollisuus koska"
+      "HEADER": "Mobiili on mahdollisuus koska..."
   },
   "problem": {
       "1": "Mobiililaitteissa on pienempi ja usein pystysuuntainen näyttö.",
       "2": "Mobiililaitteilla tekstinsyöttö on kömpelömpää.",
       "3": "Mobiililaitteilla skrollailu voi olla helpompaa ja tutumpaa.",
-      "HEADER": "Monet sivustot eivät toimi mobiilissa koska ne on suunniteltu desktopille"
+      "HEADER": "Monet sivustot eivät toimi mobiilissa, koska ne on suunniteltu desktopille"
   },
   "summary1": {
       "HEADER": "Yhteenveto oikeista vastauksista"
   },
   "questions2": {
       "1": "Vuonna 2015 suositeltavin teknologia verkkopalvelun toteuttamiseen on",
-      "2": "Vuonna 2015 huomattavin open source tallennuspaikka",
+      "2": "Vuonna 2015 huomattavin open source -tallennuspaikka",
       "3": "Mikä seuraavista ei ole open sourcea",
       "HEADER": "Tiedätkö..."
   },
   "deviceIndependency": {
       "1": "(Pääte)laiteriippumattomuuden periaatteen tavoitteena on varmistaa, että palvelu on mahdollisimman monen käytettävissä päätelaitteesta riippumatta.",
-      "2": "Laiteriippumattoman palvelun käytettävyys on hyvä  päätelaitteesta riippumatta.",
+      "2": "Laiteriippumattoman palvelun käytettävyys on hyvä päätelaitteesta riippumatta.",
       "3": "Tämä edistää palvelujen saavutettavuutta ja toteuttaa samalla yliopiston yhdenvertaisuusperiaatetta.",
       "HEADER": "Laiteriippumattomuus edistää yhdenvertaisuutta"
   },
@@ -207,14 +206,14 @@
   },
   "mobileFriendly": {
       "1": "Responsiivinen verkkopalvelu (mobiiliweb)",
-      "2": "Verkkosivusto, joka on suunniteltu mobiilikäyttö huomioided.",
+      "2": "Verkkosivusto, joka on suunniteltu mobiilikäyttö huomioiden.",
       "3": "Sovellukset",
       "4": "Tietyille käyttöjärjestelmille laadittuja ohjelmia, joita jaellaan Applen App Storessa, Google Play Storessa tai Windows Phone Storessa ja asennetaan mobiililaitteille.",
       "HEADER": "Mobiiliystävälliset vaihtoehdot Internet-palvelulle"
   },
   "questions3": {
       "1": "Mobiiliwebille tarvitaan oma verkkosivustonsa, kuten m.helsinki.fi",
-      "2": "Mobiiliwebin avulla voi ottaa valokuva",
+      "2": "Mobiiliwebin avulla voi ottaa valokuvia",
       "3": "Mobiiliwebin avulla voi luoda paikkatietoisia palveluja",
       "HEADER": "Arvioi"
   },
@@ -264,9 +263,12 @@
   },
   "nativeHybrid": {
       "1": "Sanalla sovellus voidaan viitata ainakin kolmeen erilaiseen mobiililaitteissa toimivaan ohjelmistoon:",
-      "2": "Web-applikaatiot (kutsutaan myös nimillä verkkosovellukset ja selainsovellukset) ovat verkkoselaimessa toimivia, usein HTML5:en perustuvia sovelluksia. Niitä ei jaella sovelluskaupoissa eikä niitä voi ladata laitteille. ",
-      "3": "Natiiviapplikaatiot on kehitetty alusta pitäen tietylle käyttöjärjestelmälle tietyllä ohjelmointikielellä.",
-      "4": "Hybridiapplikaatio on sovellukseksi “paketoitu” web applikaatio, johon on usein lisätty natiiviapplikaation kielellä laadittu lisäosa.",
+      "2": "Web-applikaatiot",
+      "2_1": "(kutsutaan myös nimillä verkkosovellukset ja selainsovellukset) ovat verkkoselaimessa toimivia, usein HTML5:en perustuvia sovelluksia. Niitä ei jaella sovelluskaupoissa eikä niitä voi ladata laitteille. ",
+      "3": "Natiiviapplikaatiot",
+      "3_1": "on kehitetty alusta pitäen tietylle käyttöjärjestelmälle tietyllä ohjelmointikielellä.",
+      "4": "Hybridiapplikaatio",
+      "4_1": "on sovellukseksi “paketoitu” web applikaatio, johon on usein lisätty natiiviapplikaation kielellä laadittu lisäosa.",
       "5": "Näiden lisäksi sovelluksia löytyy älytelevisioille, Facebookille, Symbianille ja monille muille ohjelmistoalustoille.",
       "HEADER": "Natiivit ja hybridit"
   },
@@ -329,11 +331,11 @@
   },
   "questions6": {
     "HEADER": "Arvioi",
-    "1": "Paljonko kalliimpaa on kehittää ja ylläpitää kolme mobiilisovellusta kolmen vuoden ajan kuin yhtä mobiiliweb-sivustoa?"
+    "1": "Kuinka paljon kalliimpaa on kolmen vuoden aikana kehittää ja ylläpitää kolme mobiilisovellusta verrattuna yhteen mobiiliweb-sivustoon?"
   },
   "costs": {
     "HEADER": "Ohjelmistokehityksen kustannukset",
-      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Kuten yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
+      "1": "Esimerkkinä mobiiliapplikaatio, jolla käyttäjä pystyy hoitamaan yhden palvelun tärkeimmät toiminnot. Esimerkiksi yksinkertainen suoraviestipalvelu tai paikkatietopalvelu kuten Eat.fi",
       "2": "Tämä on laskelma uuden palvelun mobiilijulkaisun kustannuksista kolmen vuoden ajalla, poislukien suunnittelu ja käyttäjätuki.",
       "3": "Julkaisutapa",
       "4": "Mobiiliweb",
@@ -377,7 +379,7 @@
     "HEADER": "Apu kysymyksiin palveluhankinta-asioissa on lähellä",
       "1": "Et ole yksin.",
       "2": "Vastauksia kysymyksiin, joihin tämä opas ei vielä vastannut saat meiltä.",
-      "3": "Tietotekniikkakeskus neuvoo ja konsultoi HY yksikköjä teknisen arkkitehtuurin valinnoissa ja muissa hankintaan liittyvissä kysymyksissä, joihin tämä opas ei vastannut.",
+      "3": "Tietotekniikkakeskus neuvoo ja konsultoi HY:n yksikköjä teknisen arkkitehtuurin valinnoissa ja muissa hankintaan liittyvissä kysymyksissä, joihin tämä opas ei vastannut.",
       "4": "Kysy meiltä heti, kun mietit palveluhankintoja."
   }
 }
