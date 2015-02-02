@@ -6,6 +6,7 @@ angular.module('HY')
     $scope.search = Search;
     $scope.subNav = ['part1', 'part2', 'part3', 'part4', 'part5', 'part6'];
     $scope.experience = Experience;
+    $scope.romanize = Utils.romanize;
 
     if ($state.current.name === 'app.bookmarks' || $state.current.name === 'app.search') {
       $scope.addClasses = 'hide-controls';
@@ -27,11 +28,17 @@ angular.module('HY')
       }
       if (newVal && newVal.value.length > 0) {
         $state.go('app.search', {lang: $scope.lang});
-      } else if (newVal && typeof newVal.value === 'string') {
-        $location.path(SessionData.get().lastUrl);
       }
     }, true);
 
-    $scope.romanize = Utils.romanize;
+    $scope.searchKeyUp = function($event) {
+      if ($event.keyCode === 13) {
+        // Enter pressed
+        $state.go('app.search', {lang: $scope.lang});
+      } else if ($event.keyCode === 27) {
+        // Esc pressed
+        $scope.search.value = '';
+      }
+    };
 
   });

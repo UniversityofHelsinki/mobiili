@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('SearchController', function($scope, $controller, $stateParams, $translate, Routes, Search) {
+  .controller('SearchController', function($scope, $stateParams, $location, $translate, Routes, Search, SessionData) {
 
     $scope.lang = $stateParams.lang;
     $translate.use($stateParams.lang);
@@ -11,6 +11,6 @@ angular.module('HY')
     });
 
     $scope.closeSearch = function() {
-      $scope.search.value = '';
+      $location.path(SessionData.get().lastUrl);
     };
   });

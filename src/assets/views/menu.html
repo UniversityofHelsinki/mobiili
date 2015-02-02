@@ -17,7 +17,7 @@
             <form>
               <div class="row collapse">
                 <div class="large-10 small-10 columns">
-                  <input id="search" name="search" type="search" placeholder="{{'defaults.SEARCH' | translate}}" ng-model="search.value" ng-model-options="{ updateOn: 'submit blur', debounce: {'submit': 0, 'blur': 0} }">
+                  <input id="search" name="search" type="search" placeholder="{{'defaults.SEARCH' | translate}}" ng-model="search.value" ng-model-options="{ updateOn: 'submit blur', debounce: {'submit': 0, 'blur': 0} }" ng-keyup="searchKeyUp($event)">
                 </div>
                 <div class="large-2 small-2 columns">
                   <a href="/#/{{lang}}/search" class="secondary button expand"><i class="fa fa-search"></i></a>
