@@ -32,7 +32,7 @@
     "BEGINNER": "Aloittelija",
     "YOUR_PROGRESS": "Perehtyneisyys",
     "HELP": "Ohje",
-    "END": "Loppu",
+    "END": "Kiitos ",
     "TRY": "Kokeile",
     "SEARCHING": "Etsitään",
     "GENERAL_ERROR": "Jotain meni pieleen",
@@ -46,7 +46,7 @@
       "PART4": "IV. Mobiiliweb",
       "PART5": "V. Sovellukset",
       "PART6": "VI. Palveluhankinnan käytännön vaatimukset",
-      "END": "Loppu"
+      "END": "Opas loppuu tähän. Kiitos."
   },
   "tutorial": {
     "1": "Pääset siirtymään tässä oppaassa sivulta toiselle helposti pyyhkäisemällä oikealle tai vasemmalle käyttäessäsi kosketusnäyttöä tai näppäimistön nuolinäppäimillä.",
@@ -62,8 +62,7 @@
       "PART3": "Mobiiliratkaisut",
       "PART4": "Mobiiliweb",
       "PART5": "Sovellukset",
-      "PART6": "Palveluhankinnan toteutus",
-      "END": "Loppu"
+      "PART6": "Palveluhankinnan toteutus"
   },
   "date": {
       "MAY": "Maaliskuu {{value}}",
@@ -246,8 +245,8 @@
       "2": "Valokuvien ottamiseen",
       "3": "Paikkatiedon käyttämiseen",
       "4": "Puhelimen kotiruudulle lisäämiseen (vain mobiili)",
-      "5": "Tiedon tallentamiseen laitteelle",
-      "6": "Sisällön nopeaan etsimiseen",
+      "5": "Tiedon tallentamiseen laitteelle (esim. tämän sivuston suosikit tallennetaan selaimen tietoihin).",
+      "6": "Sisällön nopeaan etsimiseen (kokeile tämän sivuston hakua)",
       "7": "Reaaliajassa tietojen haku ulkopuolisista lähteistä",
       "8": "Koko sivua ei ladata uudestaan toiselle sivulle siirryttäessä",
       "9": "Tunnistautuminen yhdellä kirjautumisella käyttäjäksi useille sivustoille (SSO)",
@@ -370,13 +369,8 @@
     },
   "example": {
     "INTRO":"Tämä sovellus toteutettiin tammikuussa 2015 käyttäen laajasti tunnettuja ja testattuja open source komponentteja. Tässä on hyödynnetty mm. seuraavia teknologioita: ",
-    "1":"HTML5...",
-    "2":"AngularJS...",
-    "3":"SASS...",
-    "4":"",
-    "5":"",
-    "6":"",
-    "":"",
+    "1": "AngularJS on Googlen kehittämä Single Page Application (SPA) toteutuksia varten suunniteltu Javascript sovelluskehys (framework).",
+    "2": "Sass (Syntatically Awesome Style Sheets) on CSS (Cascading Style Sheets) -laajennus joka mahdollistaa yksinkertaisemman ja monipuolisemman tavan rakentaa tyylitiedostoja.",
     "HEADER": "Esimerkki web-applikaatiosta"
   },
   "contactUs": {
