@@ -7,9 +7,7 @@ angular.module('HY.services', [])
   .factory('Meta', function(Utils) {
     return {
       title: 'HY',
-      description: '',
-      keywords: 'Helsingin Yliopisto, University of Helsinki, Mobiilistrategia, Mobile Strategy',
-      siteName: ''
+      description: ''
     };
   })
   .factory('Utils', function($filter) {
