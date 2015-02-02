@@ -9,6 +9,7 @@ angular.module('HY', [
     'tc.chartjs',
     'angulartics',
     'angulartics.google.analytics',
+    'ng-fastclick',
     'hmTouchEvents'
   ])
   .value('progress', {})
