@@ -199,8 +199,8 @@ angular.module('template/tour/tour.html', []).run(['$templateCache', function($t
     '  <div class=\'joyride-content-wrapper\'>\n' +
     '    <h4 ng-bind=\'title\' ng-show=\'title\'></h4>\n' +
     '    <p ng-bind=\'content\'></p>\n' +
-    '    <a class=\'small button joyride-next-tip\' ng-show=\'!isLastStep()\' ng-click=\'nextStep()\'>{{"defaults.NEXT" | translate}}</a>\n' +
-    '    <a class=\'small button joyride-next-tip\' ng-show=\'isLastStep()\' ng-click=\'endTour()\'>{{"defaults.END" | translate}}</a>\n' +
+    '    <a class=\'small button success joyride-next-tip\' ng-show=\'!isLastStep()\' ng-click=\'nextStep()\'>{{"defaults.NEXT" | translate}}</a>\n' +
+    '    <a class=\'small button success joyride-next-tip\' ng-show=\'isLastStep()\' ng-click=\'endTour()\'>{{"defaults.END" | translate}}</a>\n' +
     '    <a class=\'joyride-close-tip\' ng-click=\'endTour()\'>&times;</a>\n' +
     '  </div>\n' +
     '</div>\n' +
