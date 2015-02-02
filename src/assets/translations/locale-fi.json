@@ -40,12 +40,12 @@
   },
   "parts": {
       "PRELUDE": "Tulevaisuuden kestäviä verkkopalveluja",
-      "PART1": "I. Näin verkkopalveluja ja Internettiä käytetään vuonna 2015",
-      "PART2": "II. Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus",
-      "PART3": "III. Ratkaisuvaihtoehtoja mobiiliin",
-      "PART4": "IV. Mobiiliweb",
-      "PART5": "V. Sovellukset",
-      "PART6": "VI. Palveluhankinnan käytännön vaatimukset",
+      "PART1": "Näin verkkopalveluja ja Internettiä käytetään vuonna 2015",
+      "PART2": "Näin suunnitellaan vuonna 2015: Laiteriippumattomuus ja avoimuus",
+      "PART3": "Ratkaisuvaihtoehtoja mobiiliin",
+      "PART4": "Mobiiliweb",
+      "PART5": "Sovellukset",
+      "PART6": "Palveluhankinnan käytännön vaatimukset",
       "END": "Opas loppuu tähän. Kiitos."
   },
   "tutorial": {
