@@ -212,11 +212,9 @@ angular.module('HY.services', [])
 
   .factory('CorrectAnswers', function() {
     var answers = {
-      mobileUsage: 0,
       hyMobileUsage: 20,
       overallMobileUsage: 60,
       mobileGoogleSearch: 60,
-      textInputMobile: 0,
       tech: 'HTML5',
       openSource: 'GitHub',
       openSource2: 'YouTube',
