@@ -1,5 +1,8 @@
 angular.module('HY')
-  .controller('InfoController', function($scope, $q, $window, Utils) {
+  .controller('InfoController', function($scope, $location, $q, $window, Utils, SessionData) {
+
+    // Set last url information to localStorage data
+    SessionData.set({lastUrl: $location.path()});
 
     $scope.addToHomescreen = function() {
       $window.addToHomescreen({

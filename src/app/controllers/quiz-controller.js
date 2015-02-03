@@ -1,5 +1,9 @@
 angular.module('HY')
-  .controller('QuizController', function($scope, $stateParams, $location, $timeout, Answers, CorrectAnswers) {
+  .controller('QuizController', function($scope, $stateParams, $location, $timeout, Answers, CorrectAnswers, SessionData) {
+
+    // Set last url information to localStorage data
+    SessionData.set({lastUrl: $location.path()});
+
     $scope.addClasses = 'quiz';
 
     var answers = Answers.get('answers') || {},

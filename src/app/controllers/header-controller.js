@@ -26,19 +26,21 @@ angular.module('HY')
       if (newVal && newVal.value === oldVal.value) {
         return;
       }
-      if (newVal && newVal.value.length > 0) {
-        $state.go('app.search', {lang: $scope.lang});
-      }
     }, true);
 
     $scope.searchKeyUp = function($event) {
       if ($event.keyCode === 13) {
         // Enter pressed
-        $state.go('app.search', {lang: $scope.lang});
+        $scope.submitSearch();
       } else if ($event.keyCode === 27) {
         // Esc pressed
         $scope.search.value = '';
       }
+    };
+
+    $scope.submitSearch = function() {
+      $state.go('app.search', {lang: $scope.lang});
+
     };
 
   });

@@ -1,11 +1,6 @@
 angular.module('HY')
   .controller('MainController', function($scope, $state, $stateParams, $translate, $location, $timeout, $tour, SessionData, Experience) {
 
-    if (!$state.is('app.notFound') && !$state.is('app.search') && !$state.is('app.bookmarks')) {
-      // Set last url information to localStorage data
-      SessionData.set({lastUrl: $location.path()});
-    }
-
     if (!$state.is('app.notFound')) {
       // Set visited url information for progress use
       Experience.set($location.path());

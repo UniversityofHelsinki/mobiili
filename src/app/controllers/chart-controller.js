@@ -1,5 +1,8 @@
 angular.module('HY')
-  .controller('ChartController', function($scope, $controller, $translate, $stateParams, MobileVsDT, PlatformComparison, MobileUsers, MobileUsersHy, MobilePlatforms, MobilePlatformsHy, AppDownloads, Search, Utils) {
+  .controller('ChartController', function($scope, $controller, $translate, $stateParams, $location, MobileVsDT, PlatformComparison, MobileUsers, MobileUsersHy, MobilePlatforms, MobilePlatformsHy, AppDownloads, Search, Utils, SessionData) {
+
+    // Set last url information to localStorage data
+    SessionData.set({lastUrl: $location.path()});
 
     // Get search state for view visibility
     $scope.search = Search;
