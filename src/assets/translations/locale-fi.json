@@ -142,7 +142,7 @@
   },
   "deviceIndependency": {
       "1": "(Pääte)laiteriippumattomuuden periaatteen tavoitteena on varmistaa, että palvelu on mahdollisimman monen käytettävissä päätelaitteesta riippumatta.",
-      "2": "Laiteriippumattoman palvelun käytettävyys on hyvä päätelaitteesta riippumatta.",
+      "2": "Tavoitteena pitäisi olla se, että laiteriippumattoman palvelun käytettävyys on hyvä kaikilla yleisillä päätelaitteilla.",
       "3": "Tämä edistää palvelujen saavutettavuutta ja toteuttaa samalla yliopiston yhdenvertaisuusperiaatetta.",
       "HEADER": "Laiteriippumattomuus edistää yhdenvertaisuutta"
   },
