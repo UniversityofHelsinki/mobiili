@@ -208,22 +208,35 @@ ol.part-list {
 }
 
 .links {
-    border: solid 1px $asphalt;
-    margin: 0 0 10px 10px;
+    border-left: solid 1px $asphalt;
+    margin: 0 0 30px 30px;
     float: right;
-    min-height: 100px;
     width: 100%;
+    font-size: 0.9rem;
+    max-width: 350px;
+    display: none;
 
     @media #{$medium-up} {
-        max-width: 350px;
+        display: block;
+    }
+
+    // Bottom links
+    &:last-of-type {
+        display: block;
+        float: none;
+        border: 0;
+        border-top: 1px solid $asphalt;
+        margin: 30px 0 0 0;
+        max-width: none;
+
+        @media #{$medium-up} {
+            display: none;
+        }
     }
 
     &:before {
         content: attr(data-heading);
-        display: block;
         padding: 5px;
-        background-color: $asphalt;
-        color: white;
     }
 
     li {
@@ -236,6 +249,6 @@ ol.part-list {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        margin: 5px 10px;
+        margin: 5px;
     }
 }
