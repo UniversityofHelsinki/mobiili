@@ -33,6 +33,9 @@ angular.module('HY')
       progress.currentPart = partIndex + 1;
 
       $scope.pageCount = partRoutes.length - 1;
+      $scope.routes = [];
+      $scope.pager = _.reject(partRoutes, {id: 'init'});
+      $scope.partId = $stateParams.partId;
 
       // In case pageId is missing, we are dealing with init page, so we need to manually add correct index
       $scope.pageIndex = $stateParams.pageId ? _.findIndex(partRoutes, { id: $stateParams.pageId }) : 0;
