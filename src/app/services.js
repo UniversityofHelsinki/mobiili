@@ -219,7 +219,7 @@ angular.module('HY.services', [])
       mobileUrl:  'false',
       useCamera:  'true',
       useLocation: 'true',
-      mobileOs: 'iOS (Apple)',
+      mobileOs: 'Android',
       appType: 'windows',
       appsInstalled: 0,
       costs: 2.3
