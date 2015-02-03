@@ -36,7 +36,8 @@
     "TRY": "Kokeile",
     "SEARCHING": "Etsitään",
     "GENERAL_ERROR": "Jotain meni pieleen",
-    "APPS": "Sovellukset"
+    "APPS": "Sovellukset",
+    "SOURCES": "Lähteet"
   },
   "parts": {
       "PRELUDE": "Tulevaisuuden kestäviä verkkopalveluja",

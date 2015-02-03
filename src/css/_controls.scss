@@ -206,3 +206,36 @@ ol.part-list {
         display: block;
     }
 }
+
+.links {
+    border: solid 1px $asphalt;
+    margin: 0 0 10px 10px;
+    float: right;
+    min-height: 100px;
+    width: 100%;
+
+    @media #{$medium-up} {
+        max-width: 350px;
+    }
+
+    &:before {
+        content: attr(data-heading);
+        display: block;
+        padding: 5px;
+        background-color: $asphalt;
+        color: white;
+    }
+
+    li {
+        display: block;
+    }
+
+    a {
+        display: block;
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 5px 10px;
+    }
+}
