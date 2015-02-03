@@ -1,11 +1,13 @@
-$view-fade-out-duration: .2s;
-$view-fade-in-duration:  .5s;
-$view-padding:            0 0 40px 0;
+$view-fade-out-duration: 0.2s;
+$view-fade-in-duration:  0.5s;
+$view-padding:           0 0 40px 0;
 
-div [ui-view] {
+[ui-view="nav"], [ui-view="content"] {
   overflow: hidden;
   padding: $view-padding;
   margin: 0 20px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 
   &.ng-leave {
     opacity: 1;
@@ -19,15 +21,16 @@ div [ui-view] {
     opacity: 0;
     max-height: 0;
     padding: 0;
-    -webkit-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
-       -moz-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
-         -o-transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
-            transition:opacity $view-fade-in-duration ease-in-out $view-fade-out-duration, max-height 0s linear $view-fade-out-duration, padding 0s linear $view-fade-out-duration;
+
+    -webkit-transition:all $view-fade-in-duration ease-in-out $view-fade-out-duration;
+       -moz-transition:all $view-fade-in-duration ease-in-out $view-fade-out-duration;
+         -o-transition:all $view-fade-in-duration ease-in-out $view-fade-out-duration;
+            transition:all $view-fade-in-duration ease-in-out $view-fade-out-duration;
   }
 
   &.ng-enter-active {
     opacity: 1;
-    max-height: 10000px;
+    max-height: 100000px;
     padding: $view-padding;
   }
 
