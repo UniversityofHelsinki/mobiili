@@ -148,7 +148,7 @@ angular.module('HY', [
     $locationProvider.html5Mode(false);
 
     $translateProvider.useStaticFilesLoader({
-      prefix: '/assets/translations/locale-',
+      prefix: 'assets/translations/locale-',
       suffix: '.json'
     });
     $translateProvider.preferredLanguage('fi');

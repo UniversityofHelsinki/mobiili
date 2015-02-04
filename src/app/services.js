@@ -424,7 +424,7 @@ angular.module('HY.services', [])
       },
       loadTranslations: function(lang) {
         var _this = this;
-        return $http.get('/assets/translations/locale-' + lang + '.json').success(function(data) {
+        return $http.get('assets/translations/locale-' + lang + '.json').success(function(data) {
           _this.translations = data;
         });
       },
