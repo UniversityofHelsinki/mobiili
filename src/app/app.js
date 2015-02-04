@@ -35,7 +35,7 @@ angular.module('HY', [
         url: '/:lang/search',
         views: {
           'header@': {
-            templateUrl: '/assets/views/menu.html',
+            templateUrl: 'assets/views/menu.html',
             controller: 'HeaderController'
           },
           'content@': {
@@ -48,7 +48,7 @@ angular.module('HY', [
         url: '/:lang/bookmarks',
         views: {
           'header@': {
-            templateUrl: '/assets/views/menu.html',
+            templateUrl: 'assets/views/menu.html',
             controller: 'HeaderController'
           },
           'content@': {
@@ -61,7 +61,7 @@ angular.module('HY', [
         url: '/:lang/:partId/info/:pageId',
         views: {
           'header@': {
-            templateUrl: '/assets/views/menu.html',
+            templateUrl: 'assets/views/menu.html',
             controller: 'HeaderController'
           },
           'content@': {
@@ -80,7 +80,7 @@ angular.module('HY', [
         url: '/:lang/:partId/chart/:pageId',
         views: {
           'header@': {
-            templateUrl: '/assets/views/menu.html',
+            templateUrl: 'assets/views/menu.html',
             controller: 'HeaderController'
           },
           'content@': {
@@ -99,7 +99,7 @@ angular.module('HY', [
         url: '/:lang/:partId/quiz/:pageId',
         views: {
           'header@': {
-            templateUrl: '/assets/views/menu.html',
+            templateUrl: 'assets/views/menu.html',
             controller: 'HeaderController'
           },
           'content@': {
@@ -118,7 +118,7 @@ angular.module('HY', [
         url: '/:lang/notFound',
         views: {
           'header@': {
-            templateUrl: '/assets/views/menu.html',
+            templateUrl: 'assets/views/menu.html',
             controller: 'HeaderController'
           },
           'content@': {
@@ -131,7 +131,7 @@ angular.module('HY', [
         url: '/:lang/:partId',
         views: {
           'header@': {
-            templateUrl: '/assets/views/menu.html',
+            templateUrl: 'assets/views/menu.html',
             controller: 'HeaderController'
           },
           'content@': {

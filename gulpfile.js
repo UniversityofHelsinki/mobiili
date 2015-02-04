@@ -98,7 +98,7 @@ gulp.task('javascript', ['preprocess'], function() {
     .pipe($.plumber());
 
   var templates = gulp.src('src/**/*.html')
-    .pipe($.angularTemplatecache('templates.js', { standalone: true, root: 'assets' }));
+    .pipe($.angularTemplatecache('templates.js', { standalone: true }));
 
   var app = gulp.src('src/app/**/*.js');
   // jscs:enable requireMultipleVarDecl

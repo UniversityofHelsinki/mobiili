@@ -5,6 +5,7 @@ html {
 body {
     background-color: white;
     min-width: 320px;
+    min-height: 420px;
 }
 
 /* A simple test case to verify Compass build works ok */
@@ -62,6 +63,7 @@ img {
         top: 50%;
         width: 90%;
         left: 50%;
+        word-wrap: break-word;
         @include translate(-50%, -50%);
 
         font-size: 1.8rem;

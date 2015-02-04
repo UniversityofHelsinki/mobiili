@@ -183,12 +183,14 @@ a[disabled] {
 
 .table-wrapper {
     max-width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    touch-action: auto;
 
     table {
         min-width: 400px; // Override this for each table if necessary
         max-width: 100%;
+        touch-action: auto;
     }
 }
 
@@ -200,7 +202,7 @@ ol.part-list {
     content: attr(data-no);
     padding-right: 15px;
 
-    @media only screen and (min-width: $medium-screen-width) {
+    @media only screen and (min-width: $medium-screen-width) and (min-height: $medium-screen-width) {
         padding-right: 0;
         font-size: 400%;
         display: block;
