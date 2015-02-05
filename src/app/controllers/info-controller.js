@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('InfoController', function($scope, $location, $stateParams, $translate, $http, $q, $window, Utils, SessionData) {
+  .controller('InfoController', function($rootScope, $scope, $location, $stateParams, $translate, $http, $q, $window, Utils, SessionData) {
 
     // Set last url information to localStorage data
     SessionData.set({lastUrl: $location.path()});
@@ -15,7 +15,9 @@ angular.module('HY')
       }).show();
     };
 
-    $scope.address = Utils.translate('defaults.TRY');
+    $rootScope.$on('$translateChangeSuccess', function() {
+      $scope.address = $translate.instant('defaults.TRY');
+    });
 
     $scope.subNav = ['part1', 'part2', 'part3', 'part4', 'part5', 'part6'];
 

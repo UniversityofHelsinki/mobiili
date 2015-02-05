@@ -25,9 +25,12 @@ angular.module('HY')
 
       // Set page metadata
       headerTranslationLocation = $stateParams.pageId ? currentRoute.translationNamespace + '.HEADER' : 'parts.' + $stateParams.partId.toUpperCase();
-      Meta.title = Utils.translate(headerTranslationLocation) + ' - HY';
-      Meta.description = Utils.translate('meta.DESCRIPTION');
-      Meta.siteName = Utils.translate('parts.PRELUDE');
+
+      $rootScope.$on('$translateChangeSuccess', function() {
+        Meta.title = Utils.translate(headerTranslationLocation) + ' - HY';
+        Meta.description = Utils.translate('meta.DESCRIPTION');
+        Meta.siteName = Utils.translate('parts.PRELUDE');
+      });
 
       // Set progress info
       progress.currentPart = partIndex + 1;
