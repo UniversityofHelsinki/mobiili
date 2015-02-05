@@ -97,16 +97,13 @@ gulp.task('javascript', ['preprocess'], function() {
     .pipe($.filter('**/*.js'))
     .pipe($.plumber());
 
-  var templates = gulp.src('src/**/*.html')
+  var templates = gulp.src(['src/**/*.html', 'src/**/*.json', '!src/components/**/*'])
     .pipe($.angularTemplatecache('templates.js', { standalone: true }));
-
-  var data = gulp.src('src/assets/translations/*.json')
-    .pipe($.angularTemplatecache('data.js', {standalone: true}));
 
   var app = gulp.src('src/app/**/*.js');
   // jscs:enable requireMultipleVarDecl
 
-  return eventStream.merge(components, templates, data, app)
+  return eventStream.merge(components, templates, app)
     .pipe($.order([
       'components/jquery/dist/jquery.js',
       'components/lodash/dist/lodash.compat.js',
@@ -114,7 +111,6 @@ gulp.task('javascript', ['preprocess'], function() {
       'components/angular-translate/angular-translate.js',
       'components/**/*.js',
       'templates.js',
-      'data.js',
       'app/**/*.js'
     ], { base: path.join(__dirname, 'src') }))
     .pipe($.if(config.debug, $.sourcemaps.init()))

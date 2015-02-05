@@ -149,7 +149,8 @@ angular.module('HY', [
 
     $translateProvider.useStaticFilesLoader({
       prefix: 'assets/translations/locale-',
-      suffix: '.json'
+      suffix: '.json',
+      cache: true
     });
     $translateProvider.preferredLanguage('fi');
 
