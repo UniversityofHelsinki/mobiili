@@ -48,6 +48,11 @@ angular.module('HY')
             retVal = {
               text: 'defaults.NEXT'
             };
+
+        if (partIndex === 0 && $scope.pageIndex === 0) {
+          retVal.text = 'defaults.START';
+        }
+
         if ($scope.pageIndex < $scope.pageCount) {
           next = partRoutes[$scope.pageIndex + 1];
           retVal.url = $stateParams.partId + '/' + next.type + '/' + next.id;

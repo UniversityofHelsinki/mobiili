@@ -47,7 +47,7 @@
       "PART4": "Mobiiliweb",
       "PART5": "Sovellukset",
       "PART6": "Palveluhankinnan käytännön vaatimukset",
-      "END": "Opas loppuu tähän. Kiitos."
+      "END": "Kiitos mielenkiinnosta. Lisää tietoa:"
   },
   "tutorial": {
     "1": "Pääset siirtymään tässä oppaassa sivulta toiselle helposti pyyhkäisemällä oikealle tai vasemmalle käyttäessäsi kosketusnäyttöä tai näppäimistön nuolinäppäimillä.",
@@ -94,14 +94,14 @@
       "HEADER": "Arvioi"
   },
   "stats1": {
-      "1": "Vuodesta 2014 lähtien pohjois-amerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).",
+      "1": "Vuodesta 2014 lähtien pohjoisamerikkalaiset käyttivät enemmän aikaa netissä mobiililaitteilla kuin desktop laitteilla (läppärit ja työasemat).",
       "2": "Erityisesti mobiilisovellusten parissa vietettiin aikaa, mutta selain oli tärkeä verkko-ostamisen ja tiedonhaun kannalta.",
-      "HEADER": "Internet muuttui mobiiliksi 2014",
+      "HEADER": "Internetin mobiilikäyttö ohitti työasemakäytön vuonna 2014",
       "CHART_HEADER": "Ajankäytön jakautuminen %"
   },
   "stats2": {
-      "1": "Jo nyt merkittävillä kotimaisilla sivustoilla 60% käyttäjistä selaa mobiililaitteella.",
-      "2": "Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop on saatavilla.",
+      "1": "Jo nyt kotimaisilla sivustoilla 60% käyttäjistä selaa sivua mobiililaitteella",
+      "2": "Mobiililaitteita käytetään yhä enemmän myös silloin kun desktop-versio on saatavilla.",
       "HEADER": "Mobiilikäyttö tulee ohittamaan desktopin myös Suomessa",
       "CHART_HEADER": "Internetin käytttö Suomessa eri laitteilla"
   },
@@ -148,10 +148,12 @@
   },
   "emulationTest" : {
     "1": "Kokeile",
-    "2": "Jos käytössäsi on Google Chromen työpöytäselaimen ajantasainen versio, voit sen kehitystyökaluja käyttäen tarkastaa miten selaamasi sivusto toimii erilaisilla mobiililaitteilla. Koska Chrome on tällä hetkellä (vuoden 2015 alussa) Suomessa käytetyin selain, kannattaa sitä kokeilla kokeilla muutenkin.",
-    "3": "Tee näin",
-    "4": "Paina F12 (Windows) tai Cmd+Shift+I (Mac) käynnistääksesi Developer Tools lisäosan. Tämän jälkeen  lisäosan yläpalkista löytyvällä matkapuhelinsymbolilla avautuu mobiilisimulaattori. ",
-    "5": "Uudesta yläpalkista voit valita haluamasi laitteen (Device) käyttäen alasvetovalikkoa (Select model). Lataamalla sivun uudestaan (Reload, Ctrl+R) näkymä päivittää vastaamaan simuloitua mobiililaitetta. Voit jatkaa selailua normaalisti, jolloin saat käsityksen miten sivusto toimii erilaisilla laitteilla. Sulje lisäosa lopuksi oikean yläkulman x-painikkeesta niin näkymä palautuu normaaliksi.",
+    "2": "Jos käytössäsi on Google Chromen tai Firefoxin työpöytäselaimen ajantasainen versio, voit sen kehitystyökaluja käyttäen tarkastaa miten selaamasi sivusto toimii erilaisilla mobiililaitteilla. Koska Chrome on tällä hetkellä (vuoden 2015 alussa) Suomessa käytetyin selain, kannattaa sitä kokeilla kokeilla muutenkin.",
+    "3": "Firefox",
+    "4": "Paina ctrl+shif+M (Windows) tai cmd+alt+M (Mac) käynnistääksesi responsiivisen suunnittelunäkymän.",
+    "5": "Chrome",
+    "6": "Paina F12 (Windows) tai cmd+alt+I (Mac) käynnistääksesi Developer Tools lisäosan. Tämän jälkeen  lisäosan yläpalkista löytyvällä matkapuhelinsymbolilla avautuu mobiilisimulaattori. ",
+    "7": "Uudesta yläpalkista voit valita haluamasi laitteen (Device) käyttäen alasvetovalikkoa (Select model). Lataamalla sivun uudestaan (Reload, Ctrl+R) näkymä päivittää vastaamaan simuloitua mobiililaitetta. Voit jatkaa selailua normaalisti, jolloin saat käsityksen miten sivusto toimii erilaisilla laitteilla. Sulje lisäosa lopuksi oikean yläkulman x-painikkeesta niin näkymä palautuu normaaliksi.",
     "HEADER":"Miten laiteriippumattomuutta voi testata?"
     },
   "standards": {
@@ -180,13 +182,14 @@
   "openData2": {
     "1": "Avoimet rajapinnat mahdollistavat järjestelmien innovatiivisen yhdistämisen ja tietojen uudelleen käyttämisen. ",
     "2": "Esimerkiksi Google karttojen rajapinnan varaan on rakennettu lukemattomia palveluita kuten Eat.fi ja AuratKartalla.com. ",
+    "5": "Avointa dataa onkin hyödynnetty useissa mobiiliratkaisuissa paikkatietoon yhdistettynä, esimerkkinä edellä mainittu Eat.fi sekä HSL Reittiopas.",
     "3": "Taustajärjestelmien (back end) avoimet rajapinnat helpottavat myös esimerkiksi nettipalvelun ulkoasun (front end) uudistamista ilman taustajärjestelmän muuttamista.",
     "4": "Avoin data ja avoin lähdekoodi sopivat hyvin yhteen.",
     "HEADER": "Avoin data kantaa pidemmälle"
   },
   "openSource": {
       "1": "Tiedettä on tehty aina jakamalla omat tulokset muiden arvioitaviksi ja opittaviksi. Open Source on yksinkertaistetusti saman periaatteen käyttämistä ohjelmistokehityksessä - täsmälleen samoista syistä.",
-      "2": "Helsingin Yliopistosta lähtenyt Linux on maailman merkittävin avoimen lähdekoodin tuote.",
+      "2": "Helsingin yliopistosta lähtenyt Linux on maailman merkittävin avoimen lähdekoodin tuote.",
       "HEADER": "Mitä on avoin lähdekoodi? (open source)"
   },
   "openSource2": {
@@ -203,6 +206,7 @@
     "2":"Avoimen lähdekoodin ympärille on mahdollista kehittää kannattavaa liiketoimintaa, vaikka ohjelmistolisenssien myynti ei ole mahdollista. Tällaisia tuotteita ovat mm. Android, WordPress, MySQL, Mozilla, Enterprise Linuxit ja OpenOffice, Google Chromium.",
     "3":"Vaatimalla avointa lähdekoodia myös ulkoisissa hankinnoista et joudu koskaan yhden suljetun ohjelmistoratkaisun varaan. ",
     "4":"Tämän oppaan lähdekoodi on avointa ja käytettävissä Githubissa: {{gitURL}}",
+    "5": "Esimerkiksi mobiilikehitystä varten on olemassa useita avoimen lähdekoodin sovelluskehyksiä (framework) jotka tarjoavat työkaluja responsiiviseen ja mobiiliystävälliseen kehitystyöhön, kuten Foundation ja Bootstrap.",
     "HEADER":"Hyödynnä avointa lähdekoodia"
   },
   "mobileFriendly": {
@@ -237,7 +241,9 @@
       "B_1": "Responsiivisen palvelun kuvat ovat oikean kokoisia suhteessa näyttöön ja taittoon. Ne voivat myös adaptoitua laitteen näyttöominaisuuksiin ja nettiyhteyden nopeuteen.",
       "B_2": "Suositun FullHD (1920x1080) näytössä on 9 kertaa enemmän informaatiota kuin pienen mobiililaitteen näytölle mahtuu.",
       "B_3": "Palvelun kannattaa lähettää laitteen ominaisuuksiin sopivan kokoinen kuva",
-      "2": "Esimerkki sivustosta joka ei ole responsiivinen vaan näyttää samalta eri laitteilla"
+      "2": "Esimerkki sivustosta joka",
+      "2_1": "ei ole",
+      "2_2": "responsiivinen vaan näyttää samalta eri laitteilla"
   },
   "features": {
       "0": "Kokeile näitä:",
@@ -299,10 +305,10 @@
   "appStrength": {
       "1": "Uusi kanava: näkyvyys sovelluskaupassa",
       "2": "Muistutukset (nofications) laitteen käyttäjälle",
-      "3": "Hyvät offline toiminnallisuudet",
-      "4": "Voi hyödyntää mobiililaitteiden ominaisuuksia laajemmin",
+      "3": "Hyvät offline-toiminnallisuudet",
+      "4": "Mobiililaitteiden ominaisuudet paremmin hyödynnettävissä",
       "5": "Parempi suorituskyky erityisesti vaativissa sovelluksissa",
-      "6": "Sovelluksella on helppo rahastaa",
+      "6": "Helpommin rahastettavissa",
       "7": "Laitepohjainen käyttäjätunnistus",
       "HEADER": "Sovellusten vahvuudet"
   },
@@ -311,7 +317,7 @@
       "2": "Sovellusten sisältöjä on vaikea jakaa eikä Google ei osaa hakea sisältöjä sovellusten sisältä.",
       "3": "Jos haluat sovelluksen sisällön saavutettavaksi tarvitset myös verkkopalvelun.",
       "HEADER": "Sovelluksilla on rajansa",
-      "SUMMARY": "Google Playn suosituimmat hakusanat kesällä 2012 Chompin mukaan",
+      "SUMMARY": "Google Playn suosituimmat hakusanat kesällä 2012 Chompin mukaan:",
       "KEYWORD": "Hakusana",
       "VOLUME": "Kuukausivolyymi"
   },
@@ -353,10 +359,10 @@
     "HEADER": "Suunnittelu edellyttää laajaa näkemystä myös muista periaatteista",
       "1": "Laiteriippumattomuus ja avoimuus ovat tärkeitä periaatteita juuri nyt.",
       "2": "Jos palvelusi on saavutettava ja siitä on tullut tunnettu, myös seuraavien periaatteiden noudattaminen on tärkeää käyttäjäkokemuksen kannalta:",
-      "3": "Luotettavuus, suorituskyky, tietoturva ja käytettävyys"
+      "3": "luotettavuus, suorituskyky, tietoturva ja käytettävyys."
   },
   "userCentredDesign": {
-    "HEADER": "Käyttäjäkeskeisen suunnittelu auttaa onnistumaan",
+    "HEADER": "Käyttäjäkeskeinen suunnittelu auttaa onnistumaan",
       "1": "Käyttäjäkeskeisyyden soveltaminen ohjelmistoprojektin eri vaiheissa:",
       "2": "Ymmärrä käyttäjän tarpeet ja hänen palvelustaan saamansa arvo",
       "3": "Keskity käyttöliittymässä olennaiseen em. arvon kannalta",

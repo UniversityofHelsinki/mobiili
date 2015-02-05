@@ -6,7 +6,12 @@ angular.module('HY')
     SessionData.set({lastUrl: $location.path()});
 
     $scope.text = 'parts.' + $stateParams.partId.toUpperCase();
-    $scope.partNo = Utils.romanize(parseInt($stateParams.partId.replace('part', '')));
+    $scope.partNo = Utils.romanize(parseInt($stateParams.partId.replace('part', ''), 10));
     $scope.addClasses = 'part-divider';
+
+    if ($stateParams.partId === 'end') {
+      $scope.link = 'https://flamma.helsinki.fi/fi/tietotekniikka/asiakasvastaavat';
+      $scope.linkText = 'Flamma';
+    }
 
   });
