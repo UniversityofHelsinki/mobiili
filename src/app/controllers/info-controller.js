@@ -1,5 +1,5 @@
 angular.module('HY')
-  .controller('InfoController', function($scope, $location, $q, $window, Utils, SessionData) {
+  .controller('InfoController', function($scope, $location, $stateParams, $translate, $http, $q, $window, Utils, SessionData) {
 
     // Set last url information to localStorage data
     SessionData.set({lastUrl: $location.path()});
@@ -22,14 +22,18 @@ angular.module('HY')
     $scope.addressPromise = $q.defer();
     $scope.addressPromise.promise.then(function(result) {
       console.log('geo success', result);
-      $scope.address = result.fullAddress;
+      if (result.fullAddress) {
+        $scope.address = result.fullAddress;
+      } else {
+        $scope.address = Utils.translate('defaults.GENERAL_ERROR');
+      }
     }, function(result) {
       console.log('geo fail', result);
       $scope.address = Utils.translate('defaults.GENERAL_ERROR');
     });
 
     $scope.getLocation = function() {
-      $scope.address = Utils.translate('defaults.SEARCHING') + '...'
+      $scope.address = Utils.translate('defaults.SEARCHING') + '...';
 
       var deferred;
       deferred = $q.defer();
@@ -47,23 +51,20 @@ angular.module('HY')
 
     $scope.getAddress = function() {
       var deferred = $scope.addressPromise,
-        _this = this;
-      this.geocoder || (this.geocoder = new google.maps.Geocoder());
-      // deferred = $q.defer();
+          url = '//maps.googleapis.com/maps/api/geocode/json',
+          _this = this;
+
       this.getLocation().then(function(coords) {
         var latlng;
-        latlng = new google.maps.LatLng(coords.latitude, coords.longitude);
-        return _this.geocoder.geocode({
-          latLng: latlng
-        }, function(results, status) {
-          if (status === google.maps.GeocoderStatus.OK) {
-            return deferred.resolve(_this.extractAddress(results));
-          } else {
+        latlng = [coords.latitude, coords.longitude].join(',');
+
+        return $http.get(url + '?latlng=' + latlng)
+          .success(function(data) {
+            deferred.resolve(_this.extractAddress(data.results));
+          })
+          .error(function(status) {
             return deferred.reject('cannot geocode status: ' + status);
-          }
-        }, function() {
-          return deferred.reject('cannot geocode');
-        });
+          });
       });
       return deferred.promise;
     };
