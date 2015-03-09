@@ -34,7 +34,7 @@ git diff --cached --name-only --diff-filter=ACMR | xargs git checkout-index --pr
 RUN_JSCS=1
 TOTAL_ERRORS=0
 
-JSFILES=$(git diff-index --name-status --cached HEAD | grep -v ^D | grep -v ' dist/' | egrep '.js$' | cut -c3-)
+JSFILES=$(git diff-index --name-status --cached HEAD | grep -v ^D | grep -v '\tdist/' | egrep '.js$' | cut -c3-)
 
 JSCS_PATH='./node_modules/jscs/bin/jscs'
 
