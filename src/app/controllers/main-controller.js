@@ -12,7 +12,7 @@ angular.module('HY')
       $timeout(function() {
         // Timeout to fix position issues
         $tour.start();
-      }, 2000);
+      }, 100);
     }
 
     // Translation
