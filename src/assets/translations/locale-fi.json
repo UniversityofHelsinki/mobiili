@@ -173,10 +173,9 @@
       "HEADER": "Avoimuuden periaate"
   },
   "openData": {
-      "1": "Julkaistujen tutkimusaineistojen datan pitäisi olla yhteiskäyttöistä ja avointa. Avoin data tarkoittaa tämän periaatteen toteuttamista tietojärjestelmien tasolla.",
+      "1": "Julkaistujen tutkimusaineistojen datan pitäisi olla yhteiskäyttöistä ja avointa. Avoin data tarkoittaa tämän periaatteen toteuttamista tietojärjestelmien tasolla. Avoimien oppimisympäristöjen (ml. MOOC:t) ja vapaiden verkkokurssien jakelu ovat esimerkki avoimesta data yliopistoilla.",
       "2": "Jos data on sen arvoista, että se kannattaa esittää käyttäjälle jossakin palvelussa, se kannattaa ehdottomasti myös tarjota koneluettavassa muodossa ohjelmointirajapinnassa (eli API:ssa)",
       "3": "Ohjelmointirajapintojen avulla tietojärjestelmät voivat hallitusti ja turvallisesti vaihtaa tietoja keskenään.",
-      "4": "",
       "HEADER": "Mitä on avoin data? (Open data)"
   },
   "openData2": {
