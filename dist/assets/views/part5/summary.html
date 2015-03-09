@@ -1,0 +1,28 @@
+<div class="exclamation-mark"></div>
+<h2 translate>{{ 'summary1.HEADER' }}</h2>
+<div ng-include src="'assets/views/add-bookmark-btn.html'"></div>
+
+
+<p translate>{{ 'questions4.1' }}</p>
+<ul class="button-group stack-for-small round">
+    <li><a type="button" class="button" ng-model="mobileOs.value" ng-change="updateModel(mobileOs)" btn-radio="'Android'" translate ng-class="isCorrect(mobileOs)">Android</a></li>
+    <li><a type="button" class="button" ng-model="mobileOs.value" ng-change="updateModel(mobileOs)" btn-radio="'iOS (Apple)'" translate ng-class="isCorrect(mobileOs)">iOS (Apple)</a></li>
+    <li><a type="button" class="button" ng-model="mobileOs.value" ng-change="updateModel(mobileOs)" btn-radio="'Windows'" translate ng-class="isCorrect(mobileOs)">Windows</a></li>
+    <li><a type="button" class="button" ng-model="mobileOs.value" ng-change="updateModel(mobileOs)" btn-radio="'Symbian'" translate ng-class="isCorrect(mobileOs)">Symbian</a></li>
+</ul>
+
+<p translate>{{ 'questions4.2' }}</p>
+<ul class="button-group stack-for-small round">
+    <li><a type="button" class="button" ng-model="appType.value" ng-change="updateModel(appType)" btn-radio="'native'" translate ng-class="isCorrect(appType)">{{ 'questions4.NATIVE' }}</a></li>
+    <li><a type="button" class="button" ng-model="appType.value" ng-change="updateModel(appType)" btn-radio="'hybrid'" translate ng-class="isCorrect(appType)">{{ 'questions4.HYBRID' }}</a></li>
+    <li><a type="button" class="button" ng-model="appType.value" ng-change="updateModel(appType)" btn-radio="'windows'" translate ng-class="isCorrect(appType)">{{ 'questions4.WINDOWS' }}</a></li>
+    <li><a type="button" class="button" ng-model="appType.value" ng-change="updateModel(appType)" btn-radio="'web'" translate ng-class="isCorrect(appType)">{{ 'questions4.WEB' }}</a></li>
+</ul>
+
+<p translate>{{ 'questions4.3' }}</p>
+<ul class="button-group stack-for-small round">
+    <li><a type="button" class="button" ng-model="appsInstalled.value" ng-change="updateModel(appsInstalled)" btn-radio="0" translate ng-class="isCorrect(appsInstalled)">0</a></li>
+    <li><a type="button" class="button" ng-model="appsInstalled.value" ng-change="updateModel(appsInstalled)" btn-radio="1" translate ng-class="isCorrect(appsInstalled)">1</a></li>
+    <li><a type="button" class="button" ng-model="appsInstalled.value" ng-change="updateModel(appsInstalled)" btn-radio="3" translate ng-class="isCorrect(appsInstalled)">3</a></li>
+    <li><a type="button" class="button" ng-model="appsInstalled.value" ng-change="updateModel(appsInstalled)" btn-radio="7" translate ng-class="isCorrect(appsInstalled)">7</a></li>
+</ul>

@@ -1,0 +1,21 @@
+<h2 translate>{{ 'stats1.HEADER' }}</h2>
+<div ng-include src="'assets/views/add-bookmark-btn.html'"></div>
+<ul class="links" data-heading="{{ 'defaults.SOURCES' | translate }}">
+    <li>
+        <a target="_blank" href="http://www.comscore.com/Insights/Blog/Major-Mobile-Milestones-in-May-Apps-Now-Drive-Half-of-All-Time-Spent-on-Digital">http://www.comscore.com</a>
+    </li>
+</ul>
+
+<p translate>{{ 'stats1.1' }}</p>
+<p translate>{{ 'stats1.2' }}</p>
+
+<h6 translate>{{'stats1.CHART_HEADER'}}</h6>
+<div class="chart-wrapper">
+    <canvas tc-chartjs-line chart-options="options" chart-data="mobileVsDt" class="chart" auto-legend></canvas>
+</div>
+
+<ul class="links" data-heading="{{ 'defaults.SOURCES' | translate }}">
+    <li>
+        <a target="_blank" href="http://www.comscore.com/Insights/Blog/Major-Mobile-Milestones-in-May-Apps-Now-Drive-Half-of-All-Time-Spent-on-Digital">http://www.comscore.com</a>
+    </li>
+</ul>

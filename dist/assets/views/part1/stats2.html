@@ -1,0 +1,21 @@
+<h2 translate>{{ 'stats2.HEADER' }}</h2>
+<div ng-include src="'assets/views/add-bookmark-btn.html'"></div>
+<ul class="links" data-heading="{{ 'defaults.SOURCES' | translate }}">
+    <li>
+        <a target="_blank" href="http://gs.statcounter.com/#desktop+mobile+tablet-comparison-FI-monthly-201312-201412">http://gs.statcounter.com</a>
+    </li>
+</ul>
+
+<p translate>{{ 'stats2.1' }}</p>
+<p translate>{{ 'stats2.2' }}</p>
+
+<h6 translate>{{ 'stats2.CHART_HEADER' }}</h6>
+<div class="chart-wrapper">
+    <canvas tc-chartjs-line chart-options="options" chart-data="platformComparison" class="chart" auto-legend></canvas>
+</div>
+
+<ul class="links" data-heading="{{ 'defaults.SOURCES' | translate }}">
+    <li>
+        <a target="_blank" href="http://gs.statcounter.com/#desktop+mobile+tablet-comparison-FI-monthly-201312-201412">http://gs.statcounter.com</a>
+    </li>
+</ul>

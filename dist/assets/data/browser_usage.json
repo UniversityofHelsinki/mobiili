@@ -1,0 +1,47 @@
+[
+  {
+    "Date":"2014-09",
+    "Chrome (all)":36.76,
+    "Firefox 5+":19.79,
+    "iPhone 0":9.14,
+    "Android 0":7.19,
+    "IE 11.0":6.5,
+    "Safari iPad":6.14,
+    "IEMobile 11.0":2.24,
+    "IEMobile 10.0":2.48,
+    "IE 9.0":1.76,
+    "IE 10.0":1.54,
+    "IEMobile 9.0":1.06,
+    "Safari 7.0":1.48
+  },
+  {
+    "Date":"2014-10",
+    "Chrome (all)":37.05,
+    "Firefox 5+":19.45,
+    "iPhone 0":9.51,
+    "Android 0":7.02,
+    "IE 11.0":6.64,
+    "Safari iPad":6.1,
+    "IEMobile 11.0":2.63,
+    "IEMobile 10.0":2.16,
+    "IE 9.0":1.6,
+    "IE 10.0":1.56,
+    "IEMobile 9.0":1,
+    "Safari 7.0":0.77
+  },
+  {
+    "Date":"2014-11",
+    "Chrome (all)":37.98,
+    "Firefox 5+":18.15,
+    "iPhone 0":9.93,
+    "Android 0":7.44,
+    "IE 11.0":6.75,
+    "Safari iPad":5.98,
+    "IEMobile 11.0":3.37,
+    "IEMobile 10.0":2.09,
+    "IE 9.0":1.35,
+    "IE 10.0":1.27,
+    "IEMobile 9.0":0.99,
+    "Safari 7.0":0.38
+  }
+]

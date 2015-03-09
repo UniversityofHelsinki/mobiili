@@ -1,0 +1,74 @@
+<header>
+    <a href="/#/{{lang}}/prelude" class="title-link"><h3 class="title" data-text="Helsingin Yliopisto" data-text-min="HY"></h3></a>
+    <div class="languages">
+        <a ng-click="changeLanguage('fi')" data-text="Suomi" data-text-min="Fi" ng-show="showLang('fi')"></a>
+        <a ng-click="changeLanguage('en')" data-text="English" data-text-min="En" ng-show="showLang('en')"></a>
+        <a ng-click="changeLanguage('se')" data-text="Svenska" data-text-min="Se" ng-show="showLang('se')"></a>
+    </div>
+</header>
+
+<div class="navigation-header">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name"></li>
+      </ul>
+      <ul class="right">
+          <li class="has-form fa search">
+            <form>
+              <div class="row collapse">
+                <div class="large-10 small-10 columns">
+                  <input id="search" name="search" type="search" placeholder="{{'defaults.SEARCH' | translate}}" ng-model="search.value" ng-keyup="searchKeyUp($event)">
+                </div>
+                <div class="large-2 small-2 columns">
+                  <a ng-click="submitSearch()" class="secondary button expand"><i class="fa fa-search"></i></a>
+                </div>
+              </div>
+            </form>
+          </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="left top-bar-controls">
+          <li
+            step-text="{{'tutorial.4' | translate}}"
+            step-index="4"
+            step-placement="bottom"
+            step-append-to-body="true">
+              <a href="/#/{{lang}}/bookmarks">
+                <i class="fa fa-heart active"></i><span class="hide-for-small-only" translate>{{ 'defaults.BOOKMARKS' }}</span></a>
+          </li>
+          <li class="divider"></li>
+          <li class="help"
+            step-text="{{'tutorial.5' | translate}}"
+            step-index="5"
+            step-placement="bottom"
+            step-append-to-body="true">
+              <a ng-click="startTour()">
+                <i class="fa fa-question-circle"></i><span class="hide-for-small-only" translate>{{ 'defaults.HELP' }}</span></a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+</div>
+
+<div class="controls">
+  <div class="progress-wrapper">
+    <div
+    class="progress-inner-wrapper"
+    step-text="{{'tutorial.2' | translate}}"
+    step-index="1"
+    step-placement="bottom"
+    step-append-to-body="true">
+      <span translate class="show-for-medium-up">{{'defaults.YOUR_PROGRESS'}}</span>
+      <progressbar value="experience.value()" max="experience.total()" type="success"></progressbar> <span translate>{{'defaults.' + experience.level()}}</span>
+    </div>
+  </div>
+</div>
+
+<div class="progress-header">
+  <dl class="sub-nav">
+    <dd ng-class="{active: $index==progress.currentPart - 2}" ng-repeat="value in subNav">
+      <a href="/#/{{lang}}/{{value}}" data-text-min="{{romanize($index + 1)}}" data-text="{{'partHeadings.' + value.toUpperCase() | translate}}" translate></a>
+    </dd>
+  </dl>
+</div>
+

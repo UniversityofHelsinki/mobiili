@@ -1,0 +1,30 @@
+<div class="exclamation-mark"></div>
+
+<h2 translate>{{ 'summary1.HEADER' }}</h2>
+<div ng-include src="'assets/views/add-bookmark-btn.html'"></div>
+
+
+<p translate>{{ 'questions1.1' }}</p>
+<ul class="button-group round stack-for-small">
+    <li><a type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="10" ng-class="isCorrect(hyMobileUsage)">10%</a></li>
+    <li><a type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="20" ng-class="isCorrect(hyMobileUsage)">20%</a></li>
+    <li><a type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="40" ng-class="isCorrect(hyMobileUsage)">40%</a></li>
+    <li><a type="button" class="button" ng-model="hyMobileUsage.value" ng-change="updateModel(hyMobileUsage)" btn-radio="60" ng-class="isCorrect(hyMobileUsage)">60%</a></li>
+</ul>
+
+
+<p translate>{{ 'questions1.2' }}</p>
+<ul class="button-group round stack-for-small">
+    <li><a type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="10" ng-class="isCorrect(overallMobileUsage)">10%</a></li>
+    <li><a type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="20" ng-class="isCorrect(overallMobileUsage)">20%</a></li>
+    <li><a type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="40" ng-class="isCorrect(overallMobileUsage)">40%</a></li>
+    <li><a type="button" class="button" ng-model="overallMobileUsage.value" ng-change="updateModel(overallMobileUsage)" btn-radio="60" ng-class="isCorrect(overallMobileUsage)">60%</a></li>
+</ul>
+
+<p translate>{{ 'questions1.3' }}</p>
+<ul class="button-group round stack-for-small">
+    <li><a type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="10" ng-class="isCorrect(mobileGoogleSearch)">10%</a></li>
+    <li><a type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="20" ng-class="isCorrect(mobileGoogleSearch)">20%</a></li>
+    <li><a type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="40" ng-class="isCorrect(mobileGoogleSearch)">40%</a></li>
+    <li><a type="button" class="button" ng-model="mobileGoogleSearch.value" ng-change="updateModel(mobileGoogleSearch)" btn-radio="60" ng-class="isCorrect(mobileGoogleSearch)">60%</a></li>
+</ul>

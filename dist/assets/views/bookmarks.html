@@ -1,0 +1,11 @@
+<div class="search-results">
+<a href="/#{{backUrl}}" class="back-button" translate>{{'defaults.BACK'}}</a>
+    <h1 translate>{{'defaults.BOOKMARKS'}}</h1>
+    <ul>
+        <li ng-repeat="bookmark in bookmarks">
+            <a href="/#{{bookmark.url}}">
+            <h3>{{bookmark.title}}</h3>
+            </a>
+      </li>
+    </ul>
+</div>
