@@ -11,8 +11,14 @@ angular.module('HY')
       SessionData.set({showTutorial: false});
       $timeout(function() {
         // Timeout to fix position issues
-        $tour.start();
+        if (!$tour.isActive()) {
+          $tour.start();
+        } else {
+          $tour.end();
+        }
       }, 100);
+    } else {
+      $tour.end();
     }
 
     // Translation

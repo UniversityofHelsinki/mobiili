@@ -3,7 +3,7 @@
         <h1><span translate>{{'defaults.SEARCH_RESULTS'}}:</span><span ng-show="search.value !== ''"> "{{search.value}}" ({{hits.length}})</span></h1>
         <ul>
             <li ng-repeat="hit in hits = (searchableData | searchHits:search.value)">
-                <a href="/#/{{lang}}{{hit.url}}">
+                <a href="#/{{lang}}{{hit.url}}">
                     <h3>{{hit.content.HEADER}}</h3>
                     <p ng-repeat="parsed in hit.parsedHits">
                         <span ng-bind-html="parsed | highlight:search.value"></span>
