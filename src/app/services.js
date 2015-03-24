@@ -238,21 +238,21 @@ angular.module('HY.services', [])
   .factory('BrowserUsage', function($http) {
     return {
       get: function() {
-        return $http.get('/assets/data/browser_usage.json');
+        return $http.get('assets/data/browser_usage.json');
       }
     };
   })
   .factory('PlatformComparison', function($http) {
     return {
       get: function() {
-        return $http.get('/assets/data/platform_comparison.json');
+        return $http.get('assets/data/platform_comparison.json');
       }
     };
   })
   .factory('MobileVsDT', function($http) {
     return {
       get: function() {
-        return $http.get('/assets/data/mobileVsDt.json');
+        return $http.get('assets/data/mobileVsDt.json');
       }
     };
   })
